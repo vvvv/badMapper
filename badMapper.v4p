@@ -1,0 +1,191 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta31.2.dtd" >
+   <PATCH nodename="C:\Users\joreg\dev\repos\badMapper\badMapper.v4p" componentmode="InAWindow" systemname="badMapper" filename="C:\Users\joreg\dev\repos\badMapper\badMapper.v4p">
+   <BOUNDS height="7380" left="3495" top="6930" type="Window" width="9795">
+   </BOUNDS>
+   <NODE componentmode="InAWindow" id="13" nodename="RENDERER (EX9)" systemname="Renderer (EX9)">
+   <BOUNDS height="270" left="1170" top="5985" type="Node" width="1785">
+   </BOUNDS>
+   <BOUNDS height="6270" left="300" top="525" type="Window" width="7920">
+   </BOUNDS>
+   <BOUNDS height="3435" left="1170" top="5985" type="Box" width="7080">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="EX9 Out" visible="1">
+   </PIN>
+   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="NONE">
+   </PIN>
+   <PIN pinname="Fullscreen Antialiasing Quality Level" slicecount="1" values="NONE">
+   </PIN>
+   <PIN pinname="Projection" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="View" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Fullscreen Depthbuffer Format" slicecount="1" values="NONE">
+   </PIN>
+   <PIN pinname="Fullscreen Dimensions" slicecount="1" values="|1024 x 768|">
+   </PIN>
+   <PIN pinname="Windowed Depthbuffer Format" slicecount="1" values="NONE">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Source">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InAWindow" id="14" nodename="RENDERER (EX9)" systemname="Renderer (EX9)">
+   <BOUNDS height="270" left="5490" top="5985" type="Node" width="1785">
+   </BOUNDS>
+   <BOUNDS height="6270" left="8220" top="540" type="Window" width="7920">
+   </BOUNDS>
+   <BOUNDS height="3435" left="5490" top="5985" type="Box" width="7080">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="EX9 Out" visible="1">
+   </PIN>
+   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Fullscreen Antialiasing Quality Level" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Projection" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="View" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Fullscreen Depthbuffer Format" slicecount="1" values="NONE">
+   </PIN>
+   <PIN pinname="Fullscreen Dimensions" slicecount="1" values="|1024 x 768|">
+   </PIN>
+   <PIN pinname="Windowed Depthbuffer Format" slicecount="1" values="NONE">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Destination">
+   </PIN>
+   </NODE>
+   <NODE systemname="UniformScale (Transform)" nodename="UniformScale (Transform)" componentmode="Hidden" id="26">
+   <BOUNDS type="Node" left="2505" top="5550" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="XYZ" slicecount="1" values="2">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="26" srcpinname="Transform Out" dstnodeid="13" dstpinname="View">
+   </LINK>
+   <NODE systemname="SourceContent" filename="SourceContent.v4p" nodename="SourceContent.v4p" componentmode="Hidden" id="32">
+   <BOUNDS type="Node" left="330" top="1080" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="330" top="1080" width="3100" height="3100">
+   </BOUNDS>
+   <BOUNDS type="Window" left="16005" top="10155" width="3600" height="4380">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="SourceSelection" filename="SourceSelection.v4p" nodename="SourceSelection.v4p" componentmode="Hidden" id="33">
+   <BOUNDS type="Node" left="2595" top="1080" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2595" top="1080" width="3555" height="3565">
+   </BOUNDS>
+   <BOUNDS type="Window" left="13935" top="8220" width="5145" height="5055">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="DestinationBackground" filename="DestinationBackground.v4p" nodename="DestinationBackground.v4p" componentmode="Hidden" id="34">
+   <BOUNDS type="Node" left="4725" top="1080" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4725" top="1080" width="3100" height="3100">
+   </BOUNDS>
+   <BOUNDS type="Window" left="20430" top="11220" width="3100" height="3100">
+   </BOUNDS>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="DestinationSelection" filename="DestinationSelection.v4p" nodename="DestinationSelection.v4p" componentmode="Hidden" id="35">
+   <BOUNDS type="Node" left="7320" top="1110" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7320" top="1110" width="3675" height="6075">
+   </BOUNDS>
+   <BOUNDS type="Window" left="19440" top="7275" width="7740" height="6555">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="Drawing" filename="Drawing.v4p" nodename="Drawing.v4p" componentmode="Hidden" id="36">
+   <BOUNDS type="Node" left="1738" top="3475" width="3360" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="0" top="1255" width="10620" height="4440">
+   </BOUNDS>
+   <BOUNDS type="Window" left="13875" top="9480" width="10935" height="4950">
+   </BOUNDS>
+   <PIN pinname="Background Alpha" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Background" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="36" srcpinname="Target Layer" dstnodeid="14" dstpinname="Layers">
+   </LINK>
+   <LINK srcnodeid="33" srcpinname="Transform Out" dstnodeid="36" dstpinname="Source Selection Transform">
+   </LINK>
+   <LINK srcnodeid="36" srcpinname="Source Layer" dstnodeid="13" dstpinname="Layers">
+   </LINK>
+   <LINK srcnodeid="32" srcpinname="Texture Out" dstnodeid="36" dstpinname="Source Texture">
+   </LINK>
+   <LINK srcnodeid="35" srcpinname="Transform Out" dstnodeid="36" dstpinname="Mapping Transform">
+   </LINK>
+   <LINK srcnodeid="26" srcpinname="Transform Out" dstnodeid="14" dstpinname="View">
+   </LINK>
+   <LINK srcnodeid="34" srcpinname="Texture Out" dstnodeid="36" dstpinname="Background">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="57" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="4740" top="1590" width="630" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4740" top="1590" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="57" srcpinname="Y Output Value" dstnodeid="36" dstpinname="Background Alpha">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="58" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="4725" top="435" width="1920" height="270">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4725" top="435" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="assets\national-theatre.jpg">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="image.jpg">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="|All Pictures (*.bmp, *.dds, *.hdr, *.jpg, *.png, *.tif, *.tga)||*.bmp;*.dds;*.hdr;*.jpg;*.png;*.tif;*.tga||Bitmap (*.bmp)||*.bmp||HDR (*.hdr)||*.hdr||DDS (*.dds)||*.dds||JPG (*.jpg)||*.jpg||PNG (*.png)||*.png||TIFF (*.tif)||*.tif||Targa (*.tga)||*.tga|">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Filename">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="58" srcpinname="Output String" dstnodeid="34" dstpinname="Filename">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="59" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="5385" top="1560" width="1560" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5385" top="1560" width="1560" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; background alpha|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="60" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="6750" top="435" width="1605" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6750" top="435" width="1605" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; background image|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   </PATCH>
