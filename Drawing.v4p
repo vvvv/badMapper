@@ -283,6 +283,8 @@
    </BOUNDS>
    <PIN pinname="Alignment" slicecount="1" values="FitIn">
    </PIN>
+   <PIN pinname="Uniform Scale" slicecount="1" values="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="16" srcpinname="Width" dstnodeid="28" dstpinname="Aspect Width">
    </LINK>

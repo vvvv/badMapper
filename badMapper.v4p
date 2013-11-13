@@ -83,7 +83,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="2400" top="1215" width="3555" height="3565">
    </BOUNDS>
-   <BOUNDS type="Window" left="14880" top="435" width="11535" height="14655">
+   <BOUNDS type="Window" left="13875" top="540" width="10080" height="17010">
    </BOUNDS>
    <PIN pinname="Mouse" visible="1">
    </PIN>
@@ -98,6 +98,12 @@
    <PIN pinname="Source Active" visible="1">
    </PIN>
    <PIN pinname="Hovering" visible="1">
+   </PIN>
+   <PIN pinname="SVG Layer" visible="1">
+   </PIN>
+   <PIN pinname="Initial Data" visible="1">
+   </PIN>
+   <PIN pinname="Initialize" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="DestinationBackground" filename="DestinationBackground.v4p" nodename="DestinationBackground.v4p" componentmode="Hidden" id="34">
@@ -117,7 +123,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="4965" top="2850" width="3675" height="6075">
    </BOUNDS>
-   <BOUNDS type="Window" left="14235" top="300" width="13305" height="16035">
+   <BOUNDS type="Window" left="14235" top="300" width="13890" height="15240">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -138,6 +144,12 @@
    <PIN pinname="Show Selection" visible="1">
    </PIN>
    <PIN pinname="Hovering Source" visible="1">
+   </PIN>
+   <PIN pinname="SVG Layer" visible="1">
+   </PIN>
+   <PIN pinname="Initial Data" visible="1">
+   </PIN>
+   <PIN pinname="Initialize" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="Drawing" filename="Drawing.v4p" nodename="Drawing.v4p" componentmode="Hidden" id="36">
@@ -303,11 +315,11 @@
    <LINK srcnodeid="36" srcpinname="Target Layer" dstnodeid="66" dstpinname="Layer 1">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="68" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="7785" top="2190" width="1785" height="270">
+   <BOUNDS type="Node" left="8100" top="2205" width="1785" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="7785" top="2190" width="2445" height="975">
+   <BOUNDS type="Box" left="8100" top="2205" width="2235" height="930">
    </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|- show default window cursor&cr;&lf;- active vvvv window&cr;&lf;- save/load settings&cr;&lf;- refactor drawing|">
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|- show default window cursor&cr;&lf;- active vvvv window&cr;&lf;- refactor drawing|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
@@ -379,5 +391,135 @@
    <LINK srcnodeid="35" srcpinname="Show Selection" dstnodeid="36" dstpinname="Show Selection">
    </LINK>
    <LINK srcnodeid="33" srcpinname="Hovering" dstnodeid="35" dstpinname="Hovering Source">
+   </LINK>
+   <NODE systemname="SaveData" filename="SaveData.v4p" componentmode="Hidden" id="80" nodename="SaveData.v4p">
+   <BOUNDS type="Node" left="5955" top="4065" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5955" top="4065" width="4800" height="3600">
+   </BOUNDS>
+   <BOUNDS type="Window" left="10845" top="10860" width="7260" height="4605">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Group (SVG)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Group (SVG)" componentmode="Hidden" id="81">
+   <BOUNDS type="Node" left="5955" top="3600" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Layer 1" visible="1">
+   </PIN>
+   <PIN pinname="Layer 2" visible="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="33" srcpinname="SVG Layer" dstnodeid="81" dstpinname="Layer 1">
+   </LINK>
+   <LINK srcnodeid="35" srcpinname="SVG Layer" dstnodeid="81" dstpinname="Layer 2">
+   </LINK>
+   <LINK srcnodeid="81" srcpinname="Layer" dstnodeid="80" dstpinname="Layers">
+   </LINK>
+   <NODE systemname="LoadData" filename="LoadData.v4p" componentmode="Hidden" id="82" nodename="LoadData.v4p">
+   <BOUNDS type="Node" left="5355" top="150" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5355" top="150" width="4800" height="3600">
+   </BOUNDS>
+   <BOUNDS type="Window" left="11505" top="9090" width="9000" height="7590">
+   </BOUNDS>
+   <PIN pinname="DestinationData" visible="1">
+   </PIN>
+   <PIN pinname="SourceData" visible="1">
+   </PIN>
+   <PIN pinname="Filename" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="83" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="6855" top="3450" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6855" top="3450" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="83" srcpinname="Y Output Value" dstnodeid="80" dstpinname="Save">
+   </LINK>
+   <LINK srcnodeid="82" srcpinname="DestinationData" dstnodeid="35" dstpinname="Initial Data">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="84" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="6810" top="15" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6810" top="15" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="84" srcpinname="Y Output Value" dstnodeid="82" dstpinname="Load">
+   </LINK>
+   <LINK srcnodeid="84" srcpinname="Y Output Value" dstnodeid="35" dstpinname="Initialize">
+   </LINK>
+   <LINK srcnodeid="82" srcpinname="SourceData" dstnodeid="33" dstpinname="Initial Data">
+   </LINK>
+   <LINK srcnodeid="84" srcpinname="Y Output Value" dstnodeid="33" dstpinname="Initialize">
+   </LINK>
+   <NODE systemname="AspectRatio (Transform)" nodename="AspectRatio (Transform)" componentmode="Hidden" id="85">
+   <BOUNDS type="Node" left="3105" top="5955" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="Aspect Width" visible="1">
+   </PIN>
+   <PIN pinname="Aspect Height" visible="1">
+   </PIN>
+   <PIN pinname="Alignment" slicecount="1" values="FitIn">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="85" srcpinname="Transform Out" dstnodeid="13" dstpinname="Aspect Ratio">
+   </LINK>
+   <LINK srcnodeid="13" srcpinname="Actual Backbuffer Width" dstnodeid="85" dstpinname="Aspect Width">
+   </LINK>
+   <LINK srcnodeid="13" srcpinname="Actual Backbuffer Height" dstnodeid="85" dstpinname="Aspect Height">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="86" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="7785" top="3495" width="990" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7785" top="3495" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="file.bad">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="file.svg">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="|SVG Files (*.svg)||*.svg|">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Filename">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="86" srcpinname="Output String" dstnodeid="80" dstpinname="Filename">
+   </LINK>
+   <LINK srcnodeid="86" srcpinname="Output String" dstnodeid="82" dstpinname="Filename">
    </LINK>
    </PATCH>
