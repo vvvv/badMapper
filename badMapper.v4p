@@ -63,7 +63,7 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Destination">
    </PIN>
-   <PIN pinname="Aspect Ratio" visible="1">
+   <PIN pinname="Aspect Ratio" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Actual Backbuffer Width" visible="1">
    </PIN>
@@ -97,6 +97,8 @@
    </PIN>
    <PIN pinname="Source Active" visible="1">
    </PIN>
+   <PIN pinname="Hovering" visible="1">
+   </PIN>
    </NODE>
    <NODE systemname="DestinationBackground" filename="DestinationBackground.v4p" nodename="DestinationBackground.v4p" componentmode="Hidden" id="34">
    <BOUNDS type="Node" left="5790" top="1410" width="0" height="0">
@@ -111,11 +113,11 @@
    </PIN>
    </NODE>
    <NODE systemname="DestinationSelection" filename="DestinationSelection.v4p" nodename="DestinationSelection.v4p" componentmode="Hidden" id="35">
-   <BOUNDS type="Node" left="4995" top="2940" width="0" height="0">
+   <BOUNDS type="Node" left="4965" top="2850" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="4995" top="2940" width="3675" height="6075">
+   <BOUNDS type="Box" left="4965" top="2850" width="3675" height="6075">
    </BOUNDS>
-   <BOUNDS type="Window" left="16185" top="0" width="12060" height="14355">
+   <BOUNDS type="Window" left="14235" top="300" width="13305" height="16035">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -133,13 +135,17 @@
    </PIN>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
+   <PIN pinname="Show Selection" visible="1">
+   </PIN>
+   <PIN pinname="Hovering Source" visible="1">
+   </PIN>
    </NODE>
    <NODE systemname="Drawing" filename="Drawing.v4p" nodename="Drawing.v4p" componentmode="Hidden" id="36">
    <BOUNDS type="Node" left="1738" top="3475" width="3360" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="0" top="1255" width="10620" height="4440">
    </BOUNDS>
-   <BOUNDS type="Window" left="13875" top="9480" width="13095" height="6375">
+   <BOUNDS type="Window" left="11100" top="6000" width="15630" height="9615">
    </BOUNDS>
    <PIN pinname="Background Alpha" slicecount="1" values="1">
    </PIN>
@@ -154,6 +160,8 @@
    <PIN pinname="Destination Active" visible="1">
    </PIN>
    <PIN pinname="Mapping Transform" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Show Selection" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="33" srcpinname="Transform Out" dstnodeid="36" dstpinname="Source Selection Transform">
@@ -236,40 +244,20 @@
    </LINK>
    <LINK srcnodeid="61" srcpinname="Mouse" dstnodeid="33" dstpinname="Mouse">
    </LINK>
-   <NODE systemname="AspectRatio (Transform)" nodename="AspectRatio (Transform)" componentmode="Hidden" id="63">
-   <BOUNDS type="Node" left="7545" top="5970" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Aspect Width" visible="1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Aspect Height" visible="1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Transform Out" visible="1">
-   </PIN>
-   <PIN pinname="Uniform Scale" slicecount="1" values="0.5">
-   </PIN>
-   <PIN pinname="Alignment" slicecount="1" values="FitIn">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="63" srcpinname="Transform Out" dstnodeid="14" dstpinname="Aspect Ratio">
-   </LINK>
-   <LINK srcnodeid="14" srcpinname="Actual Backbuffer Width" dstnodeid="63" dstpinname="Aspect Width">
-   </LINK>
-   <LINK srcnodeid="14" srcpinname="Actual Backbuffer Height" dstnodeid="63" dstpinname="Aspect Height">
-   </LINK>
    <NODE systemname="UniformScale (Transform)" nodename="UniformScale (Transform)" componentmode="Hidden" id="64">
-   <BOUNDS type="Node" left="2535" top="5460" width="100" height="100">
+   <BOUNDS type="Node" left="2460" top="5070" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
    <PIN pinname="XYZ" slicecount="1" values="2">
    </PIN>
+   <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="64" srcpinname="Transform Out" dstnodeid="13" dstpinname="View">
-   </LINK>
    <NODE systemname="Renderer (TTY)" nodename="Renderer (TTY)" componentmode="InAWindow" id="65">
-   <BOUNDS type="Node" left="8550" top="4395" width="100" height="100">
+   <BOUNDS type="Node" left="9570" top="5820" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="8550" top="4395" width="2400" height="1800">
+   <BOUNDS type="Box" left="9570" top="5820" width="2400" height="1800">
    </BOUNDS>
    <BOUNDS type="Window" left="0" top="14385" width="13500" height="3165">
    </BOUNDS>
@@ -314,14 +302,12 @@
    </LINK>
    <LINK srcnodeid="36" srcpinname="Target Layer" dstnodeid="66" dstpinname="Layer 1">
    </LINK>
-   <LINK srcnodeid="35" srcpinname="Layer" dstnodeid="66" dstpinname="Layer 2">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="68" systemname="IOBox (String)">
    <BOUNDS type="Node" left="7785" top="2190" width="1785" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="7785" top="2190" width="2325" height="1305">
+   <BOUNDS type="Box" left="7785" top="2190" width="2445" height="975">
    </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|- introduce flat camera&cr;&lf;- make destination without aspect&cr;&lf;- correct aspect in Source&cr;&lf;- show default window cursor|">
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|- show default window cursor&cr;&lf;- active vvvv window&cr;&lf;- save/load settings&cr;&lf;- refactor drawing|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
@@ -331,5 +317,67 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="35" srcpinname="Transform Out" dstnodeid="36" dstpinname="Mapping Transform">
+   </LINK>
+   <NODE systemname="S (Node)" nodename="S (Node)" componentmode="Hidden" id="70">
+   <BOUNDS type="Node" left="7275" top="5550" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Send String" slicecount="1" values="DestinationCamera">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="64" srcpinname="Transform Out" dstnodeid="13" dstpinname="View">
+   </LINK>
+   <NODE nodename="S (Node)" id="72" systemname="S (Node)">
+   <BOUNDS type="Node" left="2730" top="5505" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Send String" slicecount="1" values="SourceCamera">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="64" srcpinname="Transform Out" dstnodeid="72" dstpinname="Input Value">
+   </LINK>
+   <LINK srcnodeid="35" srcpinname="Layer" dstnodeid="66" dstpinname="Layer 2">
+   </LINK>
+   <NODE systemname="AspectRatio (Transform)" nodename="AspectRatio (Transform)" componentmode="Hidden" id="73">
+   <BOUNDS type="Node" left="7650" top="5970" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Aspect Width" visible="1">
+   </PIN>
+   <PIN pinname="Aspect Height" visible="1">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="14" srcpinname="Actual Backbuffer Width" dstnodeid="73" dstpinname="Aspect Width">
+   </LINK>
+   <LINK srcnodeid="14" srcpinname="Actual Backbuffer Height" dstnodeid="73" dstpinname="Aspect Height">
+   </LINK>
+   <LINK srcnodeid="73" srcpinname="Transform Out" dstnodeid="14" dstpinname="Aspect Ratio">
+   </LINK>
+   <NODE systemname="S (Node)" nodename="S (Node)" componentmode="Hidden" id="75">
+   <BOUNDS type="Node" left="7680" top="6435" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Send String" slicecount="1" values="DestinationAspect">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="73" srcpinname="Transform Out" dstnodeid="75" dstpinname="Input Value">
+   </LINK>
+   <NODE systemname="Camera (Transform Flat)" filename="Camera (Transform Flat).v4p" nodename="Camera (Transform Flat)" componentmode="Hidden" id="76">
+   <BOUNDS type="Node" left="6885" top="5100" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Window" left="12450" top="7110" width="7485" height="7605">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="76" srcpinname="Transform Out" dstnodeid="14" dstpinname="View">
+   </LINK>
+   <LINK srcnodeid="35" srcpinname="Destination Active" dstnodeid="76" dstpinname="Enabled">
+   </LINK>
+   <LINK srcnodeid="76" srcpinname="Transform Out" dstnodeid="70" dstpinname="Input Value">
+   </LINK>
+   <LINK srcnodeid="35" srcpinname="Show Selection" dstnodeid="36" dstpinname="Show Selection">
+   </LINK>
+   <LINK srcnodeid="33" srcpinname="Hovering" dstnodeid="35" dstpinname="Hovering Source">
    </LINK>
    </PATCH>
