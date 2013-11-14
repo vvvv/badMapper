@@ -1,0 +1,9 @@
+﻿<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="150" height="150" overflow="auto" viewBox="-1, -1, 2, 2" preserveAspectRatio="none">
+  <g transform="matrix(1, 0, 0, 1, 0, 0)">
+    <polygon points="-0.2510467 -0.3227186 -0.08750513 -0.3227186 -0.08750513 0.07467681 -0.2510467 0.07467681 " stroke="#000000" fill-opacity="0" stroke-width="0.1" transform="translate(0, 0) rotate(0, 0, 0)" />
+    <polygon points="0.2958756 -0.2211004 0.4379796 -0.2211004 0.4379796 -0.05305101 0.2958756 -0.05305101 " stroke="#000000" fill-opacity="0" stroke-width="0.1" transform="translate(0, 0) rotate(0, 0, 0)" />
+    <polyline points="-0.4448785 0.03839548 0.02217786 0.02272969 -0.01304719 -0.3412676 -0.4213951 -0.1637218 " stroke="#000000" fill-opacity="0" stroke-width="0.01" transform="translate(0, 0) rotate(0, 0, 0)" />
+    <polyline points="0.2478808 0.4457062 0.609262 0.5658106 0.6170897 0.1025967 0.2557086 0.1443721 " stroke="#000000" fill-opacity="0" stroke-width="0.01" transform="translate(0, 0) rotate(0, 0, 0)" />
+  </g>
+</svg>

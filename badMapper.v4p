@@ -5,7 +5,7 @@
    <NODE componentmode="InAWindow" id="13" nodename="RENDERER (EX9)" systemname="Renderer (EX9)">
    <BOUNDS height="270" left="1170" top="5985" type="Node" width="1785">
    </BOUNDS>
-   <BOUNDS height="6270" left="300" top="525" type="Window" width="7920">
+   <BOUNDS height="6270" left="255" top="240" type="Window" width="7920">
    </BOUNDS>
    <BOUNDS height="3435" left="1170" top="5985" type="Box" width="7080">
    </BOUNDS>
@@ -39,7 +39,7 @@
    <NODE componentmode="InAWindow" id="14" nodename="RENDERER (EX9)" systemname="Renderer (EX9)">
    <BOUNDS height="270" left="5490" top="5985" type="Node" width="1785">
    </BOUNDS>
-   <BOUNDS height="6270" left="8220" top="540" type="Window" width="7920">
+   <BOUNDS height="6270" left="8175" top="240" type="Window" width="7920">
    </BOUNDS>
    <BOUNDS height="3435" left="5490" top="5985" type="Box" width="7080">
    </BOUNDS>
@@ -157,7 +157,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="0" top="1255" width="10620" height="4440">
    </BOUNDS>
-   <BOUNDS type="Window" left="11100" top="6000" width="15630" height="9615">
+   <BOUNDS type="Window" left="14595" top="7110" width="15630" height="9615">
    </BOUNDS>
    <PIN pinname="Background Alpha" slicecount="1" values="1">
    </PIN>
@@ -353,19 +353,13 @@
    <NODE systemname="AspectRatio (Transform)" nodename="AspectRatio (Transform)" componentmode="Hidden" id="73">
    <BOUNDS type="Node" left="7650" top="5970" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Aspect Width" visible="1">
+   <PIN pinname="Aspect Width" visible="1" slicecount="1" values="512">
    </PIN>
-   <PIN pinname="Aspect Height" visible="1">
+   <PIN pinname="Aspect Height" visible="1" slicecount="1" values="384">
    </PIN>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="14" srcpinname="Actual Backbuffer Width" dstnodeid="73" dstpinname="Aspect Width">
-   </LINK>
-   <LINK srcnodeid="14" srcpinname="Actual Backbuffer Height" dstnodeid="73" dstpinname="Aspect Height">
-   </LINK>
-   <LINK srcnodeid="73" srcpinname="Transform Out" dstnodeid="14" dstpinname="Aspect Ratio">
-   </LINK>
    <NODE systemname="S (Node)" nodename="S (Node)" componentmode="Hidden" id="75">
    <BOUNDS type="Node" left="7680" top="6435" width="100" height="100">
    </BOUNDS>
@@ -381,9 +375,9 @@
    </BOUNDS>
    <BOUNDS type="Window" left="12450" top="7110" width="7485" height="7605">
    </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="76" srcpinname="Transform Out" dstnodeid="14" dstpinname="View">
-   </LINK>
    <LINK srcnodeid="35" srcpinname="Destination Active" dstnodeid="76" dstpinname="Enabled">
    </LINK>
    <LINK srcnodeid="76" srcpinname="Transform Out" dstnodeid="70" dstpinname="Input Value">
@@ -521,5 +515,13 @@
    <LINK srcnodeid="86" srcpinname="Output String" dstnodeid="80" dstpinname="Filename">
    </LINK>
    <LINK srcnodeid="86" srcpinname="Output String" dstnodeid="82" dstpinname="Filename">
+   </LINK>
+   <LINK srcnodeid="14" srcpinname="Actual Backbuffer Width" dstnodeid="73" dstpinname="Aspect Width">
+   </LINK>
+   <LINK srcnodeid="14" srcpinname="Actual Backbuffer Height" dstnodeid="73" dstpinname="Aspect Height">
+   </LINK>
+   <LINK srcnodeid="73" srcpinname="Transform Out" dstnodeid="14" dstpinname="Aspect Ratio">
+   </LINK>
+   <LINK srcnodeid="76" srcpinname="Transform Out" dstnodeid="14" dstpinname="View">
    </LINK>
    </PATCH>

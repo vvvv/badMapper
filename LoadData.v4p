@@ -179,7 +179,7 @@
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
-   <PIN pinname="Update" slicecount="1" values="0" visible="1">
+   <PIN pinname="Update" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="PathXY" visible="1">
    </PIN>

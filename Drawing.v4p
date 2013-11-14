@@ -50,16 +50,6 @@
    <PIN pinname="Layer 4" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="UniformScale (Transform)" nodename="UniformScale (Transform)" componentmode="Hidden" id="8">
-   <BOUNDS type="Node" left="11955" top="2265" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Transform Out" visible="1">
-   </PIN>
-   <PIN pinname="XYZ" slicecount="1" values="2">
-   </PIN>
-   </NODE>
    <NODE id="9" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|Source Texture|">
    </PIN>
@@ -113,9 +103,9 @@
    </BOUNDS>
    <BOUNDS type="Node" left="10365" top="5925" width="750" height="240">
    </BOUNDS>
+   <PIN pinname="Input Node" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="7" srcpinname="Layer" dstnodeid="13" dstpinname="Input Node">
-   </LINK>
    <NODE id="14" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|Mapping Transform|">
    </PIN>
@@ -126,9 +116,7 @@
    <PIN pinname="Output Node" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="14" srcpinname="Output Node" dstnodeid="8" dstpinname="Transform In">
-   </LINK>
-   <BOUNDS type="Window" left="11100" top="6000" width="15630" height="9615">
+   <BOUNDS type="Window" left="14595" top="7110" width="15630" height="9615">
    </BOUNDS>
    <NODE systemname="Quad (DX9)" filename="" nodename="Quad (DX9)" componentmode="Hidden" id="4">
    <BOUNDS type="Node" left="1545" top="3960" width="100" height="100">
@@ -187,8 +175,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="1" srcpinname="Layer" dstnodeid="7" dstpinname="Layer 2">
-   </LINK>
-   <LINK srcnodeid="8" srcpinname="Transform Out" dstnodeid="1" dstpinname="Transform">
    </LINK>
    <LINK srcnodeid="9" srcpinname="Output Node" dstnodeid="1" dstpinname="Texture">
    </LINK>
@@ -297,7 +283,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="13170" top="3255" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="30">
+   <PIN pinname="Y Input Value" slicecount="1" values="20">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -487,5 +473,9 @@
    <LINK srcnodeid="45" srcpinname="Y Output Value" dstnodeid="48" dstpinname="Alpha">
    </LINK>
    <LINK srcnodeid="48" srcpinname="Output" dstnodeid="39" dstpinname="Brush Color">
+   </LINK>
+   <LINK srcnodeid="7" srcpinname="Layer" dstnodeid="13" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="14" srcpinname="Output Node" dstnodeid="1" dstpinname="Transform">
    </LINK>
    </PATCH>
