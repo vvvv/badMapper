@@ -1,4 +1,4 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45debug31.4.dtd" >
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45debug31.5.dtd" >
    <PATCH nodename="C:\Users\joreg\dev\repos\badMapper\Camera (Transform Flat).v4p" systemname="Camera (Transform Flat)" filename="C:\Users\joreg\dev\repos\badMapper\Camera (Transform Flat).v4p">
    <NODE systemname="FrameDifference (Animation)" nodename="FrameDifference (Animation)" componentmode="Hidden" id="2">
    <BOUNDS type="Node" left="3390" top="2190" width="100" height="100">
@@ -54,7 +54,7 @@
    </NODE>
    <BOUNDS type="Window" left="12450" top="7110" width="7485" height="7605">
    </BOUNDS>
-   <NODE systemname="Keyboard (System Global)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Keyboard (System Global)" componentmode="Hidden" id="16">
+   <NODE systemname="Keyboard (System Global Legacy2)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Keyboard (System Global)" componentmode="Hidden" id="16">
    <BOUNDS type="Node" left="5145" top="345" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Keyboard" visible="1" slicecount="1" values="||">
@@ -107,7 +107,7 @@
    <NODE systemname="Drag" filename="Drag.v4p" nodename="Drag.v4p" componentmode="Hidden" id="23">
    <BOUNDS type="Node" left="1980" top="3480" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="PositionXY" visible="1">
+   <PIN pinname="PositionXY" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Drag" visible="1" slicecount="1" values="0">
    </PIN>
@@ -232,7 +232,9 @@
    </LINK>
    <LINK srcnodeid="26" srcpinname="Output" dstnodeid="31" dstpinname="XYZ">
    </LINK>
-   <NODE systemname="Mouse (System)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Mouse (System)" componentmode="Hidden" id="0">
+   <INFO author="" description="" tags="">
+   </INFO>
+   <NODE systemname="Mouse (Devices Window)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Mouse (Devices Window)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="2160" top="1500" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Mouse Wheel" visible="1">
@@ -258,10 +260,10 @@
    </LINK>
    <LINK srcnodeid="0" srcpinname="PositionXY" dstnodeid="23" dstpinname="PositionXY">
    </LINK>
-   <NODE systemname="KeyMatch (System)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="KeyMatch (System)" componentmode="Hidden" id="17">
+   <NODE systemname="KeyMatch (Keyboard)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="KeyMatch (Keyboard)" componentmode="Hidden" id="17">
    <BOUNDS type="Node" left="5145" top="795" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Keyboard" visible="1" slicecount="1" values="||">
+   <PIN pinname="Keyboard" visible="1">
    </PIN>
    <PIN pinname="Key Match" slicecount="1" values="r">
    </PIN>
@@ -276,6 +278,4 @@
    </LINK>
    <LINK srcnodeid="16" srcpinname="Keyboard" dstnodeid="17" dstpinname="Keyboard">
    </LINK>
-   <INFO author="" description="" tags="">
-   </INFO>
    </PATCH>

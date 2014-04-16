@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45debug31.4.dtd" >
-   <PATCH nodename="C:\Users\joreg\dev\repos\badMapper\Source.v4p" systemname="Source" filename="C:\Users\Joreg\dev\github\badMapper\Source.v4p">
-   <BOUNDS type="Window" left="2520" top="5190" width="15855" height="8340">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45debug31.9.dtd" >
+   <PATCH nodename="C:\Users\joreg\dev\repos\badMapper\Source (DX9).v4p" systemname="Source (DX9)" filename="C:\Users\joreg\dev\repos\badMapper\Source (DX9).v4p">
+   <BOUNDS type="Window" left="1920" top="7935" width="13620" height="8340">
    </BOUNDS>
    <NODE componentmode="InAWindow" id="3" nodename="RENDERER (EX9)" systemname="Renderer (EX9)">
    <BOUNDS height="270" left="1815" top="6555" type="Node" width="1785">
@@ -52,6 +52,8 @@
    <BOUNDS type="Node" left="3420" top="6120" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Send String" slicecount="1" values="SourceCamera">
+   </PIN>
+   <PIN pinname="Display Channel" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="2" srcpinname="Transform Out" dstnodeid="1" dstpinname="Input Value">
@@ -213,6 +215,8 @@
    </PIN>
    <BOUNDS type="Box" left="7950" top="4515">
    </BOUNDS>
+   <BOUNDS type="Window" left="7485" top="4860" width="14505" height="11160">
+   </BOUNDS>
    </NODE>
    <LINK srcnodeid="9" srcpinname="Layer" dstnodeid="19" dstpinname="Layer 4">
    </LINK>
@@ -292,4 +296,6 @@
    </LINK>
    <LINK srcnodeid="19" srcpinname="Layer" dstnodeid="3" dstpinname="Layers">
    </LINK>
+   <PACK Name="addonpack" Version="31.9.0">
+   </PACK>
    </PATCH>
