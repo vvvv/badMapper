@@ -1,4 +1,4 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45debug31.5.dtd" >
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45debug31.9.dtd" >
    <PATCH nodename="C:\Users\joreg\dev\repos\badMapper\SourceSelection.v4p" systemname="SourceSelection" filename="C:\Users\joreg\dev\repos\badMapper\SourceSelection.v4p">
    <NODE id="2" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|Transform Out|">
@@ -310,7 +310,7 @@
    </LINK>
    <LINK srcnodeid="53" srcpinname="Output" dstnodeid="38" dstpinname="Remove">
    </LINK>
-   <NODE systemname="Drag" filename="Drag.v4p" nodename="Drag.v4p" componentmode="Hidden" id="68">
+   <NODE systemname="Drag (2d)" filename="%VVVV%\lib\nodes\modules\2D\Drag (2d).v4p" nodename="%VVVV%\lib\nodes\modules\2D\Drag (2d).v4p" componentmode="Hidden" id="68">
    <BOUNDS type="Node" left="5487" top="5486" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Box" left="2037" top="2316" width="6900" height="6340">
@@ -319,16 +319,16 @@
    </BOUNDS>
    <PIN pinname="Output 1" visible="1">
    </PIN>
-   <PIN pinname="PositionXY" visible="1">
+   <PIN pinname="PositionXY" visible="1" slicecount="2" values="0,0">
    </PIN>
    <PIN pinname="OffsetXY" visible="1">
    </PIN>
-   <PIN pinname="Drag" visible="1">
+   <PIN pinname="Drag" visible="1" slicecount="1" values="0">
    </PIN>
    </NODE>
-   <LINK srcnodeid="21" srcpinname="Output 1" dstnodeid="68" dstpinname="Hit" linkstyle="PolyLine">
+   <LINK srcnodeid="21" srcpinname="Output 1" dstnodeid="68" dstpinname="Is Hit" linkstyle="PolyLine">
    </LINK>
-   <NODE systemname="Drag" filename="Drag.v4p" nodename="Drag.v4p" componentmode="Hidden" id="69">
+   <NODE systemname="Drag (2d)" filename="%VVVV%\lib\nodes\modules\2D\Drag (2d).v4p" nodename="%VVVV%\lib\nodes\modules\2D\Drag (2d).v4p" componentmode="Hidden" id="69">
    <BOUNDS type="Node" left="6462" top="5486" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Box" left="3012" top="2316" width="6900" height="6340">
@@ -347,17 +347,17 @@
    </PIN>
    <PIN pinname="OffsetXY" visible="1">
    </PIN>
-   <PIN pinname="Drag" visible="1">
+   <PIN pinname="Drag" visible="1" slicecount="1" values="0">
    </PIN>
    </NODE>
-   <LINK srcnodeid="21" srcpinname="Output 1" dstnodeid="69" dstpinname="Hit" linkstyle="PolyLine">
+   <LINK srcnodeid="21" srcpinname="Output 1" dstnodeid="69" dstpinname="Is Hit" linkstyle="PolyLine">
    </LINK>
    <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="70">
    <BOUNDS type="Node" left="6750" top="6090" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input 1" visible="1">
+   <PIN pinname="Input 1" visible="1" slicecount="3" values="0,0,0">
    </PIN>
-   <PIN pinname="Input 2" visible="1">
+   <PIN pinname="Input 2" visible="1" slicecount="3" values="0,0,0">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -417,7 +417,7 @@
    <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="76">
    <BOUNDS type="Node" left="1905" top="7395" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input 1" visible="1">
+   <PIN pinname="Input 1" visible="1" slicecount="6" values="0,0,0,0,0,0">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -568,7 +568,7 @@
    </LINK>
    <LINK srcnodeid="71" srcpinname="Y Output Value" dstnodeid="95" dstpinname="Simulate">
    </LINK>
-   <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="14">
+   <NODE systemname="R (NODE)" nodename="R (Node)" componentmode="Hidden" id="14">
    <BOUNDS type="Node" left="4440" top="3090" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Transform In" visible="1">
@@ -580,6 +580,8 @@
    <PIN pinname="Receive String" slicecount="1" values="SourceCamera">
    </PIN>
    <PIN pinname="Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Display Channel" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="14" srcpinname="Input Value" dstnodeid="15" dstpinname="Transform In 2">
@@ -597,7 +599,7 @@
    <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="103">
    <BOUNDS type="Node" left="1320" top="7950" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input 1" visible="1" slicecount="1" values="1">
+   <PIN pinname="Input 1" visible="1" slicecount="6" values="0,0,0,0,0,0">
    </PIN>
    <PIN pinname="Input 2" visible="1">
    </PIN>
@@ -661,22 +663,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="14" srcpinname="Input Value" dstnodeid="108" dstpinname="Source">
-   </LINK>
-   <NODE systemname="Multiply (2d Vector)" filename="Multiply (2d Vector).v4p" nodename="Multiply (2d Vector).v4p" componentmode="Hidden" id="109">
-   <BOUNDS type="Node" left="3155" top="4070" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="1448" top="1980" width="3415" height="4180">
-   </BOUNDS>
-   <BOUNDS type="Window" left="20105" top="4490" width="3415" height="4180">
-   </BOUNDS>
-   <PIN pinname="XY" visible="1" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="108" srcpinname="Transform Out" dstnodeid="109" dstpinname="Transform">
-   </LINK>
-   <LINK srcnodeid="109" srcpinname="XY" dstnodeid="44" dstpinname="TranslateXY">
-   </LINK>
-   <LINK srcnodeid="109" srcpinname="XY" dstnodeid="68" dstpinname="PositionXY">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="110" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="6450" top="7740" width="480" height="480">
@@ -1142,10 +1128,28 @@
    </LINK>
    <LINK srcnodeid="9" srcpinname="Middle Button" dstnodeid="92" dstpinname="Input 1">
    </LINK>
-   <LINK srcnodeid="9" srcpinname="PositionXY" dstnodeid="109" dstpinname="XY">
-   </LINK>
    <LINK srcnodeid="9" srcpinname="PositionXY" dstnodeid="6" dstpinname="PointsXY">
    </LINK>
    <LINK srcnodeid="9" srcpinname="PositionXY" dstnodeid="69" dstpinname="PositionXY">
+   </LINK>
+   <PACK Name="addonpack" Version="31.9.0">
+   </PACK>
+   <NODE systemname="Multiply (2d Vector)" filename="Multiply (2d Vector).v4p" nodename="Multiply (2d Vector)" componentmode="Hidden" id="109">
+   <BOUNDS type="Node" left="3155" top="4070" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1448" top="1980" width="3415" height="4180">
+   </BOUNDS>
+   <BOUNDS type="Window" left="20105" top="4490" width="3415" height="4180">
+   </BOUNDS>
+   <PIN pinname="XY" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="108" srcpinname="Transform Out" dstnodeid="109" dstpinname="Transform">
+   </LINK>
+   <LINK srcnodeid="109" srcpinname="XY" dstnodeid="44" dstpinname="TranslateXY">
+   </LINK>
+   <LINK srcnodeid="109" srcpinname="XY" dstnodeid="68" dstpinname="PositionXY">
+   </LINK>
+   <LINK srcnodeid="9" srcpinname="PositionXY" dstnodeid="109" dstpinname="XY">
    </LINK>
    </PATCH>
