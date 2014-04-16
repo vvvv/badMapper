@@ -1,9 +1,9 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45debug31.5.dtd" >
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45debug31.9.dtd" >
    <PATCH nodename="C:\Users\joreg\dev\repos\badMapper\Camera (Transform Flat).v4p" systemname="Camera (Transform Flat)" filename="C:\Users\joreg\dev\repos\badMapper\Camera (Transform Flat).v4p">
    <NODE systemname="FrameDifference (Animation)" nodename="FrameDifference (Animation)" componentmode="Hidden" id="2">
    <BOUNDS type="Node" left="3390" top="2190" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="1" values="0">
+   <PIN pinname="Input" visible="1" slicecount="1" values="-2">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -23,9 +23,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="11" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="5805" top="2400" width="480" height="480">
+   <BOUNDS type="Box" left="6735" top="2430" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="5805" top="2400" width="0" height="0">
+   <BOUNDS type="Node" left="6735" top="2430" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -55,15 +55,15 @@
    <BOUNDS type="Window" left="12450" top="7110" width="7485" height="7605">
    </BOUNDS>
    <NODE systemname="Keyboard (System Global Legacy2)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Keyboard (System Global)" componentmode="Hidden" id="16">
-   <BOUNDS type="Node" left="5145" top="345" width="100" height="100">
+   <BOUNDS type="Node" left="6075" top="375" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Keyboard" visible="1" slicecount="1" values="||">
    </PIN>
-   <BOUNDS type="Box" left="5145" top="345">
+   <BOUNDS type="Box" left="6075" top="375">
    </BOUNDS>
    </NODE>
    <NODE systemname="MonoFlop (Animation)" nodename="MonoFlop (Animation)" componentmode="Hidden" id="20">
-   <BOUNDS type="Node" left="5145" top="1320" width="100" height="100">
+   <BOUNDS type="Node" left="6075" top="1350" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Set" visible="1" slicecount="1" values="0">
    </PIN>
@@ -73,7 +73,7 @@
    </PIN>
    </NODE>
    <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="21">
-   <BOUNDS type="Node" left="5145" top="1710" width="100" height="100">
+   <BOUNDS type="Node" left="6075" top="1740" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -85,9 +85,9 @@
    <LINK srcnodeid="21" srcpinname="Down Edge" dstnodeid="11" dstpinname="Y Input Value">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="22" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="2190" top="315" width="480" height="480">
+   <BOUNDS type="Box" left="2160" top="375" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="2190" top="315" width="0" height="0">
+   <BOUNDS type="Node" left="2160" top="375" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="1">
    </PIN>
@@ -107,7 +107,7 @@
    <NODE systemname="Drag" filename="Drag.v4p" nodename="Drag.v4p" componentmode="Hidden" id="23">
    <BOUNDS type="Node" left="1980" top="3480" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="PositionXY" visible="1" slicecount="1" values="0">
+   <PIN pinname="PositionXY" visible="1" slicecount="2" values="-0.426307448494453,-0.966029723991507">
    </PIN>
    <PIN pinname="Drag" visible="1" slicecount="1" values="0">
    </PIN>
@@ -121,7 +121,7 @@
    <NODE systemname="Divide (Value)" nodename="Divide (Value)" componentmode="Hidden" id="25">
    <BOUNDS type="Node" left="2235" top="3930" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input 2" visible="1" slicecount="1" values="0.203522504892368">
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -186,28 +186,46 @@
    </NODE>
    <LINK srcnodeid="22" srcpinname="Y Output Value" dstnodeid="32" dstpinname="Simulate">
    </LINK>
-   <NODE systemname="SumUp (Value)" filename="SumUp (Value).v4p" nodename="SumUp (Value)" componentmode="Hidden" id="24">
-   <BOUNDS type="Node" left="1980" top="4845" width="100" height="100">
+   <INFO author="" description="" tags="">
+   </INFO>
+   <NODE systemname="KeyMatch (Keyboard)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="KeyMatch (Keyboard)" componentmode="Hidden" id="17">
+   <BOUNDS type="Node" left="6075" top="825" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1">
+   <PIN pinname="Keyboard" visible="1">
    </PIN>
-   <PIN pinname="Output" visible="1">
+   <PIN pinname="Key Match" slicecount="1" values="r">
    </PIN>
-   <PIN pinname="Initialize" visible="1">
-   </PIN>
-   <BOUNDS type="Box" left="1980" top="4845">
+   <BOUNDS type="Box" left="6075" top="825">
    </BOUNDS>
+   <PIN pinname="Key Mode" slicecount="1" values="DownOnly">
+   </PIN>
+   <PIN pinname="R" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="24" srcpinname="Output" dstnodeid="8" dstpinname="TranslateXY">
+   <LINK srcnodeid="17" srcpinname="R" dstnodeid="20" dstpinname="Set">
    </LINK>
-   <LINK srcnodeid="28" srcpinname="Output" dstnodeid="24" dstpinname="Input">
+   <LINK srcnodeid="16" srcpinname="Keyboard" dstnodeid="17" dstpinname="Keyboard">
    </LINK>
-   <LINK srcnodeid="11" srcpinname="Y Output Value" dstnodeid="24" dstpinname="Initialize">
+   <NODE systemname="Mouse (Devices Window)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Mouse (Devices Window)" componentmode="Hidden" id="33">
+   <BOUNDS type="Node" left="2160" top="1500" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Enabled" slicecount="1" visible="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="33" srcpinname="Mouse Wheel" dstnodeid="2" dstpinname="Input">
    </LINK>
-   <NODE systemname="SumUp (Value)" filename="SumUp (Value).v4p" nodename="SumUp (Value)" componentmode="Hidden" id="26">
+   <LINK srcnodeid="33" srcpinname="Right Button" dstnodeid="23" dstpinname="Drag">
+   </LINK>
+   <LINK srcnodeid="33" srcpinname="PositionXY" dstnodeid="23" dstpinname="PositionXY">
+   </LINK>
+   <LINK srcnodeid="32" srcpinname="Bang" dstnodeid="33" dstpinname="Enabled">
+   </LINK>
+   <PACK Name="addonpack" Version="31.9.0">
+   </PACK>
+   <NODE systemname="SumUp (Value)" filename="%VVVV%\lib\nodes\modules\Value\SumUp (Value).v4p" nodename="SumUp (Value)" componentmode="Hidden" id="26">
    <BOUNDS type="Node" left="3390" top="3210" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Initial Value" slicecount="1" values="1">
+   <PIN pinname="Initial Value" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Initialize" visible="1">
    </PIN>
@@ -232,50 +250,54 @@
    </LINK>
    <LINK srcnodeid="26" srcpinname="Output" dstnodeid="31" dstpinname="XYZ">
    </LINK>
-   <INFO author="" description="" tags="">
-   </INFO>
-   <NODE systemname="Mouse (Devices Window)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Mouse (Devices Window)" componentmode="Hidden" id="0">
-   <BOUNDS type="Node" left="2160" top="1500" width="100" height="100">
+   <NODE systemname="SumUp (Value)" filename="%VVVV%\lib\nodes\modules\Value\SumUp (Value).v4p" nodename="SumUp (Value)" componentmode="Hidden" id="24">
+   <BOUNDS type="Node" left="1980" top="4845" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Mouse Wheel" visible="1">
+   <PIN pinname="Input" visible="1">
    </PIN>
-   <PIN pinname="X" visible="1">
+   <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Y" visible="1">
+   <PIN pinname="Initialize" visible="1">
    </PIN>
-   <PIN pinname="Left Button" visible="1">
+   <BOUNDS type="Box" left="1980" top="4845">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="24" srcpinname="Output" dstnodeid="8" dstpinname="TranslateXY">
+   </LINK>
+   <LINK srcnodeid="28" srcpinname="Output" dstnodeid="24" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="11" srcpinname="Y Output Value" dstnodeid="24" dstpinname="Initialize">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="35" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="3315" top="375" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3315" top="375" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Right Button" visible="1">
+   <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Enabled" visible="1">
+   <PIN pinname="Precision" slicecount="1" values="4">
    </PIN>
-   <PIN pinname="PositionXY" visible="1">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Minimum Zoom|">
    </PIN>
    </NODE>
-   <LINK srcnodeid="0" srcpinname="Mouse Wheel" dstnodeid="2" dstpinname="Input">
+   <LINK srcnodeid="35" srcpinname="Y Output Value" dstnodeid="26" dstpinname="Minimum">
    </LINK>
-   <LINK srcnodeid="0" srcpinname="Right Button" dstnodeid="23" dstpinname="Drag">
-   </LINK>
-   <LINK srcnodeid="32" srcpinname="Bang" dstnodeid="0" dstpinname="Enabled">
-   </LINK>
-   <LINK srcnodeid="0" srcpinname="PositionXY" dstnodeid="23" dstpinname="PositionXY">
-   </LINK>
-   <NODE systemname="KeyMatch (Keyboard)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="KeyMatch (Keyboard)" componentmode="Hidden" id="17">
-   <BOUNDS type="Node" left="5145" top="795" width="100" height="100">
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="36" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="4770" top="375" width="795" height="240">
    </BOUNDS>
-   <PIN pinname="Keyboard" visible="1">
-   </PIN>
-   <PIN pinname="Key Match" slicecount="1" values="r">
-   </PIN>
-   <BOUNDS type="Box" left="5145" top="795">
+   <BOUNDS type="Node" left="4770" top="375" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Key Mode" slicecount="1" values="DownOnly">
+   <PIN pinname="Y Input Value" slicecount="1" values="5">
    </PIN>
-   <PIN pinname="R" visible="1">
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Maximum Zoom|">
    </PIN>
    </NODE>
-   <LINK srcnodeid="17" srcpinname="R" dstnodeid="20" dstpinname="Set">
-   </LINK>
-   <LINK srcnodeid="16" srcpinname="Keyboard" dstnodeid="17" dstpinname="Keyboard">
+   <LINK srcnodeid="36" srcpinname="Y Output Value" dstnodeid="26" dstpinname="Maximum">
    </LINK>
    </PATCH>
