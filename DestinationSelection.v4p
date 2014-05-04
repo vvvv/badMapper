@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45debug31.9.dtd" >
-   <PATCH nodename="C:\Users\joreg\dev\repos\badMapper\DestinationSelection.v4p" systemname="DestinationSelection" filename="C:\Users\joreg\dev\repos\badMapper\DestinationSelection.v4p">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45debug31.10.dtd" >
+   <PATCH nodename="C:\Users\joreg\Documents\repos\badMapper\DestinationSelection.v4p" systemname="DestinationSelection" filename="C:\Users\joreg\dev\repos\badMapper\DestinationSelection.v4p">
    <NODE id="2" nodename="Homography (Transform 2d)" systemname="Homography (Transform 2d)">
    <BOUNDS height="0" left="11010" top="17595" type="Node" width="0">
    </BOUNDS>
@@ -22,7 +22,7 @@
    </NODE>
    <LINK srcnodeid="2" srcpinname="Transform Out" dstnodeid="3" dstpinname="Input Node">
    </LINK>
-   <BOUNDS type="Window" left="16200" top="915" width="15885" height="11805">
+   <BOUNDS type="Window" left="10620" top="945" width="15885" height="11805">
    </BOUNDS>
    <NODE componentmode="InABox" id="5" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
    <BOUNDS height="0" left="5505" top="1170" type="Node" width="0">
@@ -126,20 +126,6 @@
    </LINK>
    <LINK srcnodeid="5" srcpinname="X Output Value" dstnodeid="4" dstpinname="X">
    </LINK>
-   <NODE systemname="Drag" filename="Drag.v4p" nodename="Drag.v4p" componentmode="Hidden" id="16">
-   <BOUNDS type="Node" left="4995" top="9990" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Hit" visible="1">
-   </PIN>
-   <PIN pinname="Drag" visible="1">
-   </PIN>
-   <PIN pinname="PositionXY" visible="1">
-   </PIN>
-   <PIN pinname="OffsetXY" visible="1">
-   </PIN>
-   <PIN pinname="Dragging" visible="1">
-   </PIN>
-   </NODE>
    <NODE systemname="Add (Value)" nodename="Add (Value)" componentmode="Hidden" id="19">
    <BOUNDS type="Node" left="2820" top="10845" width="100" height="100">
    </BOUNDS>
@@ -149,10 +135,10 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Input 2" visible="1" slicecount="8" values="-0.251396648044693,0.230769230769232,0.307262569832403,0.264957264957265,0.344193114607134,-0.2630380933253,-0.262569832402235,-0.213675213675214">
+   <PIN pinname="Input 2" visible="1" slicecount="24" values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0">
    </PIN>
    </NODE>
-   <NODE systemname="FrameDelay (Animation)" nodename="FrameDelay (Animation)" componentmode="Hidden" id="20">
+   <NODE systemname="FrameDelay (Animation Legacy)" nodename="FrameDelay (Animation)" componentmode="Hidden" id="20">
    <BOUNDS type="Node" left="3270" top="11970" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
@@ -254,8 +240,6 @@
    </LINK>
    <LINK srcnodeid="28" srcpinname="Output" dstnodeid="27" dstpinname="Spread">
    </LINK>
-   <LINK srcnodeid="27" srcpinname="Output" dstnodeid="16" dstpinname="Hit">
-   </LINK>
    <NODE systemname="xyZ (3d XY)" nodename="xyZ (3d XY)" componentmode="Hidden" id="29">
    <BOUNDS type="Node" left="7185" top="15780" width="100" height="100">
    </BOUNDS>
@@ -307,7 +291,7 @@
    </BOUNDS>
    <PIN pinname="Vertices Count" slicecount="0" visible="1" values="4">
    </PIN>
-   <PIN pinname="VerticesXY" visible="1">
+   <PIN pinname="VerticesXY" visible="1" slicecount="24" values="0.221739474385977,0.458887134045362,0.642828237563372,0.594716857522726,0.642828237563372,0.143155349642038,0.225346987396479,0.0946448190510273,-0.451226662285626,-0.0803468634933233,-0.00488464977592232,-0.22102778442204,-0.00488466251641514,-0.328163709715009,-0.454834192283452,-0.148674372807145,-0.0891692144796252,-0.215580990090966,0.930780387483537,-0.0846022602170706,0.923565191589296,-0.167482911720872,-0.0891692144796252,-0.332418902590871">
    </PIN>
    <PIN pinname="PointsXY" visible="1" slicecount="2" values="0,0">
    </PIN>
@@ -328,22 +312,6 @@
    </NODE>
    <LINK srcnodeid="22" srcpinname="Output" dstnodeid="36" dstpinname="Input">
    </LINK>
-   <NODE systemname="Grow (2d)" filename="Grow (2d).v4p" componentmode="Hidden" id="41" nodename="Grow (2d).v4p">
-   <BOUNDS type="Node" left="3045" top="12645" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="3045" top="12645" width="4800" height="3600">
-   </BOUNDS>
-   <BOUNDS type="Window" left="10770" top="9990" width="6915" height="6225">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="Factor" slicecount="1" values="1.14">
-   </PIN>
-   <PIN pinname="Vertex Count" visible="1">
-   </PIN>
-   </NODE>
    <NODE systemname="Store (Spreads)" filename="%VVVV%\addonpack\lib\nodes\plugins\Store.dll" nodename="Store (Spreads)" componentmode="Hidden" id="42">
    <BOUNDS type="Node" left="2820" top="6570" width="100" height="100">
    </BOUNDS>
@@ -448,8 +416,6 @@
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="51" srcpinname="Output" dstnodeid="16" dstpinname="Drag">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="52" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="13230" top="765" width="570" height="540">
    </BOUNDS>
@@ -478,7 +444,7 @@
    <LINKPOINT x="5475" y="2850">
    </LINKPOINT>
    </LINK>
-   <NODE systemname="FrameDelay (Animation)" nodename="FrameDelay (Animation)" componentmode="Hidden" id="53">
+   <NODE systemname="FrameDelay (Animation Legacy)" nodename="FrameDelay (Animation)" componentmode="Hidden" id="53">
    <BOUNDS type="Node" left="5865" top="10950" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1" slicecount="0" values="0">
@@ -499,13 +465,11 @@
    <NODE systemname="OR (Boolean Spectral)" nodename="OR (Boolean Spectral)" componentmode="Hidden" id="55">
    <BOUNDS type="Node" left="5865" top="10545" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1">
+   <PIN pinname="Input" visible="1" slicecount="12" values="0,0,0,0,0,0,0,0,0,0,0,0">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="16" srcpinname="Dragging" dstnodeid="55" dstpinname="Input">
-   </LINK>
    <LINK srcnodeid="55" srcpinname="Output" dstnodeid="53" dstpinname="Input 1">
    </LINK>
    <LINK srcnodeid="44" srcpinname="Y Output Value" dstnodeid="46" dstpinname="Switch">
@@ -526,20 +490,16 @@
    </LINK>
    <LINK srcnodeid="42" srcpinname="Output" dstnodeid="19" dstpinname="Input 1">
    </LINK>
-   <LINK srcnodeid="16" srcpinname="OffsetXY" dstnodeid="19" dstpinname="Input 2">
-   </LINK>
    <NODE systemname="OR (Boolean Spectral)" nodename="OR (Boolean Spectral)" componentmode="Hidden" id="58">
    <BOUNDS type="Node" left="4605" top="14640" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1">
+   <PIN pinname="Input" visible="1" slicecount="12" values="0,0,0,0,0,0,0,0,0,0,0,0">
    </PIN>
    <PIN pinname="Bin Size" slicecount="1" values="4">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="16" srcpinname="Dragging" dstnodeid="58" dstpinname="Input">
-   </LINK>
    <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="59">
    <BOUNDS type="Node" left="4215" top="15135" width="100" height="100">
    </BOUNDS>
@@ -584,8 +544,6 @@
    </LINK>
    <LINK srcnodeid="62" srcpinname="Y Output Value" dstnodeid="61" dstpinname="Select" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="62" srcpinname="Y Output Value" dstnodeid="41" dstpinname="Vertex Count" hiddenwhenlocked="1">
-   </LINK>
    <NODE systemname="Select (Value)" nodename="Select (Value)" componentmode="Hidden" id="63">
    <BOUNDS type="Node" left="4725" top="12285" width="100" height="100">
    </BOUNDS>
@@ -618,8 +576,6 @@
    <PIN pinname="XYZ" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="41" srcpinname="Output" dstnodeid="34" dstpinname="VerticesXY">
-   </LINK>
    <NODE systemname="R (NODE)" nodename="R (Node)" componentmode="Hidden" id="76">
    <BOUNDS type="Node" left="4140" top="7440" width="100" height="100">
    </BOUNDS>
@@ -670,14 +626,6 @@
    </NODE>
    <LINK srcnodeid="80" srcpinname="Bang" dstnodeid="42" dstpinname="Clear">
    </LINK>
-   <NODE systemname="Multiply (2d Vector)" filename="Multiply (2d Vector).v4p" nodename="Multiply (2d Vector)" componentmode="Hidden" id="81">
-   <BOUNDS type="Node" left="6225" top="8985" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Transform" visible="1">
-   </PIN>
-   <PIN pinname="XY" visible="1" slicecount="1" values="0">
-   </PIN>
-   </NODE>
    <NODE systemname="R (NODE)" nodename="R (Node)" componentmode="Hidden" id="82">
    <BOUNDS type="Node" left="6765" top="8145" width="100" height="100">
    </BOUNDS>
@@ -688,8 +636,6 @@
    <PIN pinname="Display Channel" slicecount="1" values="0">
    </PIN>
    </NODE>
-   <LINK srcnodeid="81" srcpinname="XY" dstnodeid="16" dstpinname="PositionXY">
-   </LINK>
    <NODE systemname="Inverse (Transform)" nodename="Inverse (Transform)" componentmode="Hidden" id="83">
    <BOUNDS type="Node" left="6225" top="8520" width="100" height="100">
    </BOUNDS>
@@ -699,8 +645,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="82" srcpinname="Input Value" dstnodeid="83" dstpinname="Source">
-   </LINK>
-   <LINK srcnodeid="83" srcpinname="Transform Out" dstnodeid="81" dstpinname="Transform">
    </LINK>
    <NODE systemname="Billboard (Transform)" nodename="Billboard (Transform)" componentmode="Hidden" id="86">
    <BOUNDS type="Node" left="6510" top="16860" width="100" height="100">
@@ -761,8 +705,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="88" srcpinname="Y Output Value" dstnodeid="87" dstpinname="Input 2">
-   </LINK>
-   <LINK srcnodeid="56" srcpinname="Output" dstnodeid="41" dstpinname="Input">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="89" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="12825" top="18240" width="480" height="480">
@@ -994,8 +936,6 @@
    </LINK>
    <LINK srcnodeid="17" srcpinname="PositionXY" dstnodeid="79" dstpinname="Input 1">
    </LINK>
-   <LINK srcnodeid="17" srcpinname="PositionXY" dstnodeid="81" dstpinname="XY">
-   </LINK>
    <LINK srcnodeid="19" srcpinname="Output" dstnodeid="67" dstpinname="XY">
    </LINK>
    <PACK Name="addonpack" Version="31.9.0">
@@ -1039,5 +979,69 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="36" srcpinname="Output" dstnodeid="124" dstpinname="Color Input">
+   </LINK>
+   <NODE systemname="Grow (2d)" filename="%VVVV%\lib\nodes\modules\2D\Grow (2d).v4p" componentmode="Hidden" id="41" nodename="Grow (2d)">
+   <BOUNDS type="Node" left="3045" top="12645" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3045" top="12645" width="4800" height="3600">
+   </BOUNDS>
+   <BOUNDS type="Window" left="10770" top="9990" width="6915" height="6225">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Factor" slicecount="1" values="1.14">
+   </PIN>
+   <PIN pinname="Vertex Count" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="62" srcpinname="Y Output Value" dstnodeid="41" dstpinname="Vertex Count" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="41" srcpinname="Output" dstnodeid="34" dstpinname="VerticesXY">
+   </LINK>
+   <LINK srcnodeid="56" srcpinname="Output" dstnodeid="41" dstpinname="Input">
+   </LINK>
+   <PACK Name="VVVV.Packs" Version="0.1.0">
+   </PACK>
+   <NODE systemname="Drag (2d)" filename="%VVVV%\lib\nodes\modules\2D\Drag (2d).v4p" nodename="Drag (2d)" componentmode="Hidden" id="16">
+   <BOUNDS type="Node" left="4995" top="9990" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Hit" visible="1">
+   </PIN>
+   <PIN pinname="Drag" visible="1">
+   </PIN>
+   <PIN pinname="PositionXY" visible="1" slicecount="2" values="0.299524575471878,-0.517241358757019">
+   </PIN>
+   <PIN pinname="OffsetXY" visible="1">
+   </PIN>
+   <PIN pinname="Dragging" visible="1">
+   </PIN>
+   <PIN pinname="Is Hit" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="51" srcpinname="Output" dstnodeid="16" dstpinname="Drag">
+   </LINK>
+   <LINK srcnodeid="16" srcpinname="Dragging" dstnodeid="55" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="16" srcpinname="OffsetXY" dstnodeid="19" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="16" srcpinname="Dragging" dstnodeid="58" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="27" srcpinname="Output" dstnodeid="16" dstpinname="Is Hit">
+   </LINK>
+   <NODE systemname="Multiply (2d Vector)" filename="%VVVV%\lib\nodes\modules\2D\Multiply (2d Vector).v4p" nodename="Multiply (2d Vector)" componentmode="Hidden" id="81">
+   <BOUNDS type="Node" left="6225" top="8985" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform" visible="1">
+   </PIN>
+   <PIN pinname="XY" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="83" srcpinname="Transform Out" dstnodeid="81" dstpinname="Transform">
+   </LINK>
+   <LINK srcnodeid="17" srcpinname="PositionXY" dstnodeid="81" dstpinname="XY">
+   </LINK>
+   <LINK srcnodeid="81" srcpinname="XY" dstnodeid="16" dstpinname="PositionXY">
    </LINK>
    </PATCH>
