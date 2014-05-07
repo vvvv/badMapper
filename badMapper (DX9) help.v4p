@@ -1,17 +1,17 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45debug31.10.dtd" >
    <PATCH nodename="C:\Users\joreg\Documents\repos\badMapper\badMapper (DX9) help.v4p" systemname="badMapper (DX9) help" filename="C:\Users\joreg\Documents\repos\badMapper\badMapper (DX9) help.v4p">
-   <BOUNDS type="Window" left="0" top="7800" width="11505" height="6915">
+   <BOUNDS type="Window" left="0" top="8685" width="11505" height="6915">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.1.0">
    </PACK>
    <PACK Name="addonpack" Version="31.9.0">
    </PACK>
-   <NODE systemname="badMapper (DX9)" filename="badMapper (DX9).v4p" nodename="badMapper (DX9).v4p" componentmode="Hidden" id="0">
+   <NODE systemname="badMapper (DX9)" filename="badMapper (DX9).v4p" nodename="badMapper (DX9).v4p" componentmode="InAWindow" id="0">
    <BOUNDS type="Node" left="6675" top="4995" width="1950" height="270">
    </BOUNDS>
    <PIN pinname="Content" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="210" top="7725" width="7320" height="6630">
+   <BOUNDS type="Window" left="10005" top="7965" width="7695" height="6705">
    </BOUNDS>
    <PIN pinname="Background Alpha" slicecount="1" values="1">
    </PIN>
@@ -26,8 +26,6 @@
    <PIN pinname="Texture Out" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="1" srcpinname="Texture Out" dstnodeid="0" dstpinname="Content">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="2" systemname="IOBox (String)">
    <BOUNDS type="Box" left="6885" top="2385" width="1965" height="300">
    </BOUNDS>
@@ -216,4 +214,18 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
+   <NODE systemname="VideoIn (EX9.Texture)" filename="%VVVV%\lib\nodes\modules\EX9.Texture\VideoIn (EX9.Texture).v4p" nodename="VideoIn (EX9.Texture)" componentmode="Hidden" id="16">
+   <BOUNDS type="Node" left="8850" top="1125" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Video Format" slicecount="1" values="YUY2">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Width" slicecount="1" values="640">
+   </PIN>
+   <PIN pinname="Height" slicecount="1" values="480">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="16" srcpinname="Texture Out" dstnodeid="0" dstpinname="Content">
+   </LINK>
    </PATCH>

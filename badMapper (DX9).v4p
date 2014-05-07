@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45debug31.10.dtd" >
    <PATCH nodename="C:\Users\joreg\Documents\repos\badMapper\badMapper (DX9).v4p" componentmode="InAWindow" systemname="badMapper (DX9)" filename="C:\Users\joreg\Documents\repos\badMapper\badMapper (DX9).v4p" locked="0">
-   <BOUNDS height="6630" left="210" top="7725" type="Window" width="7320">
+   <BOUNDS height="6705" left="10005" top="7965" type="Window" width="7695">
    </BOUNDS>
    <NODE systemname="SourceSelection" filename="SourceSelection.v4p" nodename="SourceSelection.v4p" componentmode="Hidden" id="33">
    <BOUNDS type="Node" left="825" top="3240" width="0" height="0">
@@ -147,9 +147,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="83" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="6285" top="1455" width="480" height="480">
+   <BOUNDS type="Box" left="6735" top="1455" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="6285" top="1455" width="0" height="0">
+   <BOUNDS type="Node" left="6735" top="1455" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
@@ -171,9 +171,9 @@
    <LINK srcnodeid="82" srcpinname="Destination Selection" dstnodeid="35" dstpinname="Initial Data" hiddenwhenlocked="1">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="84" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="5685" top="1455" width="480" height="480">
+   <BOUNDS type="Box" left="6135" top="1455" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="5685" top="1455" width="0" height="0">
+   <BOUNDS type="Node" left="6135" top="1455" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
@@ -195,9 +195,9 @@
    <LINK srcnodeid="82" srcpinname="Source Selection" dstnodeid="33" dstpinname="Initial Data" hiddenwhenlocked="1">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="86" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="4245" top="1455" width="1305" height="240">
+   <BOUNDS type="Box" left="4695" top="1455" width="1305" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="4245" top="1455" width="0" height="0">
+   <BOUNDS type="Node" left="4695" top="1455" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" values="selections.bad">
    </PIN>
@@ -245,7 +245,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="480" top="5505" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="1440" top="7650" width="13620" height="7785">
+   <BOUNDS type="Window" left="825" top="7515" width="13620" height="7785">
    </BOUNDS>
    <PIN pinname="Source Texture" visible="1">
    </PIN>
@@ -269,7 +269,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1905" top="5505" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="11370" top="6960" width="16710" height="8340">
+   <BOUNDS type="Window" left="11370" top="5235" width="16710" height="10065">
    </BOUNDS>
    <PIN pinname="Active" visible="1">
    </PIN>
@@ -403,5 +403,25 @@
    <LINK srcnodeid="102" srcpinname="XY" dstnodeid="33" dstpinname="Content Size">
    </LINK>
    <LINK srcnodeid="33" srcpinname="Selection Info" dstnodeid="96" dstpinname="Text">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="103" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="4140" top="675" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4140" top="675" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Debug in Destination|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="103" srcpinname="Y Output Value" dstnodeid="97" dstpinname="Debug in Destination" hiddenwhenlocked="1">
    </LINK>
    </PATCH>
