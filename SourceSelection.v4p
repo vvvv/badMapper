@@ -10,7 +10,7 @@
    <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="14310" top="0" width="12750" height="15780">
+   <BOUNDS type="Window" left="15225" top="165" width="12750" height="15285">
    </BOUNDS>
    <NODE systemname="HitTest (2d Quad)" filename="%VVVV%\addonpack\lib\nodes\plugins\HitTest2dNodes.dll" nodename="HitTest (2d Quad)" componentmode="Hidden" id="6">
    <BOUNDS type="Node" left="4185" top="4050" width="100" height="100">
@@ -931,5 +931,97 @@
    <LINK srcnodeid="9" srcpinname="PositionXY" dstnodeid="109" dstpinname="XY">
    </LINK>
    <LINK srcnodeid="109" srcpinname="XY" dstnodeid="68" dstpinname="PositionXY">
+   </LINK>
+   <NODE systemname="xy (2d)" nodename="xy (2d)" componentmode="Hidden" id="140">
+   <BOUNDS type="Node" left="1380" top="6360" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="XYZ" visible="1" slicecount="3" values="0,0,0">
+   </PIN>
+   <PIN pinname="XY" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="101" srcpinname="TranslateXYZ" dstnodeid="140" dstpinname="XYZ">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="141">
+   <BOUNDS type="Node" left="570" top="3405" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="570" top="3405" width="795" height="480">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="2" values="0,0">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0|">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Content Size|">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="SelectionInfo" filename="SelectionInfo.v4p" nodename="SelectionInfo.v4p" componentmode="Hidden" id="146">
+   <BOUNDS type="Node" left="172" top="7282" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="0" top="5312" width="3730" height="3940">
+   </BOUNDS>
+   <BOUNDS type="Window" left="6345" top="5385" width="7065" height="10005">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="141" srcpinname="Y Output Value" dstnodeid="146" dstpinname="Content Size">
+   </LINK>
+   <LINK srcnodeid="140" srcpinname="XY" dstnodeid="146" dstpinname="Position">
+   </LINK>
+   <LINK srcnodeid="102" srcpinname="XY" dstnodeid="146" dstpinname="Size">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="147" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="225" top="7905" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="225" top="7905" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Selection Info|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="146" srcpinname="Output" dstnodeid="147" dstpinname="Input String">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="148" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="3390" top="2010" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3390" top="2010" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="9" srcpinname="Right Button" dstnodeid="148" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="149" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="1605" top="2250" width="795" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1605" top="2250" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Y Input Value">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="9" srcpinname="PositionXY" dstnodeid="149" dstpinname="Y Input Value">
    </LINK>
    </PATCH>
