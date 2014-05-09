@@ -1,11 +1,11 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45debug31.10.dtd" >
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45debug32.0.dtd" >
    <PATCH nodename="C:\Users\joreg\Documents\repos\badMapper\Source (DX9).v4p" systemname="Source (DX9)" filename="C:\Users\joreg\dev\repos\badMapper\Source (DX9).v4p">
-   <BOUNDS type="Window" left="1440" top="7650" width="13620" height="7785">
+   <BOUNDS type="Window" left="825" top="7515" width="13620" height="7785">
    </BOUNDS>
    <NODE componentmode="InAWindow" id="3" nodename="RENDERER (EX9)" systemname="Renderer (EX9)">
    <BOUNDS height="270" left="1815" top="6555" type="Node" width="1785">
    </BOUNDS>
-   <BOUNDS height="7785" left="0" top="0" type="Window" width="9840">
+   <BOUNDS height="8265" left="0" top="0" type="Window" width="7920">
    </BOUNDS>
    <BOUNDS height="3435" left="1815" top="6555" type="Box" width="7080">
    </BOUNDS>
