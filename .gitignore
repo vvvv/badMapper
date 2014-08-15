@@ -1,3 +1,6 @@
-*.dll
+
+# .v4p backup files
 *~.xml
-*.png
+
+# Dynamic plugins .dll
+bin/
