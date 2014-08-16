@@ -1,9 +1,0 @@
-﻿<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="352" height="312" overflow="auto" viewBox="-1, -1, 2, 2" preserveAspectRatio="none">
-  <g transform="matrix(1, 0, 0, 1, 0, 0)">
-    <polyline points="0.2395868 0.4518208 0.6157269 0.5640106 0.6223438 0.1637287 0.2378637 0.1295264 " stroke="#000000" fill-opacity="0" stroke-width="0.01" transform="translate(0, 0) rotate(0, 0, 0)" class="destination" />
-    <polyline points="0.6161447 0.5689158 0.9133537 0.4866688 0.9227996 0.1700038 0.6223139 0.1636171 " stroke="#000000" fill-opacity="0" stroke-width="0.01" transform="translate(0, 0) rotate(0, 0, 0)" class="destination" />
-    <rect x="-0.2942761" y="0.01010172" width="0.2301205" height="0.8213722" fill="#FFFFFF" stroke="#000000" stroke-width="0.1" transform="translate(0, 0) rotate(0, 0, 0) translate(-0.1150602, -0.4106861)" class="source" />
-    <rect x="-0.05164786" y="0.01004628" width="0.250307" height="0.8205885" fill="#FFFFFF" stroke="#000000" stroke-width="0.1" transform="translate(0, 0) rotate(0, 0, 0) translate(-0.1251535, -0.4102942)" class="source" />
-  </g>
-</svg>

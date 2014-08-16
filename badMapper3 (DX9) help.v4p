@@ -1,0 +1,189 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha32.2.dtd" >
+   <PATCH nodename="C:\Users\Domi\Documents\GitHub\badMapper\badMapper3 (DX9) help.v4p" systemname="badMapper3 (DX9) help" filename="C:\Users\Domi\Documents\GitHub\badMapper-v3.0\badMapper3 (DX9) help.v4p">
+   <BOUNDS type="Window" left="21255" top="150" width="7545" height="6375">
+   </BOUNDS>
+   <PACK Name="addonpack" Version="32.2.0">
+   </PACK>
+   <NODE systemname="FileTexture (EX9.Texture)" nodename="FileTexture (EX9.Texture)" componentmode="Hidden" id="12">
+   <BOUNDS type="Node" left="840" top="1110" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Filename" slicecount="1" visible="1" values="assets\earth_512x512.jpg">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Reload" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Use Preloaded Item" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Repair" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Preload" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Width" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Height" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Mip Map Count" slicecount="1" values="Automatic">
+   </PIN>
+   <PIN pinname="Type" slicecount="1" values="Texture">
+   </PIN>
+   <PIN pinname="Format" slicecount="1" values="|No Specific|">
+   </PIN>
+   <PIN pinname="Original Width" visible="0" pintype="Output">
+   </PIN>
+   <PIN pinname="Original Height" visible="0" pintype="Output">
+   </PIN>
+   </NODE>
+   <PACK Name="imagepack" Version="0.1.0">
+   </PACK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="13" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="840" top="390" width="2670" height="420">
+   </BOUNDS>
+   <BOUNDS type="Node" left="840" top="390" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="assets\earth_512x512.jpg">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="image.jpg">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="|All Pictures (*.bmp, *.dds, *.hdr, *.jpg, *.png, *.tif, *.tga)||*.bmp;*.dds;*.hdr;*.jpg;*.png;*.tif;*.tga||Bitmap (*.bmp)||*.bmp||HDR (*.hdr)||*.hdr||DDS (*.dds)||*.dds||JPG (*.jpg)||*.jpg||PNG (*.png)||*.png||TIFF (*.tif)||*.tif||Targa (*.tga)||*.tga|">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Filename">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="13" srcpinname="Output String" dstnodeid="12" dstpinname="Filename">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="16" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="2940" top="1440" width="540" height="585">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2940" top="1440" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="17" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="2940" top="2325" width="555" height="525">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2940" top="2325" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="18" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="2355" top="1020" width="1125" height="255">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2355" top="1020" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="sub\file.txt">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="file.txt">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="|All Text Formats (*.csv, *.dtd, *.html, *.txt, *.xml)||*.csv;*.dtd;*.html;*.htm;*.txt;*.xml||Text (*.txt)||*.txt||XML (*.xml)||*.xml||CSV (*.csv)||*.csv||DTD (*.dtd)||*.dtd||HTML (*.html, *.htm)||*.html;*.htm|">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Filename">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <PACK Name="VVVV.Packs" Version="0.1.0">
+   </PACK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="24" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="3600" top="450" width="1425" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3600" top="450" width="1425" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Content texture|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="25" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="3600" top="1050" width="810" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3600" top="1050" width="810" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Savefile|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="26" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="3600" top="1740" width="600" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3600" top="1740" width="600" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Save|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="27" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="3600" top="2475" width="630" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3600" top="2475" width="630" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Load|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE systemname="badMapper3 (DX9)" filename="badMapper3 (DX9).v4p" nodename="badMapper3 (DX9)" componentmode="Hidden" id="28">
+   <BOUNDS type="Node" left="840" top="3660" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Window" left="4200" top="150" width="16965" height="11235">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="12" srcpinname="Texture Out" dstnodeid="28" dstpinname="Content">
+   </LINK>
+   <LINK srcnodeid="16" srcpinname="Y Output Value" dstnodeid="28" dstpinname="Save">
+   </LINK>
+   <LINK srcnodeid="17" srcpinname="Y Output Value" dstnodeid="28" dstpinname="Load">
+   </LINK>
+   <LINK srcnodeid="18" srcpinname="Output String" dstnodeid="28" dstpinname="Filename">
+   </LINK>
+   </PATCH>
