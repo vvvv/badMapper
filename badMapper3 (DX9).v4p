@@ -69,7 +69,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="9375" top="11205" width="4875" height="3900">
    </BOUNDS>
-   <BOUNDS type="Window" left="-14145" top="-600" width="11250" height="8295">
+   <BOUNDS type="Window" left="-13335" top="-690" width="11250" height="8295">
    </BOUNDS>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
@@ -266,7 +266,7 @@
    <LINKPOINT x="7975" y="8955">
    </LINKPOINT>
    </LINK>
-   <NODE systemname="PolygonEditor (2d)" filename="%VVVV%\addonpack\lib\nodes\modules\2d\PolygonEditor (2d).v4p" nodename="PolygonEditor (2d)" componentmode="Hidden" id="100">
+   <NODE systemname="PolygonEditor (2d)" filename="%VVVV%\addonpack\lib\nodes\modules\2d\PolygonEditor (2d).v4p" nodename="PolygonEditor (2d)" componentmode="InAWindow" id="100">
    <BOUNDS type="Node" left="4215" top="6930" width="2565" height="270">
    </BOUNDS>
    <PIN pinname="Cursor Type" visible="1">
@@ -333,7 +333,7 @@
    </PIN>
    <PIN pinname="Remove" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="6255" top="1755" width="29040" height="15600">
+   <BOUNDS type="Window" left="-120" top="-120" width="29040" height="15840">
    </BOUNDS>
    <PIN pinname="Keyboard StepsizeXY" visible="1" slicecount="2" values="0.01,0.01">
    </PIN>
@@ -675,9 +675,9 @@
    <LINK srcnodeid="145" srcpinname="Transform Out" dstnodeid="147" dstpinname="Source">
    </LINK>
    <LINK srcnodeid="147" srcpinname="Transform Out" dstnodeid="146" dstpinname="Transform" linkstyle="Bezier">
-   <LINKPOINT x="670" y="6920">
+   <LINKPOINT x="420" y="10470">
    </LINKPOINT>
-   <LINKPOINT x="3900" y="2740">
+   <LINKPOINT x="3270" y="765">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="76" srcpinname="Source Active" dstnodeid="145" dstpinname="Enabled" linkstyle="VHV" hiddenwhenlocked="1">
@@ -799,11 +799,11 @@
    </LINKPOINT>
    </LINK>
    <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="159">
-   <BOUNDS type="Node" left="6495" top="11865" width="100" height="100">
+   <BOUNDS type="Node" left="6495" top="11205" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="6495" top="11865" width="2400" height="1800">
+   <BOUNDS type="Box" left="6495" top="11205" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="-11175" top="10350" width="6240" height="5010">
+   <BOUNDS type="Window" left="-13185" top="7710" width="6240" height="5010">
    </BOUNDS>
    <PIN pinname="Layers" visible="1">
    </PIN>
@@ -842,4 +842,18 @@
    <LINKPOINT x="9405" y="8745">
    </LINKPOINT>
    </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="161" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="21465" top="5670" width="3795" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="21465" top="5670" width="4035" height="930">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Shape Mode turns itself off randomly&cr;&lf;&cr;&lf;reason -&gt; i am mixing mouseEvents and mouseStates, using togEdge like a mouseevent (which is wrong)|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
    </PATCH>
