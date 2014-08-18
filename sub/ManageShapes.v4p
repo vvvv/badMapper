@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha32.2.dtd" >
-   <PATCH nodename="C:\Users\Domi\Documents\GitHub\badMapper-v3.0\sub\ManageShapes.v4p" systemname="ManageShapes" filename="C:\Users\Domi\Documents\GitHub\badMapper-v3.0\sub\ManageShapes.v4p">
+   <PATCH nodename="C:\Users\Domi\Documents\GitHub\badMapper\sub\ManageShapes.v4p" systemname="ManageShapes" filename="C:\Users\Domi\Documents\GitHub\badMapper-v3.0\sub\ManageShapes.v4p">
    <BOUNDS type="Window" left="10725" top="735" width="22170" height="13440">
    </BOUNDS>
    <PACK Name="addonpack" Version="32.2.0">
@@ -675,7 +675,7 @@
    </PIN>
    <PIN pinname="Success" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="13335" top="2325" width="13395" height="6000">
+   <BOUNDS type="Window" left="5385" top="2565" width="7245" height="6000">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="92" srcpinname="Output String" dstnodeid="94" dstpinname="Filename">
@@ -731,9 +731,9 @@
    <LINK srcnodeid="94" srcpinname="Success" dstnodeid="97" dstpinname="Switch" hiddenwhenlocked="1">
    </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="99" hiddenwhenlocked="1">
-   <BOUNDS type="Node" left="19275" top="2070" width="100" height="100">
+   <BOUNDS type="Node" left="19560" top="2280" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="19275" top="2070" width="795" height="240">
+   <BOUNDS type="Box" left="19560" top="2280" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Value Type" slicecount="1" values="Integer">
    </PIN>
@@ -782,52 +782,6 @@
    <PIN pinname="Switch" visible="1" slicecount="1" values="1">
    </PIN>
    </NODE>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="117" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="18540" top="5265" width="795" height="480">
-   </BOUNDS>
-   <BOUNDS type="Node" left="18540" top="5265" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Vector Size" slicecount="1" values="2">
-   </PIN>
-   <PIN pinname="Rows" slicecount="1" values="2">
-   </PIN>
-   <PIN pinname="Y Input Value">
-   </PIN>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="95" srcpinname="VerticesXY" dstnodeid="117" dstpinname="Y Input Value">
-   </LINK>
-   <NODE systemname="S+H (Animation)" nodename="S+H (Animation)" componentmode="Hidden" id="118">
-   <BOUNDS type="Node" left="19965" top="6015" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="Set" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="117" srcpinname="Y Output Value" dstnodeid="118" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="94" srcpinname="Success" dstnodeid="118" dstpinname="Set">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="119" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="20070" top="6780" width="795" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="20070" top="6780" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="118" srcpinname="Output" dstnodeid="119" dstpinname="Y Input Value">
-   </LINK>
    <LINK srcnodeid="94" srcpinname="Success" dstnodeid="108" dstpinname="Switch" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="41" srcpinname="Output" dstnodeid="108" dstpinname="Input 1">
@@ -875,5 +829,23 @@
    <LINK srcnodeid="60" srcpinname="PositionXY" dstnodeid="42" dstpinname="Input 2">
    </LINK>
    <LINK srcnodeid="102" srcpinname="Bang" dstnodeid="101" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="137" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="21525" top="11295" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="21525" top="11295" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Load Success|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="94" srcpinname="Success" dstnodeid="137" dstpinname="Y Input Value">
    </LINK>
    </PATCH>

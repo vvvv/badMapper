@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha32.2.dtd" >
-   <PATCH nodename="C:\Users\Domi\Documents\GitHub\badMapper-v3.0\sub\destination.v4p" systemname="destination" filename="C:\Users\Domi\Documents\GitHub\badMapper-v3.0\sub\destination.v4p">
+   <PATCH nodename="C:\Users\Domi\Documents\GitHub\badMapper\sub\destination.v4p" systemname="destination" filename="C:\Users\Domi\Documents\GitHub\badMapper-v3.0\sub\destination.v4p">
    <BOUNDS type="Window" left="0" top="0" width="29040" height="15600">
    </BOUNDS>
    <PACK Name="addonpack" Version="32.2.0">
@@ -627,7 +627,7 @@
    </BOUNDS>
    <PIN pinname="Render State Out" visible="1">
    </PIN>
-   <PIN pinname="Culling" slicecount="1" values="Counterclockwise">
+   <PIN pinname="Culling" slicecount="1" values="None">
    </PIN>
    </NODE>
    <LINK srcnodeid="232" srcpinname="Render State Out" dstnodeid="33" dstpinname="Render State">
