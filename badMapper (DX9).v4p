@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha32.2.dtd" >
    <PATCH nodename="C:\Users\Domi\Documents\GitHub\badMapper\badMapper (DX9).v4p" systemname="badMapper_v3.0" filename="C:\Users\Domi\Documents\GitHub\badMapper-v3.0\badMapper_v3.0.v4p">
-   <BOUNDS type="Window" left="-28920" top="-1920" width="29040" height="18180">
+   <BOUNDS type="Window" left="-120" top="-120" width="29040" height="15840">
    </BOUNDS>
    <PACK Name="addonpack" Version="32.2.0">
    </PACK>
@@ -641,7 +641,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="6495" top="11205" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="-13185" top="7710" width="6240" height="5010">
+   <BOUNDS type="Window" left="-20910" top="10575" width="6240" height="5010">
    </BOUNDS>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
@@ -799,7 +799,7 @@
    </PIN>
    <PIN pinname="Background Image" visible="1">
    </PIN>
-   <PIN pinname="Background Image Transform" visible="1">
+   <PIN pinname="Background Image Transform" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
    <LINK srcnodeid="6" srcpinname="Output Node" dstnodeid="4" dstpinname="Texture " hiddenwhenlocked="1" linkstyle="VHV">
