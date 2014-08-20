@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha32.2.dtd" >
    <PATCH nodename="C:\Users\Domi\Documents\GitHub\badMapper\badMapper (DX9).v4p" systemname="badMapper_v3.0" filename="C:\Users\Domi\Documents\GitHub\badMapper-v3.0\badMapper_v3.0.v4p">
-   <BOUNDS type="Window" left="-120" top="-120" width="29040" height="15840">
+   <BOUNDS type="Window" left="-28920" top="-1920" width="29040" height="18240">
    </BOUNDS>
    <PACK Name="addonpack" Version="32.2.0">
    </PACK>
@@ -9,7 +9,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="9375" top="11205" width="4875" height="3900">
    </BOUNDS>
-   <BOUNDS type="Window" left="-13335" top="-690" width="11250" height="8295">
+   <BOUNDS type="Window" left="8940" top="0" width="9540" height="7545">
    </BOUNDS>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
@@ -51,7 +51,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="2655" top="11205" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="-25605" top="-150" width="10875" height="10275">
+   <BOUNDS type="Window" left="0" top="0" width="8925" height="7635">
    </BOUNDS>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
@@ -78,12 +78,12 @@
    <PIN pinname="Debug In Destination" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="ManageShapes" filename="sub\ManageShapes.v4p" componentmode="Hidden" id="89" nodename="sub\ManageShapes.v4p" stayontop="0">
+   <NODE systemname="ManageShapes" filename="sub\ManageShapes.v4p" componentmode="InAWindow" id="89" nodename="sub\ManageShapes.v4p" stayontop="0">
    <BOUNDS type="Node" left="4425" top="4950" width="3825" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="4425" top="4950" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="-120" top="-120" width="29040" height="15840">
+   <BOUNDS type="Window" left="-28920" top="-1920" width="29040" height="18240">
    </BOUNDS>
    <PIN pinname="Vertex Destination Mouseover" visible="1" slicecount="1" values="0">
    </PIN>
@@ -130,6 +130,10 @@
    <PIN pinname="Initialize" visible="1">
    </PIN>
    <PIN pinname="Load Success" visible="1">
+   </PIN>
+   <PIN pinname="Polygon Source" visible="1">
+   </PIN>
+   <PIN pinname="Polygon Destination" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="17" srcpinname="Device" dstnodeid="89" dstpinname="Mouse" hiddenwhenlocked="1" linkstyle="VHV">
@@ -179,6 +183,10 @@
    </BOUNDS>
    <BOUNDS type="Box" left="4215" top="6930">
    </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Snap Threshold" slicecount="1" values="0.06">
+   </PIN>
    </NODE>
    <NODE systemname="PolygonEditor (2d)" filename="%VVVV%\addonpack\lib\nodes\modules\2d\PolygonEditor (2d).v4p" nodename="PolygonEditor (2d)" componentmode="Hidden" id="101">
    <BOUNDS type="Node" left="6945" top="6930" width="2205" height="270">
@@ -217,6 +225,10 @@
    </PIN>
    <BOUNDS type="Box" left="6945" top="6930">
    </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Snap Threshold" slicecount="1" values="0.06">
+   </PIN>
    </NODE>
    <LINK srcnodeid="89" srcpinname="VerticesXY Source" dstnodeid="100" dstpinname="VerticesXY">
    </LINK>
@@ -641,7 +653,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="6495" top="11205" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="-20910" top="10575" width="6240" height="5010">
+   <BOUNDS type="Window" left="18525" top="0" width="8490" height="7530">
    </BOUNDS>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
@@ -731,15 +743,15 @@
    <LINK srcnodeid="100" srcpinname="Output" dstnodeid="34" dstpinname="PolygonEditor Source">
    </LINK>
    <LINK srcnodeid="117" srcpinname="Device" dstnodeid="34" dstpinname="Mouse" linkstyle="VHV" hiddenwhenlocked="0">
-   <LINKPOINT x="8475" y="9445">
+   <LINKPOINT x="8670" y="9000">
    </LINKPOINT>
-   <LINKPOINT x="5130" y="9440">
+   <LINKPOINT x="4410" y="9000">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="76" srcpinname="Destination Active" dstnodeid="34" dstpinname="Destination Hover" linkstyle="VHV" hiddenwhenlocked="1">
-   <LINKPOINT x="10345" y="9500">
+   <LINKPOINT x="10560" y="9435">
    </LINKPOINT>
-   <LINKPOINT x="4880" y="9355">
+   <LINKPOINT x="4245" y="9435">
    </LINKPOINT>
    </LINK>
    <NODE systemname="Destination (DX9)" filename="sub\Destination (DX9).v4p" componentmode="Hidden" id="4" nodename="Destination (DX9)">
@@ -809,9 +821,9 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="76" srcpinname="Destination Active" dstnodeid="4" dstpinname="Destination Hover" hiddenwhenlocked="1" linkstyle="VHV">
-   <LINKPOINT x="10540" y="9505">
+   <LINKPOINT x="10560" y="9465">
    </LINKPOINT>
-   <LINKPOINT x="9425" y="9365">
+   <LINKPOINT x="7485" y="9465">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="4" srcpinname="Destination Selection" dstnodeid="5" dstpinname="Layers">
@@ -843,15 +855,19 @@
    <LINK srcnodeid="4" srcpinname="Destination" dstnodeid="159" dstpinname="Layers">
    </LINK>
    <LINK srcnodeid="154" srcpinname="Output Node" dstnodeid="4" dstpinname="Background Image" linkstyle="VHV">
-   <LINKPOINT x="13755" y="8685">
+   <LINKPOINT x="13755" y="9300">
    </LINKPOINT>
-   <LINKPOINT x="9405" y="8970">
+   <LINKPOINT x="7800" y="9300">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="160" srcpinname="Output Node" dstnodeid="4" dstpinname="Background Image Transform" linkstyle="VHV">
-   <LINKPOINT x="15435" y="8745">
+   <LINKPOINT x="15435" y="9360">
    </LINKPOINT>
-   <LINKPOINT x="9405" y="8745">
+   <LINKPOINT x="7965" y="9360">
    </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="89" srcpinname="Polygon Source" dstnodeid="100" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="89" srcpinname="Polygon Destination" dstnodeid="101" dstpinname="Input">
    </LINK>
    </PATCH>
