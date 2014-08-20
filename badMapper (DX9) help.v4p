@@ -232,7 +232,7 @@
    </NODE>
    <LINK srcnodeid="34" srcpinname="Output String" dstnodeid="33" dstpinname="Filename">
    </LINK>
-   <NODE systemname="badMapper (DX9)" filename="badMapper (DX9).v4p" nodename="badMapper (DX9)" componentmode="InAWindow" id="28">
+   <NODE systemname="badMapper (DX9)" filename="badMapper (DX9).v4p" nodename="badMapper (DX9)" componentmode="Hidden" id="28">
    <BOUNDS type="Node" left="840" top="4005" width="2835" height="270">
    </BOUNDS>
    <BOUNDS type="Window" left="-120" top="-120" width="29040" height="15840">

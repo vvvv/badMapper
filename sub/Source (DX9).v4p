@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha32.2.dtd" >
-   <PATCH nodename="C:\Users\Domi\Documents\GitHub\badMapper\sub\source.v4p" systemname="source" filename="C:\Users\Domi\Documents\GitHub\badMapper-v3.0\sub\source.v4p">
+   <PATCH nodename="C:\Users\Domi\Documents\GitHub\badMapper\sub\Source (DX9).v4p" systemname="source" filename="C:\Users\Domi\Documents\GitHub\badMapper-v3.0\sub\source.v4p">
    <BOUNDS type="Window" left="0" top="0" width="29040" height="15840">
    </BOUNDS>
    <PACK Name="addonpack" Version="32.2.0">
@@ -49,7 +49,7 @@
    <NODE systemname="AsString (Value)" nodename="AsString (Value)" componentmode="Hidden" id="30">
    <BOUNDS type="Node" left="10035" top="8130" width="750" height="270">
    </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="2" values="0">
+   <PIN pinname="Input" visible="1" slicecount="2" values="0,0">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -179,7 +179,7 @@
    </PIN>
    <PIN pinname="Width" visible="1">
    </PIN>
-   <PIN pinname="Input" visible="1">
+   <PIN pinname="Input" visible="1" slicecount="8" values="0.25,-0.25,-0.25,-0.25,-0.25,0.25,0.25,0.25">
    </PIN>
    <PIN pinname="Bin Size" slicecount="1" visible="1" values="4">
    </PIN>
@@ -326,32 +326,6 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="PolygonEditor (2d Split)" filename="%VVVV%\addonpack\lib\nodes\modules\2d\PolygonEditor\PolygonEditor (2d Split).v4p" nodename="PolygonEditor (2d Split)" componentmode="Hidden" id="91">
-   <BOUNDS type="Node" left="7050" top="2550" width="4830" height="270">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="VerticesXY" visible="1">
-   </PIN>
-   <PIN pinname="Mouseover" visible="1">
-   </PIN>
-   <PIN pinname="Vertex Bin Size" visible="1">
-   </PIN>
-   <PIN pinname="ID" visible="-1" pintype="Output">
-   </PIN>
-   <BOUNDS type="Window" left="2145" top="2520" width="13560" height="10785">
-   </BOUNDS>
-   <PIN pinname="Rotation" visible="1">
-   </PIN>
-   <PIN pinname="Shape Mode" visible="1">
-   </PIN>
-   <PIN pinname="Vertex Tagged" visible="1">
-   </PIN>
-   <PIN pinname="Former Index" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="92" srcpinname="Y Output Value" dstnodeid="91" dstpinname="Input">
-   </LINK>
    <LINK srcnodeid="64" srcpinname="Layer" dstnodeid="22" dstpinname="Layer 4">
    </LINK>
    <LINK srcnodeid="23" srcpinname="Layer" dstnodeid="22" dstpinname="Layer 1">
@@ -374,10 +348,6 @@
    <LINKPOINT x="4535" y="10620">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="91" srcpinname="VerticesXY" dstnodeid="59" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="91" srcpinname="Vertex Bin Size" dstnodeid="59" dstpinname="Bin Size" hiddenwhenlocked="1">
-   </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="99">
    <BOUNDS type="Node" left="16125" top="1470" width="100" height="100">
    </BOUNDS>
@@ -395,8 +365,6 @@
    <LINK srcnodeid="99" srcpinname="Y Output Value" dstnodeid="10" dstpinname="Input 2">
    </LINK>
    <LINK srcnodeid="63" srcpinname="Y Output Value" dstnodeid="10" dstpinname="Input 1">
-   </LINK>
-   <LINK srcnodeid="91" srcpinname="VerticesXY" dstnodeid="28" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="17" srcpinname="Output" dstnodeid="41" dstpinname="Layer 3">
    </LINK>
@@ -457,14 +425,12 @@
    </PIN>
    <PIN pinname="Mouseover Source" visible="1">
    </PIN>
-   <PIN pinname="VerticesXY Source" visible="1">
+   <PIN pinname="VerticesXY Source" visible="1" slicecount="8" values="0.25,-0.25,-0.25,-0.25,-0.25,0.25,0.25,0.25">
    </PIN>
    <PIN pinname="Texture Pixelsize" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="115" srcpinname="Layer" dstnodeid="41" dstpinname="Layer 4">
-   </LINK>
-   <LINK srcnodeid="91" srcpinname="Mouseover" dstnodeid="115" dstpinname="Mouseover Source">
    </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="117">
    <BOUNDS type="Node" left="9735" top="6090" width="100" height="100">
@@ -494,8 +460,6 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
-   <LINK srcnodeid="91" srcpinname="VerticesXY" dstnodeid="115" dstpinname="VerticesXY Source">
-   </LINK>
    <LINK srcnodeid="106" srcpinname="XY" dstnodeid="115" dstpinname="Texture Pixelsize">
    </LINK>
    <NODE nodename="IOBox (Color)" componentmode="InABox" id="119" systemname="IOBox (Color)">
@@ -510,38 +474,6 @@
    </NODE>
    <PACK Name="VVVV.Packs" Version="0.1.0">
    </PACK>
-   <NODE systemname="CircumRectangle (PolygonEditor EX9)" filename="%VVVV%\addonpack\lib\nodes\modules\2d\PolygonEditor\CircumRectangle (PolygonEditor EX9).v4p" nodename="CircumRectangle (PolygonEditor EX9)" componentmode="Hidden" id="120">
-   <BOUNDS type="Node" left="6270" top="9135" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="VerticesXY" visible="1">
-   </PIN>
-   <PIN pinname="Rotation" visible="1">
-   </PIN>
-   <PIN pinname="Shape Mode" visible="1">
-   </PIN>
-   <PIN pinname="Vertex Bin Size" visible="1" slicecount="4" values="1,1,1,1">
-   </PIN>
-   <PIN pinname="Enabled" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="Color" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="91" srcpinname="VerticesXY" dstnodeid="120" dstpinname="VerticesXY">
-   </LINK>
-   <LINK srcnodeid="91" srcpinname="Rotation" dstnodeid="120" dstpinname="Rotation">
-   </LINK>
-   <LINK srcnodeid="91" srcpinname="Shape Mode" dstnodeid="120" dstpinname="Shape Mode">
-   </LINK>
-   <LINK srcnodeid="91" srcpinname="Vertex Bin Size" dstnodeid="120" dstpinname="Vertex Bin Size" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="120" srcpinname="Output" dstnodeid="41" dstpinname="Layer 2">
-   </LINK>
-   <LINK srcnodeid="119" srcpinname="Color Output" dstnodeid="120" dstpinname="Color">
-   </LINK>
-   <LINK srcnodeid="91" srcpinname="Former Index" dstnodeid="30" dstpinname="Input">
-   </LINK>
    <NODE systemname="UniformScale (Transform)" nodename="UniformScale (Transform)" componentmode="Hidden" id="123">
    <BOUNDS type="Node" left="840" top="7320" width="100" height="100">
    </BOUNDS>
@@ -567,5 +499,71 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="124" srcpinname="Y Output Value" dstnodeid="123" dstpinname="XYZ">
+   </LINK>
+   <NODE systemname="BoundingBox (PolygonEditor DX9)" filename="%VVVV%\addonpack\lib\nodes\modules\2d\PolygonEditor\BoundingBox (PolygonEditor DX9).v4p" nodename="BoundingBox (PolygonEditor DX9)" componentmode="Hidden" id="120">
+   <BOUNDS type="Node" left="6270" top="9135" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="VerticesXY" visible="1" slicecount="8" values="0.25,-0.25,-0.25,-0.25,-0.25,0.25,0.25,0.25">
+   </PIN>
+   <PIN pinname="Rotation" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Shape Mode" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Vertex Bin Size" visible="1" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Enabled" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Color" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="120" srcpinname="Output" dstnodeid="41" dstpinname="Layer 2">
+   </LINK>
+   <LINK srcnodeid="119" srcpinname="Color Output" dstnodeid="120" dstpinname="Color">
+   </LINK>
+   <NODE systemname="Polygon (PolygonEditor Split)" filename="%VVVV%\addonpack\lib\nodes\modules\2d\PolygonEditor\Polygon (PolygonEditor Split).v4p" nodename="Polygon (PolygonEditor Split)" componentmode="Hidden" id="91">
+   <BOUNDS type="Node" left="6840" top="1815" width="1890" height="270">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="VerticesXY" visible="1">
+   </PIN>
+   <PIN pinname="Mouseover" visible="1">
+   </PIN>
+   <PIN pinname="Vertex Bin Size" visible="1">
+   </PIN>
+   <PIN pinname="ID" visible="-1" pintype="Output">
+   </PIN>
+   <BOUNDS type="Window" left="2145" top="2520" width="13560" height="10785">
+   </BOUNDS>
+   <PIN pinname="Rotation" visible="1">
+   </PIN>
+   <PIN pinname="Shape Mode" visible="1">
+   </PIN>
+   <PIN pinname="Vertex Tagged" visible="1">
+   </PIN>
+   <PIN pinname="Former Index" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="92" srcpinname="Y Output Value" dstnodeid="91" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="91" srcpinname="VerticesXY" dstnodeid="59" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="91" srcpinname="Vertex Bin Size" dstnodeid="59" dstpinname="Bin Size" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="91" srcpinname="VerticesXY" dstnodeid="28" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="91" srcpinname="VerticesXY" dstnodeid="115" dstpinname="VerticesXY Source">
+   </LINK>
+   <LINK srcnodeid="91" srcpinname="Former Index" dstnodeid="30" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="91" srcpinname="VerticesXY" dstnodeid="120" dstpinname="VerticesXY">
+   </LINK>
+   <LINK srcnodeid="91" srcpinname="Rotation" dstnodeid="120" dstpinname="Rotation">
+   </LINK>
+   <LINK srcnodeid="91" srcpinname="Shape Mode" dstnodeid="120" dstpinname="Shape Mode">
+   </LINK>
+   <LINK srcnodeid="91" srcpinname="Vertex Bin Size" dstnodeid="120" dstpinname="Vertex Bin Size" hiddenwhenlocked="1">
    </LINK>
    </PATCH>
