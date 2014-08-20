@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha32.2.dtd" >
    <PATCH nodename="C:\Users\Domi\Documents\GitHub\badMapper\badMapper (DX9) help.v4p" systemname="badMapper3 (DX9) help" filename="C:\Users\Domi\Documents\GitHub\badMapper-v3.0\badMapper3 (DX9) help.v4p">
-   <BOUNDS type="Window" left="3390" top="7590" width="9720" height="5325">
+   <BOUNDS type="Window" left="735" top="7995" width="9720" height="5325">
    </BOUNDS>
    <PACK Name="addonpack" Version="32.2.0">
    </PACK>
@@ -57,7 +57,7 @@
    <LINK srcnodeid="13" srcpinname="Output String" dstnodeid="12" dstpinname="Filename">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="16" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="6075" top="825" width="540" height="585">
+   <BOUNDS type="Box" left="6075" top="825" width="480" height="510">
    </BOUNDS>
    <BOUNDS type="Node" left="6075" top="825" width="0" height="0">
    </BOUNDS>
@@ -77,9 +77,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="17" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="6075" top="1710" width="555" height="525">
+   <BOUNDS type="Box" left="6075" top="1635" width="480" height="510">
    </BOUNDS>
-   <BOUNDS type="Node" left="6075" top="1710" width="0" height="0">
+   <BOUNDS type="Node" left="6075" top="1635" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -161,9 +161,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="27" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="6735" top="1860" width="630" height="270">
+   <BOUNDS type="Node" left="6735" top="1785" width="630" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="6735" top="1860" width="630" height="270">
+   <BOUNDS type="Box" left="6735" top="1785" width="630" height="270">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Load|">
    </PIN>
@@ -175,9 +175,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="30" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="6135" top="2445" width="480" height="480">
+   <BOUNDS type="Box" left="6075" top="2445" width="480" height="510">
    </BOUNDS>
-   <BOUNDS type="Node" left="6135" top="2445" width="0" height="0">
+   <BOUNDS type="Node" left="6075" top="2445" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
