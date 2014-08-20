@@ -235,7 +235,7 @@
    <NODE systemname="badMapper (DX9)" filename="badMapper (DX9).v4p" nodename="badMapper (DX9)" componentmode="Hidden" id="28">
    <BOUNDS type="Node" left="840" top="4005" width="2835" height="270">
    </BOUNDS>
-   <BOUNDS type="Window" left="2895" top="675" width="25605" height="14265">
+   <BOUNDS type="Window" left="2190" top="1335" width="25605" height="14265">
    </BOUNDS>
    <PIN pinname="Filename" visible="1" slicecount="1" values="sub\file.txt">
    </PIN>

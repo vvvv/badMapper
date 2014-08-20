@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha32.2.dtd" >
    <PATCH nodename="C:\Users\Domi\Documents\GitHub\badMapper\sub\Destination (DX9).v4p" systemname="destination" filename="C:\Users\Domi\Documents\GitHub\badMapper-v3.0\sub\destination.v4p">
-   <BOUNDS type="Window" left="-120" top="-120" width="29040" height="16440">
+   <BOUNDS type="Window" left="0" top="0" width="29040" height="16440">
    </BOUNDS>
    <PACK Name="addonpack" Version="32.2.0">
    </PACK>
@@ -351,9 +351,9 @@
    <LINK srcnodeid="144" srcpinname="Y Output Value" dstnodeid="71" dstpinname="Input 2" linkstyle="PolyLine">
    </LINK>
    <NODE systemname="IOBox (Enumerations)" nodename="IOBox (Enumerations)" componentmode="InABox" id="158">
-   <BOUNDS type="Node" left="16500" top="555" width="100" height="100">
+   <BOUNDS type="Node" left="15150" top="555" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="16500" top="555" width="1200" height="240">
+   <BOUNDS type="Box" left="15150" top="555" width="1200" height="240">
    </BOUNDS>
    <PIN pinname="Output Enum" visible="1">
    </PIN>
@@ -431,9 +431,9 @@
    <LINK srcnodeid="203" srcpinname="Output" dstnodeid="33" dstpinname="Enabled">
    </LINK>
    <NODE systemname="IOBox (Node)" nodename="IOBox (Node)" componentmode="InABox" id="212">
-   <BOUNDS type="Node" left="15405" top="555" width="100" height="100">
+   <BOUNDS type="Node" left="14055" top="555" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="15405" top="555" width="795" height="240">
+   <BOUNDS type="Box" left="14055" top="555" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="Mouse">
    </PIN>
@@ -453,19 +453,21 @@
    </BOUNDS>
    <PIN pinname="Enabled" visible="1">
    </PIN>
+   <PIN pinname="Selection" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="213" srcpinname="Layer" dstnodeid="36" dstpinname="Layer 4">
    </LINK>
    <LINK srcnodeid="212" srcpinname="Output Node" dstnodeid="213" dstpinname="Mouse" linkstyle="VHV">
-   <LINKPOINT x="19130" y="9400">
+   <LINKPOINT x="18230" y="9400">
    </LINKPOINT>
-   <LINKPOINT x="12145" y="9515">
+   <LINKPOINT x="11695" y="9515">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="158" srcpinname="Output Enum" dstnodeid="213" dstpinname="Cursor Type" linkstyle="VHV">
-   <LINKPOINT x="20225" y="9535">
+   <LINKPOINT x="19325" y="9535">
    </LINKPOINT>
-   <LINKPOINT x="12310" y="9650">
+   <LINKPOINT x="11860" y="9650">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="144" srcpinname="Y Output Value" dstnodeid="213" dstpinname="Enabled" linkstyle="VHV">
@@ -819,5 +821,19 @@
    <LINK srcnodeid="204" srcpinname="Former Index" dstnodeid="3" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="204" srcpinname="Former Index" dstnodeid="146" dstpinname="Index">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="252">
+   <BOUNDS type="Node" left="16770" top="420" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="16770" top="420" width="525" height="480">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="6" values="|Selection Rect|,|Selection Rect|,|Selection Rect|,|Selection Rect|,|Selection Rect|,|Selection Rect|">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="252" srcpinname="Y Output Value" dstnodeid="213" dstpinname="Selection">
    </LINK>
    </PATCH>
