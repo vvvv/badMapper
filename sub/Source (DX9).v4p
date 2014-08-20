@@ -517,10 +517,12 @@
    </PIN>
    <PIN pinname="Color" visible="1">
    </PIN>
+   <BOUNDS type="Window" left="7200" top="405" width="13590" height="16125">
+   </BOUNDS>
    </NODE>
    <LINK srcnodeid="120" srcpinname="Output" dstnodeid="41" dstpinname="Layer 2">
    </LINK>
-   <LINK srcnodeid="119" srcpinname="Color Output" dstnodeid="120" dstpinname="Color">
+   <LINK srcnodeid="119" srcpinname="Color Output" dstnodeid="120" dstpinname="Colors">
    </LINK>
    <NODE systemname="Polygon (PolygonEditor Split)" filename="%VVVV%\addonpack\lib\nodes\modules\2d\PolygonEditor\Polygon (PolygonEditor Split).v4p" nodename="Polygon (PolygonEditor Split)" componentmode="Hidden" id="91">
    <BOUNDS type="Node" left="6840" top="1815" width="1890" height="270">
