@@ -331,7 +331,7 @@
    <NODE systemname="EQ (Value)" nodename="EQ (Value)" componentmode="Hidden" id="54">
    <BOUNDS type="Node" left="15150" top="7575" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input 2" slicecount="1" values="3">
+   <PIN pinname="Input 2" slicecount="1" values="2">
    </PIN>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -341,7 +341,7 @@
    <NODE systemname="EQ (Value)" nodename="EQ (Value)" componentmode="Hidden" id="55">
    <BOUNDS type="Node" left="14550" top="7575" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input 2" slicecount="1" values="3">
+   <PIN pinname="Input 2" slicecount="1" values="2">
    </PIN>
    <PIN pinname="Input 1" visible="1" slicecount="5" values="0">
    </PIN>
@@ -709,11 +709,13 @@
    <NODE systemname="MouseMatch (Mouse)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="MouseMatch (Mouse)" componentmode="Hidden" id="133">
    <BOUNDS type="Node" left="16305" top="7140" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Button" slicecount="1" values="Right">
+   <PIN pinname="Button" slicecount="1" values="Right" visible="1">
    </PIN>
    <PIN pinname="Mouse" visible="1">
    </PIN>
    <PIN pinname="Detected" visible="1">
+   </PIN>
+   <PIN pinname="Click Count" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="12" srcpinname="Output Node" dstnodeid="133" dstpinname="Mouse">
@@ -831,5 +833,49 @@
    <LINK srcnodeid="138" srcpinname="Output" dstnodeid="108" dstpinname="Input 1">
    </LINK>
    <LINK srcnodeid="138" srcpinname="Output" dstnodeid="97" dstpinname="Input 1">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="140" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="18465" top="8370" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="18465" top="8370" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="133" srcpinname="Detected" dstnodeid="140" dstpinname="Y Input Value">
+   <LINKPOINT x="17310" y="7845">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="141" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="17235" top="6780" width="285" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="17235" top="6780" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="2">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="141" srcpinname="Y Output Value" dstnodeid="133" dstpinname="Click Count">
+   </LINK>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="142" systemname="IOBox (Enumerations)">
+   <BOUNDS type="Box" left="16770" top="6345" width="870" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="16770" top="6345" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="Right">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="142" srcpinname="Output Enum" dstnodeid="133" dstpinname="Button">
    </LINK>
    </PATCH>

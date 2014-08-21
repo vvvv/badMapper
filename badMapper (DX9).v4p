@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha32.2.dtd" >
    <PATCH nodename="C:\Users\Domi\Documents\GitHub\badMapper\badMapper (DX9).v4p" systemname="badMapper_v3.0" filename="C:\Users\Domi\Documents\GitHub\badMapper-v3.0\badMapper_v3.0.v4p">
-   <BOUNDS type="Window" left="1800" top="885" width="25605" height="14265">
+   <BOUNDS type="Window" left="2190" top="1335" width="25605" height="14265">
    </BOUNDS>
    <PACK Name="addonpack" Version="32.2.0">
    </PACK>
@@ -9,7 +9,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="9375" top="11205" width="4875" height="3900">
    </BOUNDS>
-   <BOUNDS type="Window" left="9015" top="0" width="9540" height="7545">
+   <BOUNDS type="Window" left="-19470" top="-1635" width="9540" height="7545">
    </BOUNDS>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
@@ -24,6 +24,8 @@
    <PIN pinname="Actual Backbuffer Height" visible="1">
    </PIN>
    <PIN pinname="Background Color" visible="1" slicecount="1" values="|0.00000,0.00000,0.00000,1.00000|">
+   </PIN>
+   <PIN pinname="Presentation Interval" slicecount="1" values="default">
    </PIN>
    </NODE>
    <NODE systemname="IOBox (Node)" nodename="IOBox (Node)" componentmode="InABox" id="6" hiddenwhenlocked="0">
@@ -51,7 +53,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="2655" top="11205" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="0" top="0" width="8925" height="7620">
+   <BOUNDS type="Window" left="-28575" top="-1800" width="8925" height="7620">
    </BOUNDS>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
@@ -62,6 +64,8 @@
    <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="NONE">
    </PIN>
    <PIN pinname="View" visible="1">
+   </PIN>
+   <PIN pinname="Presentation Interval" slicecount="1" values="default">
    </PIN>
    </NODE>
    <NODE systemname="windowing" filename="sub\windowing.v4p" componentmode="Hidden" id="76" nodename="sub\windowing.v4p" hiddenwhenlocked="1">
@@ -78,7 +82,7 @@
    <PIN pinname="Debug In Destination" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="ManageShapes" filename="sub\ManageShapes.v4p" componentmode="Hidden" id="89" nodename="sub\ManageShapes.v4p" stayontop="0">
+   <NODE systemname="ManageShapes" filename="sub\ManageShapes.v4p" componentmode="InAWindow" id="89" nodename="sub\ManageShapes.v4p" stayontop="0">
    <BOUNDS type="Node" left="4425" top="4950" width="3825" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="4425" top="4950" width="4800" height="3600">
@@ -144,7 +148,7 @@
    </LINK>
    <PACK Name="imagepack" Version="0.1.0">
    </PACK>
-   <NODE systemname="PolygonEditor (2d)" filename="%VVVV%\addonpack\lib\nodes\modules\2d\PolygonEditor (2d).v4p" nodename="PolygonEditor (2d)" componentmode="Hidden" id="100">
+   <NODE systemname="PolygonEditor (2d)" filename="%VVVV%\addonpack\lib\nodes\modules\2d\PolygonEditor (2d).v4p" nodename="PolygonEditor (2d)" componentmode="InAWindow" id="100">
    <BOUNDS type="Node" left="4215" top="6930" width="2565" height="270">
    </BOUNDS>
    <PIN pinname="Cursor Type" visible="1">
@@ -155,7 +159,7 @@
    </PIN>
    <PIN pinname="Mouse" visible="1">
    </PIN>
-   <PIN pinname="Keyboard" visible="1">
+   <PIN pinname="Keyboard" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="VerticesXY" visible="1">
    </PIN>
@@ -188,6 +192,8 @@
    <PIN pinname="Snap Threshold" slicecount="1" values="0.06">
    </PIN>
    <PIN pinname="Selection Rect" visible="1">
+   </PIN>
+   <PIN pinname="Snap" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="PolygonEditor (2d)" filename="%VVVV%\addonpack\lib\nodes\modules\2d\PolygonEditor (2d).v4p" nodename="PolygonEditor (2d)" componentmode="Hidden" id="101">
@@ -234,6 +240,8 @@
    <PIN pinname="Force Shape Mode" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Selection Rect" visible="1">
+   </PIN>
+   <PIN pinname="Snap" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="89" srcpinname="VerticesXY Source" dstnodeid="100" dstpinname="VerticesXY">
@@ -354,12 +362,6 @@
    <LINKPOINT x="10570" y="3213">
    </LINKPOINT>
    <LINKPOINT x="12440" y="3073">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="129" srcpinname="Device" dstnodeid="100" dstpinname="Keyboard" linkstyle="VHV" hiddenwhenlocked="1">
-   <LINKPOINT x="11285" y="6815">
-   </LINKPOINT>
-   <LINKPOINT x="5560" y="6820">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="130" srcpinname="Device" dstnodeid="101" dstpinname="Keyboard" linkstyle="VHV" hiddenwhenlocked="1">
@@ -659,11 +661,13 @@
    </BOUNDS>
    <BOUNDS type="Box" left="6495" top="11205" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="18525" top="0" width="8490" height="7530">
+   <BOUNDS type="Window" left="-9915" top="-1650" width="8490" height="7530">
    </BOUNDS>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Destination">
+   </PIN>
+   <PIN pinname="Presentation Interval" slicecount="1" values="default">
    </PIN>
    </NODE>
    <LINK srcnodeid="157" srcpinname="Y Output Value" dstnodeid="76" dstpinname="Debug In Destination" linkstyle="VHV">
@@ -883,5 +887,67 @@
    <LINK srcnodeid="101" srcpinname="Selection Rect" dstnodeid="4" dstpinname="Selection Rect">
    </LINK>
    <LINK srcnodeid="100" srcpinname="Selection Rect" dstnodeid="34" dstpinname="Selection Rect">
+   </LINK>
+   <NODE systemname="KeyMatch (Keyboard)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="KeyMatch (Keyboard)" componentmode="Hidden" id="163" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="11385" top="3900" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Key Match" slicecount="1" values="S">
+   </PIN>
+   <PIN pinname="Keyboard" visible="1">
+   </PIN>
+   <PIN pinname="S" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="129" srcpinname="Device" dstnodeid="163" dstpinname="Keyboard" hiddenwhenlocked="1">
+   </LINK>
+   <NODE systemname="NOT (Boolean)" nodename="NOT (Boolean)" componentmode="Hidden" id="164" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="11370" top="4245" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="163" srcpinname="S" dstnodeid="164" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="164" srcpinname="Output" dstnodeid="100" dstpinname="Snap" linkstyle="VHV" hiddenwhenlocked="1">
+   <LINKPOINT x="11400" y="6810">
+   </LINKPOINT>
+   <LINKPOINT x="5745" y="6810">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="KeyMatch (Keyboard)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="KeyMatch (Keyboard)" componentmode="Hidden" id="166" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="12570" top="3855" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Key Match" slicecount="1" values="S">
+   </PIN>
+   <PIN pinname="Keyboard" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="S" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="NOT (Boolean)" nodename="NOT (Boolean)" componentmode="Hidden" id="165" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="12555" top="4200" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="166" srcpinname="S" dstnodeid="165" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="130" srcpinname="Device" dstnodeid="166" dstpinname="Keyboard" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="165" srcpinname="Output" dstnodeid="101" dstpinname="Snap" linkstyle="VHV" hiddenwhenlocked="1">
+   <LINKPOINT x="12585" y="6855">
+   </LINKPOINT>
+   <LINKPOINT x="8265" y="6855">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="129" srcpinname="Device" dstnodeid="100" dstpinname="Keyboard" linkstyle="VHV" hiddenwhenlocked="1">
+   <LINKPOINT x="11325" y="6780">
+   </LINKPOINT>
+   <LINKPOINT x="6255" y="6780">
+   </LINKPOINT>
    </LINK>
    </PATCH>
