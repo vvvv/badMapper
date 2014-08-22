@@ -235,7 +235,7 @@
    <NODE systemname="badMapper (DX9)" filename="badMapper (DX9).v4p" nodename="badMapper (DX9)" componentmode="InAWindow" id="28">
    <BOUNDS type="Node" left="840" top="4005" width="2835" height="270">
    </BOUNDS>
-   <BOUNDS type="Window" left="2190" top="1335" width="25605" height="14265">
+   <BOUNDS type="Window" left="1560" top="750" width="25605" height="14265">
    </BOUNDS>
    <PIN pinname="Filename" visible="1" slicecount="1" values="sub\file.txt">
    </PIN>
@@ -248,6 +248,8 @@
    <PIN pinname="Content" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Switch" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Chessboard Resolution" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="16" srcpinname="Y Output Value" dstnodeid="28" dstpinname="Save">
@@ -277,11 +279,11 @@
    <LINK srcnodeid="12" srcpinname="Texture Out" dstnodeid="28" dstpinname="Content">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="49" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="6735" top="3210" width="1305" height="270">
+   <BOUNDS type="Node" left="6885" top="3180" width="1305" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="6735" top="3210" width="1305" height="270">
+   <BOUNDS type="Box" left="6885" top="3180" width="1245" height="510">
    </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Chess Texture|">
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Chess Texture Resolution|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
@@ -318,4 +320,20 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="56" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="6000" top="3240" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6000" top="3240" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="9">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="56" srcpinname="Y Output Value" dstnodeid="28" dstpinname="Chessboard Resolution">
+   </LINK>
    </PATCH>
