@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha32.2.dtd" >
    <PATCH nodename="C:\Users\Domi\Documents\GitHub\badMapper\sub\PolygonLayer.v4p" systemname="PolygonLayer" filename="C:\Users\Domi\Documents\GitHub\badMapper-v3.0\sub\PolygonLayer.v4p">
-   <BOUNDS type="Window" left="-23385" top="690" width="17670" height="10740">
+   <BOUNDS type="Window" left="-22365" top="4170" width="17670" height="10740">
    </BOUNDS>
    <PACK Name="imagepack" Version="0.1.0">
    </PACK>
@@ -35,7 +35,7 @@
    </PIN>
    <PIN pinname="Layer 5" visible="1">
    </PIN>
-   <PIN pinname="Layer 4" visible="1">
+   <PIN pinname="Layer 4" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Layer 6" visible="1">
    </PIN>
@@ -213,23 +213,15 @@
    </PIN>
    <PIN pinname="BinSize" visible="1">
    </PIN>
-   <PIN pinname="Color" visible="1">
+   <PIN pinname="Color" visible="1" slicecount="1" values="|1.00000,1.00000,1.00000,0.00000|">
    </PIN>
-   <PIN pinname="Width" slicecount="8" visible="1" values="2.44,2.44,2.44,2.44,2.44,2.44,2.44,2.44">
+   <PIN pinname="Width" slicecount="1" visible="1" values="2.64">
    </PIN>
    <PIN pinname="Antialias" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Closed" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Enabled" slicecount="1" values="1">
-   </PIN>
-   </NODE>
-   <NODE id="8" systemname="RGB (Color Join)" nodename="RGB (Color Join)" componentmode="Hidden" hiddenwhenlocked="1">
-   <BOUNDS type="Node" left="12465" top="5925" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="Alpha" slicecount="1" values="1">
    </PIN>
    </NODE>
    <NODE id="7" systemname="xyZ (3d XY)" nodename="xyZ (3d XY)" componentmode="Hidden" hiddenwhenlocked="0">
@@ -267,9 +259,9 @@
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Color)" componentmode="InABox" id="5" systemname="IOBox (Color)">
-   <BOUNDS type="Box" left="6315" top="5145" width="720" height="420">
+   <BOUNDS type="Box" left="5775" top="5580" width="720" height="420">
    </BOUNDS>
-   <BOUNDS type="Node" left="6315" top="5145" width="0" height="0">
+   <BOUNDS type="Node" left="5775" top="5580" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Color Input" slicecount="1" visible="1" values="|1.00000,1.00000,1.00000,1.00000|">
    </PIN>
@@ -311,7 +303,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="3300" top="6060" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.00000,0.85885,1.00000,0.82484|">
+   <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.00000,0.67749,1.00000,0.82484|">
    </PIN>
    <PIN pinname="Color Output" visible="1">
    </PIN>
@@ -331,13 +323,11 @@
    </BOUNDS>
    <BOUNDS type="Node" left="3300" top="4965" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.71750,0.71750,0.71750,0.77941|">
+   <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.39390,0.39390,0.39390,0.77941|">
    </PIN>
    <PIN pinname="Color Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="8" srcpinname="Output" dstnodeid="9" dstpinname="Color">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="26" systemname="IOBox (String)">
    <BOUNDS type="Node" left="1140" top="480" width="7890" height="270">
    </BOUNDS>
@@ -419,14 +409,14 @@
    </PIN>
    <PIN pinname="Input 2" visible="1">
    </PIN>
+   <PIN pinname="Input Count" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Input 3" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="27" srcpinname="Output" dstnodeid="31" dstpinname="Input 1">
-   </LINK>
    <LINK srcnodeid="31" srcpinname="Output" dstnodeid="3" dstpinname="Select">
    </LINK>
    <LINK srcnodeid="31" srcpinname="Output" dstnodeid="4" dstpinname="Select">
-   </LINK>
-   <LINK srcnodeid="30" srcpinname="Output" dstnodeid="31" dstpinname="Input 2">
    </LINK>
    <NODE systemname="Group (EX9)" nodename="Group (EX9)" componentmode="Hidden" id="33">
    <BOUNDS type="Node" left="7920" top="8805" width="100" height="100">
@@ -573,5 +563,21 @@
    <LINK srcnodeid="1" srcpinname="Color Output" dstnodeid="23" dstpinname="Input 2">
    </LINK>
    <LINK srcnodeid="0" srcpinname="Color Output" dstnodeid="23" dstpinname="Input 1">
+   </LINK>
+   <NODE nodename="IOBox (Color)" componentmode="InABox" id="40" systemname="IOBox (Color)">
+   <BOUNDS type="Box" left="13410" top="5580" width="2250" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="13410" top="5580" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Color Input" slicecount="1" visible="1" values="|1.00000,1.00000,1.00000,1.00000|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="40" srcpinname="Color Output" dstnodeid="9" dstpinname="Color">
+   </LINK>
+   <LINK srcnodeid="30" srcpinname="Output" dstnodeid="31" dstpinname="Input 3">
+   </LINK>
+   <LINK srcnodeid="27" srcpinname="Output" dstnodeid="31" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="12" srcpinname="Tagged" dstnodeid="31" dstpinname="Input 1">
    </LINK>
    </PATCH>

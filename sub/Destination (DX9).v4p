@@ -459,9 +459,9 @@
    <LINK srcnodeid="213" srcpinname="Layer" dstnodeid="36" dstpinname="Layer 4">
    </LINK>
    <LINK srcnodeid="212" srcpinname="Output Node" dstnodeid="213" dstpinname="Mouse" linkstyle="VHV">
-   <LINKPOINT x="18230" y="9400">
+   <LINKPOINT x="14085" y="9840">
    </LINKPOINT>
-   <LINKPOINT x="11695" y="9515">
+   <LINKPOINT x="15840" y="9840">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="158" srcpinname="Output Enum" dstnodeid="213" dstpinname="Cursor Type" linkstyle="VHV">
@@ -511,7 +511,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="5460" top="9930" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="-23385" top="690" width="17670" height="10740">
+   <BOUNDS type="Window" left="-22365" top="4170" width="17670" height="10740">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -525,8 +525,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="205" srcpinname="Y Output Value" dstnodeid="228" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="228" srcpinname="Layer" dstnodeid="21" dstpinname="Layer 1">
    </LINK>
    <LINK srcnodeid="144" srcpinname="Y Output Value" dstnodeid="228" dstpinname="Destination Hover" linkstyle="VHV">
    <LINKPOINT x="21085" y="8775">
@@ -609,7 +607,7 @@
    <NODE systemname="Switch (Node Input)" nodename="Switch (Node Input)" componentmode="Hidden" id="237">
    <BOUNDS type="Node" left="675" top="13890" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input 1" visible="1">
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Input 2" visible="1">
    </PIN>
@@ -618,8 +616,6 @@
    <PIN pinname="Switch" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="33" srcpinname="Layer" dstnodeid="237" dstpinname="Input 1">
-   </LINK>
    <LINK srcnodeid="36" srcpinname="Layer" dstnodeid="237" dstpinname="Input 2">
    </LINK>
    <LINK srcnodeid="237" srcpinname="Output" dstnodeid="30" dstpinname="Input Node">
@@ -835,5 +831,9 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="252" srcpinname="Y Output Value" dstnodeid="213" dstpinname="Selection">
+   </LINK>
+   <LINK srcnodeid="228" srcpinname="Layer" dstnodeid="21" dstpinname="Layer 1">
+   </LINK>
+   <LINK srcnodeid="33" srcpinname="Layer" dstnodeid="237" dstpinname="Input 1">
    </LINK>
    </PATCH>
