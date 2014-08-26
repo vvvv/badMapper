@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha32.2.dtd" >
    <PATCH nodename="C:\Users\Domi\Documents\GitHub\badMapper\badMapper (DX9).v4p" systemname="badMapper_v3.0" filename="C:\Users\Domi\Documents\GitHub\badMapper-v3.0\badMapper_v3.0.v4p">
-   <BOUNDS type="Window" left="11025" top="1605" width="25605" height="13545">
+   <BOUNDS type="Window" left="1035" top="1560" width="24810" height="13545">
    </BOUNDS>
    <PACK Name="addonpack" Version="32.2.0">
    </PACK>
@@ -25,9 +25,9 @@
    </PIN>
    </NODE>
    <NODE systemname="windowing" filename="sub\windowing.v4p" componentmode="Hidden" id="76" nodename="sub\windowing.v4p" hiddenwhenlocked="1">
-   <BOUNDS type="Node" left="9615" top="2505" width="100" height="100">
+   <BOUNDS type="Node" left="9690" top="2505" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="9615" top="2505" width="4800" height="3600">
+   <BOUNDS type="Box" left="9690" top="2505" width="4800" height="3600">
    </BOUNDS>
    <BOUNDS type="Window" left="-16275" top="5340" width="13380" height="8595">
    </BOUNDS>
@@ -81,9 +81,9 @@
    </PIN>
    <PIN pinname="Remove Polygon Index" visible="1">
    </PIN>
-   <PIN pinname="Source PolygonEditor" visible="1">
+   <PIN pinname="Source PolygonEditor" visible="1" slicecount="36" values="6,4,1,0,1,0,0,12,2,1,1,2,1,1,2,1,1,2,1,1,0.1328125,0.32421875,0,0,-0.45703125,0.32421875,0,0,-0.45703125,0.75,0,0,0.1328125,0.75,0,0">
    </PIN>
-   <PIN pinname="Destination PolygonEditor" visible="1">
+   <PIN pinname="Destination PolygonEditor" visible="1" slicecount="36" values="6,4,0,0,0,0,0,12,2,1,1,2,1,1,2,1,1,2,1,1,0.25,-0.25,0,0,-0.25,-0.25,0,0,-0.25,0.25,0,0,0.25,0.25,0,0">
    </PIN>
    <PIN pinname="Source Hover" visible="1">
    </PIN>
@@ -105,149 +105,23 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="17" srcpinname="Device" dstnodeid="89" dstpinname="Mouse" hiddenwhenlocked="1" linkstyle="VHV">
-   <LINKPOINT x="6535" y="4965">
+   <LINKPOINT x="6855" y="4830">
    </LINKPOINT>
-   <LINKPOINT x="6035" y="4905">
+   <LINKPOINT x="7140" y="4830">
    </LINKPOINT>
    </LINK>
    <PACK Name="imagepack" Version="0.1.0">
    </PACK>
-   <NODE systemname="PolygonEditor (2d)" filename="%VVVV%\addonpack\lib\nodes\modules\2d\PolygonEditor (2d).v4p" nodename="PolygonEditor (2d)" componentmode="Hidden" id="100">
-   <BOUNDS type="Node" left="4215" top="6930" width="2565" height="270">
-   </BOUNDS>
-   <PIN pinname="Cursor Type" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="Initialize" slicecount="1" visible="1" values="0">
-   </PIN>
-   <PIN pinname="Mouse" visible="1">
-   </PIN>
-   <PIN pinname="Keyboard" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="VerticesXY" visible="1">
-   </PIN>
-   <PIN pinname="Insert" visible="1">
-   </PIN>
-   <PIN pinname="Remove Polygon Index" visible="1">
-   </PIN>
-   <PIN pinname="Evaluate" visible="-1" pintype="Input" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Vertex Bin Size" visible="1" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Bring To Front On Click" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Force Shape Mode" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Remove" visible="1">
-   </PIN>
-   <PIN pinname="Keyboard StepsizeXY" visible="1">
-   </PIN>
-   <PIN pinname="Quant Stepsize" visible="1">
-   </PIN>
-   <PIN pinname="Quantization" visible="1" slicecount="1" values="1">
-   </PIN>
-   <BOUNDS type="Window" left="3120" top="0" width="22335" height="15600">
-   </BOUNDS>
-   <BOUNDS type="Box" left="4215" top="6930">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="Snap Threshold" slicecount="1" values="0.06">
-   </PIN>
-   <PIN pinname="Selection Rect" visible="1">
-   </PIN>
-   <PIN pinname="Snap" visible="1">
-   </PIN>
-   <PIN pinname="Camera Transform" visible="1" slicecount="1" values="||">
-   </PIN>
-   </NODE>
-   <NODE systemname="PolygonEditor (2d)" filename="%VVVV%\addonpack\lib\nodes\modules\2d\PolygonEditor (2d).v4p" nodename="PolygonEditor (2d)" componentmode="Hidden" id="101">
-   <BOUNDS type="Node" left="6945" top="6930" width="2205" height="270">
-   </BOUNDS>
-   <PIN pinname="Cursor Type" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="Initialize" slicecount="1" visible="1" values="0">
-   </PIN>
-   <PIN pinname="Mouse" visible="1">
-   </PIN>
-   <PIN pinname="Keyboard" visible="1">
-   </PIN>
-   <PIN pinname="VerticesXY" visible="1">
-   </PIN>
-   <PIN pinname="Insert" visible="1">
-   </PIN>
-   <PIN pinname="Remove Polygon Index" visible="1">
-   </PIN>
-   <PIN pinname="Evaluate" visible="-1" pintype="Input" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Vertex Bin Size" visible="1" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Bring To Front On Click" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Remove" visible="1">
-   </PIN>
-   <BOUNDS type="Window" left="690" top="-240" width="24495" height="15840">
-   </BOUNDS>
-   <PIN pinname="Keyboard StepsizeXY" visible="1" slicecount="2" values="0.01,0.01">
-   </PIN>
-   <PIN pinname="Quant Stepsize" visible="1">
-   </PIN>
-   <PIN pinname="Quantization" visible="1" slicecount="1" values="0">
-   </PIN>
-   <BOUNDS type="Box" left="6945" top="6930">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="Snap Threshold" slicecount="1" values="0.06">
-   </PIN>
-   <PIN pinname="Force Shape Mode" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Selection Rect" visible="1">
-   </PIN>
-   <PIN pinname="Snap" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="89" srcpinname="VerticesXY Source" dstnodeid="100" dstpinname="VerticesXY">
-   </LINK>
-   <LINK srcnodeid="89" srcpinname="VerticesXY Destination" dstnodeid="101" dstpinname="VerticesXY">
-   </LINK>
-   <LINK srcnodeid="89" srcpinname="Insert Polygon" dstnodeid="100" dstpinname="Insert">
-   </LINK>
-   <LINK srcnodeid="89" srcpinname="Insert Polygon" dstnodeid="101" dstpinname="Insert">
-   </LINK>
-   <LINK srcnodeid="89" srcpinname="Remove Polygon Index" dstnodeid="100" dstpinname="Remove Polygon Index">
-   </LINK>
-   <LINK srcnodeid="89" srcpinname="Remove Polygon Index" dstnodeid="101" dstpinname="Remove Polygon Index">
-   </LINK>
-   <LINK srcnodeid="100" srcpinname="Output" dstnodeid="89" dstpinname="Source PolygonEditor" linkstyle="Bezier">
-   <LINKPOINT x="1695" y="6630">
-   </LINKPOINT>
-   <LINKPOINT x="4200" y="3870">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="101" srcpinname="Output" dstnodeid="89" dstpinname="Destination PolygonEditor" linkstyle="Bezier">
-   <LINKPOINT x="13645" y="8485">
-   </LINKPOINT>
-   <LINKPOINT x="7745" y="2645">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="89" srcpinname="Remove Polygon" dstnodeid="100" dstpinname="Remove">
-   </LINK>
-   <LINK srcnodeid="89" srcpinname="Remove Polygon" dstnodeid="101" dstpinname="Remove">
-   </LINK>
    <LINK srcnodeid="76" srcpinname="Source Active" dstnodeid="89" dstpinname="Source Hover" hiddenwhenlocked="1" linkstyle="VHV">
-   <LINKPOINT x="9350" y="5095">
+   <LINKPOINT x="9695" y="4545">
    </LINKPOINT>
-   <LINKPOINT x="4960" y="4910">
+   <LINKPOINT x="5020" y="4545">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="76" srcpinname="Destination Active" dstnodeid="89" dstpinname="Destination Hover" hiddenwhenlocked="1" linkstyle="VHV">
-   <LINKPOINT x="10265" y="5200">
+   <LINKPOINT x="10310" y="4680">
    </LINKPOINT>
-   <LINKPOINT x="5380" y="5015">
+   <LINKPOINT x="6625" y="4680">
    </LINKPOINT>
    </LINK>
    <NODE systemname="Mouse (Devices Window)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Mouse (Devices Window)" componentmode="Hidden" id="117">
@@ -270,12 +144,6 @@
    <BOUNDS type="Box" left="9840" top="3300">
    </BOUNDS>
    </NODE>
-   <LINK srcnodeid="118" srcpinname="Device" dstnodeid="101" dstpinname="Mouse" linkstyle="VHV" hiddenwhenlocked="1">
-   <LINKPOINT x="9845" y="6705">
-   </LINKPOINT>
-   <LINKPOINT x="8110" y="6705">
-   </LINKPOINT>
-   </LINK>
    <NODE systemname="Divide (Value)" nodename="Divide (Value)" componentmode="Hidden" id="125">
    <BOUNDS type="Node" left="1560" top="5055" width="435" height="270">
    </BOUNDS>
@@ -307,51 +175,35 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="76" srcpinname="Source Active" dstnodeid="129" dstpinname="Enabled" linkstyle="VHV" hiddenwhenlocked="1">
-   <LINKPOINT x="9655" y="3213">
+   <LINKPOINT x="9705" y="3213">
    </LINKPOINT>
-   <LINKPOINT x="11315" y="3073">
+   <LINKPOINT x="11340" y="3073">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="76" srcpinname="Destination Active" dstnodeid="130" dstpinname="Enabled" linkstyle="VHV" hiddenwhenlocked="1">
-   <LINKPOINT x="10570" y="3213">
+   <LINKPOINT x="10620" y="3213">
    </LINKPOINT>
-   <LINKPOINT x="12440" y="3073">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="130" srcpinname="Device" dstnodeid="101" dstpinname="Keyboard" linkstyle="VHV" hiddenwhenlocked="1">
-   <LINKPOINT x="12405" y="6810">
-   </LINKPOINT>
-   <LINKPOINT x="8295" y="6810">
+   <LINKPOINT x="12465" y="3073">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="125" srcpinname="Output" dstnodeid="100" dstpinname="StepsizeXY" hiddenwhenlocked="1" linkstyle="VHV">
-   <LINKPOINT x="1675" y="7335">
-   </LINKPOINT>
-   <LINKPOINT x="6410" y="7035">
-   </LINKPOINT>
-   </LINK>
-   <NODE systemname="Save" filename="sub\Save.v4p" componentmode="Hidden" id="136" nodename="sub\Save.v4p" stayontop="1" hiddenwhenlocked="1">
+   <NODE systemname="SaveXml" filename="sub\SaveXml.v4p" componentmode="Hidden" id="136" nodename="sub\SaveXml.v4p" stayontop="1" hiddenwhenlocked="1">
    <BOUNDS type="Node" left="14010" top="9885" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="14010" top="9885" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="3840" top="4290" width="9000" height="6000">
+   <BOUNDS type="Window" left="150" top="570" width="9660" height="8265">
    </BOUNDS>
-   <PIN pinname="PolygonEditor Source" visible="1">
+   <PIN pinname="PolygonEditor Source" visible="1" slicecount="36" values="6,4,1,0,1,0,0,12,2,1,1,2,1,1,2,1,1,2,1,1,0.1328125,0.32421875,0,0,-0.45703125,0.32421875,0,0,-0.45703125,0.75,0,0,0.1328125,0.75,0,0">
    </PIN>
-   <PIN pinname="PolygonEditor Destination" visible="1">
+   <PIN pinname="PolygonEditor Destination" visible="1" slicecount="36" values="6,4,0,0,0,0,0,12,2,1,1,2,1,1,2,1,1,2,1,1,0.25,-0.25,0,0,-0.25,-0.25,0,0,-0.25,0.25,0,0,0.25,0.25,0,0">
    </PIN>
-   <PIN pinname="Filename" visible="1" slicecount="1" values="badMapper_SaveFile.txt">
+   <PIN pinname="Filename" visible="1" slicecount="1" values="SaveFile\SaveFile.xml">
    </PIN>
    <PIN pinname="Save" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Success" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="100" srcpinname="Output" dstnodeid="136" dstpinname="PolygonEditor Source" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="101" srcpinname="Output" dstnodeid="136" dstpinname="PolygonEditor Destination" hiddenwhenlocked="1">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="138" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="19035" top="1320" width="480" height="480">
    </BOUNDS>
@@ -397,9 +249,9 @@
    <LINK srcnodeid="140" srcpinname="Output String" dstnodeid="136" dstpinname="Filename">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="141" systemname="IOBox (String)" hiddenwhenlocked="1">
-   <BOUNDS type="Node" left="14685" top="9900" width="3120" height="270">
+   <BOUNDS type="Node" left="15120" top="9855" width="3120" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="14685" top="9900" width="3120" height="270">
+   <BOUNDS type="Box" left="15120" top="9855" width="3120" height="270">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; load is inside ManageShapes|">
    </PIN>
@@ -441,10 +293,6 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="138" srcpinname="Y Output Value" dstnodeid="136" dstpinname="Save">
-   </LINK>
-   <LINK srcnodeid="89" srcpinname="Initialize" dstnodeid="101" dstpinname="Initialize">
-   </LINK>
-   <LINK srcnodeid="89" srcpinname="Initialize" dstnodeid="100" dstpinname="Initialize">
    </LINK>
    <PACK Name="VVVV.Packs" Version="0.1.0">
    </PACK>
@@ -555,9 +403,9 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="157" srcpinname="Y Output Value" dstnodeid="76" dstpinname="Debug In Destination" linkstyle="VHV">
-   <LINKPOINT x="20025" y="2225">
+   <LINKPOINT x="20050" y="2225">
    </LINKPOINT>
-   <LINKPOINT x="10350" y="2245">
+   <LINKPOINT x="10400" y="2245">
    </LINKPOINT>
    </LINK>
    <NODE systemname="IOBox (Node)" nodename="IOBox (Node)" componentmode="InABox" id="160">
@@ -570,20 +418,6 @@
    <PIN pinname="Pin Visibility" slicecount="1" values="OnlyInspector">
    </PIN>
    <PIN pinname="Output Node" visible="1">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="161" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="21465" top="5670" width="3795" height="270">
-   </BOUNDS>
-   <BOUNDS type="Box" left="21465" top="5670" width="4035" height="930">
-   </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|Shape Mode turns itself off randomly&cr;&lf;&cr;&lf;reason -&gt; i am mixing mouseEvents and mouseStates, using togEdge like a mouseevent (which is wrong)|">
-   </PIN>
-   <PIN pinname="Output String" visible="0">
-   </PIN>
-   <PIN pinname="Show Grid" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
    <NODE systemname="Source (DX9)" filename="sub\Source (DX9).v4p" componentmode="Hidden" id="34" nodename="Source (DX9)">
@@ -601,7 +435,7 @@
    </PIN>
    <PIN pinname="Window Hover" visible="1">
    </PIN>
-   <PIN pinname="Cursor type" visible="1">
+   <PIN pinname="Cursor type" visible="1" slicecount="1" values="(nil)">
    </PIN>
    <PIN pinname="Shapes Mouseover Source" visible="1">
    </PIN>
@@ -613,7 +447,7 @@
    </PIN>
    <PIN pinname="ID" visible="-1" pintype="Output">
    </PIN>
-   <PIN pinname="PolygonEditor Source" visible="1">
+   <PIN pinname="PolygonEditor Source" visible="1" slicecount="36" values="6,4,1,0,1,0,0,12,2,1,1,2,1,1,2,1,1,2,1,1,0.1328125,0.32421875,0,0,-0.45703125,0.32421875,0,0,-0.45703125,0.75,0,0,0.1328125,0.75,0,0">
    </PIN>
    <PIN pinname="PolygonEditor Destination" visible="1">
    </PIN>
@@ -621,7 +455,7 @@
    </PIN>
    <PIN pinname="Destination Hover" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Selection Rect" visible="1">
+   <PIN pinname="Selection Rect" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Texture Size" visible="1">
    </PIN>
@@ -639,10 +473,6 @@
    </LINKPOINT>
    <LINKPOINT x="4610" y="9145">
    </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="100" srcpinname="Cursor Type" dstnodeid="34" dstpinname="Cursor type">
-   </LINK>
-   <LINK srcnodeid="100" srcpinname="Output" dstnodeid="34" dstpinname="PolygonEditor Source">
    </LINK>
    <LINK srcnodeid="117" srcpinname="Device" dstnodeid="34" dstpinname="Mouse" linkstyle="VHV" hiddenwhenlocked="0">
    <LINKPOINT x="8610" y="8775">
@@ -685,7 +515,7 @@
    </PIN>
    <PIN pinname="Shape Vertex Count" visible="1">
    </PIN>
-   <PIN pinname="Cursor type" visible="1">
+   <PIN pinname="Cursor type" visible="1" slicecount="1" values="(nil)">
    </PIN>
    <PIN pinname="Vertex Selected" visible="1">
    </PIN>
@@ -701,9 +531,9 @@
    </PIN>
    <PIN pinname="Polygon Mouseover Destination" visible="1">
    </PIN>
-   <PIN pinname="PolygonEditor Source" visible="1">
+   <PIN pinname="PolygonEditor Source" visible="1" slicecount="36" values="6,4,1,0,1,0,0,12,2,1,1,2,1,1,2,1,1,2,1,1,0.1328125,0.32421875,0,0,-0.45703125,0.32421875,0,0,-0.45703125,0.75,0,0,0.1328125,0.75,0,0">
    </PIN>
-   <PIN pinname="PolygonEditor Destination" visible="1">
+   <PIN pinname="PolygonEditor Destination" visible="1" slicecount="36" values="6,4,0,0,0,0,0,12,2,1,1,2,1,1,2,1,1,2,1,1,0.25,-0.25,0,0,-0.25,-0.25,0,0,-0.25,0.25,0,0,0.25,0.25,0,0">
    </PIN>
    <PIN pinname="Mouse" visible="1">
    </PIN>
@@ -715,7 +545,7 @@
    </PIN>
    <PIN pinname="Background Image Transform" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Selection Rect" visible="1">
+   <PIN pinname="Selection Rect" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Destination Hover" visible="1">
    </PIN>
@@ -725,12 +555,6 @@
    </LINKPOINT>
    <LINKPOINT x="7975" y="8955">
    </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="101" srcpinname="Cursor Type" dstnodeid="4" dstpinname="Cursor type">
-   </LINK>
-   <LINK srcnodeid="101" srcpinname="Output" dstnodeid="4" dstpinname="PolygonEditor Destination">
-   </LINK>
-   <LINK srcnodeid="100" srcpinname="Output" dstnodeid="4" dstpinname="PolygonEditor Source">
    </LINK>
    <LINK srcnodeid="157" srcpinname="Y Output Value" dstnodeid="4" dstpinname="Debug In Destination" linkstyle="VHV">
    <LINKPOINT x="20065" y="8810">
@@ -749,14 +573,6 @@
    </LINKPOINT>
    <LINKPOINT x="7965" y="9360">
    </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="89" srcpinname="Polygon Source" dstnodeid="100" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="89" srcpinname="Polygon Destination" dstnodeid="101" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="101" srcpinname="Selection Rect" dstnodeid="4" dstpinname="Selection Rect">
-   </LINK>
-   <LINK srcnodeid="100" srcpinname="Selection Rect" dstnodeid="34" dstpinname="Selection Rect">
    </LINK>
    <NODE systemname="KeyMatch (Keyboard)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="KeyMatch (Keyboard)" componentmode="Hidden" id="163" hiddenwhenlocked="1">
    <BOUNDS type="Node" left="11385" top="3900" width="100" height="100">
@@ -780,12 +596,6 @@
    </NODE>
    <LINK srcnodeid="163" srcpinname="S" dstnodeid="164" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="164" srcpinname="Output" dstnodeid="100" dstpinname="Snap" linkstyle="VHV" hiddenwhenlocked="1">
-   <LINKPOINT x="11400" y="6810">
-   </LINKPOINT>
-   <LINKPOINT x="5745" y="6810">
-   </LINKPOINT>
-   </LINK>
    <NODE systemname="KeyMatch (Keyboard)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="KeyMatch (Keyboard)" componentmode="Hidden" id="166" hiddenwhenlocked="1">
    <BOUNDS type="Node" left="12570" top="3855" width="100" height="100">
    </BOUNDS>
@@ -807,18 +617,6 @@
    <LINK srcnodeid="166" srcpinname="S" dstnodeid="165" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="130" srcpinname="Device" dstnodeid="166" dstpinname="Keyboard" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="165" srcpinname="Output" dstnodeid="101" dstpinname="Snap" linkstyle="VHV" hiddenwhenlocked="1">
-   <LINKPOINT x="12585" y="6855">
-   </LINKPOINT>
-   <LINKPOINT x="8265" y="6855">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="129" srcpinname="Device" dstnodeid="100" dstpinname="Keyboard" linkstyle="VHV" hiddenwhenlocked="1">
-   <LINKPOINT x="11325" y="6780">
-   </LINKPOINT>
-   <LINKPOINT x="6255" y="6780">
-   </LINKPOINT>
    </LINK>
    <NODE systemname="Switch (Node Input)" nodename="Switch (Node Input)" componentmode="Hidden" id="171">
    <BOUNDS type="Node" left="570" top="8190" width="100" height="100">
@@ -898,12 +696,6 @@
    <PIN pinname="Key Mode" slicecount="1" values="DownOnly">
    </PIN>
    </NODE>
-   <LINK srcnodeid="117" srcpinname="Device" dstnodeid="100" dstpinname="Mouse" linkstyle="VHV">
-   <LINKPOINT x="8630" y="6720">
-   </LINKPOINT>
-   <LINKPOINT x="5815" y="6720">
-   </LINKPOINT>
-   </LINK>
    <LINK srcnodeid="152" srcpinname="XY" dstnodeid="34" dstpinname="Texture Size">
    </LINK>
    <LINK srcnodeid="6" srcpinname="Output Node" dstnodeid="185" dstpinname="Content">
@@ -929,7 +721,7 @@
    </BOUNDS>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
-   <PIN pinname="Minimum Zoom" slicecount="1" values="1">
+   <PIN pinname="Minimum Zoom" slicecount="1" values="0.75">
    </PIN>
    <BOUNDS type="Window" left="10620" top="7125" width="8370" height="7485">
    </BOUNDS>
@@ -939,15 +731,9 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="76" srcpinname="Source Active" dstnodeid="145" dstpinname="Enabled" linkstyle="VHV" hiddenwhenlocked="1">
-   <LINKPOINT x="9625" y="10300">
+   <LINKPOINT x="9675" y="10300">
    </LINKPOINT>
-   <LINKPOINT x="4055" y="10160">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="145" srcpinname="Transform Out" dstnodeid="100" dstpinname="Camera Transform" linkstyle="Bezier">
-   <LINKPOINT x="15" y="11730">
-   </LINKPOINT>
-   <LINKPOINT x="4470" y="2940">
+   <LINKPOINT x="4080" y="10160">
    </LINKPOINT>
    </LINK>
    <NODE systemname="Keyboard (Devices Window)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Keyboard (Devices Window)" componentmode="Hidden" id="189">
@@ -1045,9 +831,9 @@
    <LINK srcnodeid="145" srcpinname="Transform Out" dstnodeid="199" dstpinname="Input Node">
    </LINK>
    <LINK srcnodeid="193" srcpinname="Y Output Value" dstnodeid="76" dstpinname="Renderer Handles" linkstyle="VHV">
-   <LINKPOINT x="345" y="1380">
+   <LINKPOINT x="370" y="1380">
    </LINKPOINT>
-   <LINKPOINT x="9645" y="1380">
+   <LINKPOINT x="9695" y="1380">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="76" srcpinname="Source Hover" dstnodeid="117" dstpinname="Enabled">
@@ -1055,27 +841,145 @@
    <LINK srcnodeid="76" srcpinname="Destination Hover" dstnodeid="118" dstpinname="Enabled">
    </LINK>
    <LINK srcnodeid="76" srcpinname="Destination Hover" dstnodeid="34" dstpinname="Destination Hover" linkstyle="VHV" hiddenwhenlocked="1">
-   <LINKPOINT x="10560" y="9465">
+   <LINKPOINT x="10610" y="9465">
    </LINKPOINT>
-   <LINKPOINT x="4845" y="9465">
+   <LINKPOINT x="4870" y="9465">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="76" srcpinname="Source Hover" dstnodeid="34" dstpinname="Source Hover" linkstyle="VHV" hiddenwhenlocked="1">
-   <LINKPOINT x="9945" y="9345">
+   <LINKPOINT x="9995" y="9345">
    </LINKPOINT>
-   <LINKPOINT x="4695" y="9345">
+   <LINKPOINT x="4720" y="9345">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="76" srcpinname="Destination Hover" dstnodeid="4" dstpinname="Destination Hover" linkstyle="VHV">
-   <LINKPOINT x="10560" y="9045">
+   <LINKPOINT x="10610" y="9045">
    </LINKPOINT>
-   <LINKPOINT x="7635" y="9045">
+   <LINKPOINT x="7660" y="9045">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="76" srcpinname="Source Hover" dstnodeid="4" dstpinname="Source Hover" linkstyle="VHV">
-   <LINKPOINT x="9945" y="8925">
+   <LINKPOINT x="9995" y="8925">
    </LINKPOINT>
-   <LINKPOINT x="7485" y="8925">
+   <LINKPOINT x="7510" y="8925">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="PolygonEditor (2d)" filename="%VVVV%\addonpack\lib\nodes\modules\2d\PolygonEditor (2d).v4p" nodename="PolygonEditor (2d)" componentmode="Hidden" id="200">
+   <BOUNDS type="Node" left="4215" top="6930" width="2565" height="270">
+   </BOUNDS>
+   <BOUNDS type="Window" left="3120" top="0" width="22335" height="15600">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4215" top="6930">
+   </BOUNDS>
+   <PIN pinname="Force Shape Mode" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Quantization" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="89" srcpinname="Insert Polygon" dstnodeid="200" dstpinname="Insert">
+   </LINK>
+   <LINK srcnodeid="89" srcpinname="Remove Polygon Index" dstnodeid="200" dstpinname="Remove Polygon Index">
+   </LINK>
+   <LINK srcnodeid="200" srcpinname="Output" dstnodeid="89" dstpinname="Source PolygonEditor" linkstyle="Bezier">
+   <LINKPOINT x="1695" y="6630">
+   </LINKPOINT>
+   <LINKPOINT x="4200" y="3870">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="89" srcpinname="Remove Polygon" dstnodeid="200" dstpinname="Remove">
+   </LINK>
+   <LINK srcnodeid="125" srcpinname="Output" dstnodeid="200" dstpinname="StepsizeXY" hiddenwhenlocked="1" linkstyle="VHV">
+   <LINKPOINT x="1590" y="6810">
+   </LINKPOINT>
+   <LINKPOINT x="6525" y="6810">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="200" srcpinname="Output" dstnodeid="136" dstpinname="PolygonEditor Source" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="89" srcpinname="Initialize" dstnodeid="200" dstpinname="Initialize">
+   </LINK>
+   <LINK srcnodeid="200" srcpinname="Cursor Type" dstnodeid="34" dstpinname="Cursor type">
+   </LINK>
+   <LINK srcnodeid="200" srcpinname="Output" dstnodeid="34" dstpinname="PolygonEditor Source">
+   </LINK>
+   <LINK srcnodeid="200" srcpinname="Output" dstnodeid="4" dstpinname="PolygonEditor Source">
+   </LINK>
+   <LINK srcnodeid="89" srcpinname="Polygon Source" dstnodeid="200" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="200" srcpinname="Selection Rect" dstnodeid="34" dstpinname="Selection Rect">
+   </LINK>
+   <LINK srcnodeid="164" srcpinname="Output" dstnodeid="200" dstpinname="Snap" linkstyle="VHV" hiddenwhenlocked="1">
+   <LINKPOINT x="11400" y="6375">
+   </LINKPOINT>
+   <LINKPOINT x="5610" y="6375">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="129" srcpinname="Device" dstnodeid="200" dstpinname="Keyboard" linkstyle="VHV" hiddenwhenlocked="1">
+   <LINKPOINT x="11325" y="6525">
+   </LINKPOINT>
+   <LINKPOINT x="6060" y="6525">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="117" srcpinname="Device" dstnodeid="200" dstpinname="Mouse" linkstyle="VHV">
+   <LINKPOINT x="8630" y="6720">
+   </LINKPOINT>
+   <LINKPOINT x="5815" y="6720">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="145" srcpinname="Transform Out" dstnodeid="200" dstpinname="Camera Transform" linkstyle="Bezier">
+   <LINKPOINT x="15" y="11730">
+   </LINKPOINT>
+   <LINKPOINT x="4470" y="2940">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="PolygonEditor (2d)" filename="%VVVV%\addonpack\lib\nodes\modules\2d\PolygonEditor (2d).v4p" nodename="PolygonEditor (2d)" componentmode="Hidden" id="201">
+   <BOUNDS type="Node" left="6945" top="6930" width="2205" height="270">
+   </BOUNDS>
+   <BOUNDS type="Window" left="690" top="-240" width="24495" height="15840">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6945" top="6930">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="89" srcpinname="Insert Polygon" dstnodeid="201" dstpinname="Insert">
+   </LINK>
+   <LINK srcnodeid="89" srcpinname="Remove Polygon Index" dstnodeid="201" dstpinname="Remove Polygon Index">
+   </LINK>
+   <LINK srcnodeid="201" srcpinname="Output" dstnodeid="89" dstpinname="Destination PolygonEditor" linkstyle="Bezier">
+   <LINKPOINT x="13645" y="8485">
+   </LINKPOINT>
+   <LINKPOINT x="7745" y="2645">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="89" srcpinname="Remove Polygon" dstnodeid="201" dstpinname="Remove">
+   </LINK>
+   <LINK srcnodeid="118" srcpinname="Device" dstnodeid="201" dstpinname="Mouse" linkstyle="VHV" hiddenwhenlocked="1">
+   <LINKPOINT x="9870" y="6750">
+   </LINKPOINT>
+   <LINKPOINT x="8340" y="6750">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="130" srcpinname="Device" dstnodeid="201" dstpinname="Keyboard" linkstyle="VHV" hiddenwhenlocked="1">
+   <LINKPOINT x="12450" y="6840">
+   </LINKPOINT>
+   <LINKPOINT x="8535" y="6840">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="201" srcpinname="Output" dstnodeid="136" dstpinname="PolygonEditor Destination" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="89" srcpinname="Initialize" dstnodeid="201" dstpinname="Initialize">
+   </LINK>
+   <LINK srcnodeid="201" srcpinname="Cursor Type" dstnodeid="4" dstpinname="Cursor type">
+   </LINK>
+   <LINK srcnodeid="201" srcpinname="Output" dstnodeid="4" dstpinname="PolygonEditor Destination">
+   </LINK>
+   <LINK srcnodeid="89" srcpinname="Polygon Destination" dstnodeid="201" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="201" srcpinname="Selection Rect" dstnodeid="4" dstpinname="Selection Rect">
+   </LINK>
+   <LINK srcnodeid="165" srcpinname="Output" dstnodeid="201" dstpinname="Snap" linkstyle="VHV" hiddenwhenlocked="1">
+   <LINKPOINT x="12585" y="6615">
+   </LINKPOINT>
+   <LINKPOINT x="8145" y="6615">
    </LINKPOINT>
    </LINK>
    </PATCH>
