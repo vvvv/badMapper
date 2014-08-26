@@ -783,7 +783,7 @@
    </BOUNDS>
    <PIN pinname="Sort After Z-Index">
    </PIN>
-   <PIN pinname="Sort By Z-Index" slicecount="1" values="1">
+   <PIN pinname="Sort By Z-Index" slicecount="1" values="1" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="205" srcpinname="Y Output Value" dstnodeid="204" dstpinname="Input">
@@ -811,7 +811,7 @@
    </PIN>
    <BOUNDS type="Box" left="3090" top="1455">
    </BOUNDS>
-   <PIN pinname="Sort By Z-Index" slicecount="1" values="1">
+   <PIN pinname="Sort By Z-Index" slicecount="1" values="0" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="206" srcpinname="Y Output Value" dstnodeid="207" dstpinname="Input">
@@ -825,5 +825,41 @@
    </LINKPOINT>
    <LINKPOINT x="705" y="13725">
    </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="253" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="10845" top="1125" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="10845" top="1125" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="253" srcpinname="Y Output Value" dstnodeid="204" dstpinname="Sort By Z-Index">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="254" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="4725" top="870" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4725" top="870" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="254" srcpinname="Y Output Value" dstnodeid="207" dstpinname="Sort By Z-Index">
    </LINK>
    </PATCH>

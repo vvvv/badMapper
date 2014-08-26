@@ -735,6 +735,8 @@
    </PIN>
    <PIN pinname="Tagged" visible="1">
    </PIN>
+   <PIN pinname="Sort By Z-Index" slicecount="1" values="0">
+   </PIN>
    </NODE>
    <LINK srcnodeid="92" srcpinname="Y Output Value" dstnodeid="91" dstpinname="Input">
    </LINK>

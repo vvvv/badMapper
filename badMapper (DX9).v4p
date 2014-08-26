@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha32.2.dtd" >
    <PATCH nodename="C:\Users\Domi\Documents\GitHub\badMapper\badMapper (DX9).v4p" systemname="badMapper_v3.0" filename="C:\Users\Domi\Documents\GitHub\badMapper-v3.0\badMapper_v3.0.v4p">
-   <BOUNDS type="Window" left="1560" top="750" width="25605" height="14265">
+   <BOUNDS type="Window" left="1560" top="750" width="25605" height="13545">
    </BOUNDS>
    <PACK Name="addonpack" Version="32.2.0">
    </PACK>
@@ -9,7 +9,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="9375" top="11205" width="4875" height="3900">
    </BOUNDS>
-   <BOUNDS type="Window" left="-18795" top="-1800" width="9540" height="8850">
+   <BOUNDS type="Window" left="10035" top="0" width="10215" height="7470">
    </BOUNDS>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
@@ -53,7 +53,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="2655" top="11205" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="-28800" top="-1800" width="8850" height="9060">
+   <BOUNDS type="Window" left="0" top="0" width="9960" height="7470">
    </BOUNDS>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
@@ -609,7 +609,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="6495" top="11205" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="-9915" top="-1650" width="8490" height="7530">
+   <BOUNDS type="Window" left="20310" top="0" width="8490" height="7530">
    </BOUNDS>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
@@ -973,6 +973,8 @@
    </PIN>
    <PIN pinname="Keyboard" visible="1" slicecount="1" values="||">
    </PIN>
+   <PIN pinname="Key Mode" slicecount="1" values="DownOnly">
+   </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="190" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="12945" top="5115" width="480" height="480">
@@ -1011,14 +1013,6 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="152" srcpinname="XY" dstnodeid="185" dstpinname="Content SizeXY">
-   </LINK>
-   <LINK srcnodeid="188" srcpinname="C" dstnodeid="171" dstpinname="Switch">
-   </LINK>
-   <LINK srcnodeid="188" srcpinname="C" dstnodeid="34" dstpinname="Enable Chess Texture" linkstyle="VHV">
-   <LINKPOINT x="450" y="9375">
-   </LINKPOINT>
-   <LINKPOINT x="3885" y="9375">
-   </LINKPOINT>
    </LINK>
    <NODE systemname="Camera (Transform 2d)" filename="%VVVV%\lib\nodes\modules\Transform\Camera (Transform 2d).v4p" nodename="Camera (Transform 2d)" componentmode="Hidden" id="145">
    <BOUNDS type="Node" left="4005" top="10260" width="100" height="100">
@@ -1064,6 +1058,24 @@
    <LINKPOINT x="390" y="12375">
    </LINKPOINT>
    <LINKPOINT x="2850" y="2010">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="Toggle (Animation)" nodename="Toggle (Animation)" componentmode="Hidden" id="191">
+   <BOUNDS type="Node" left="435" top="6810" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="188" srcpinname="C" dstnodeid="191" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="191" srcpinname="Output" dstnodeid="171" dstpinname="Switch">
+   </LINK>
+   <LINK srcnodeid="191" srcpinname="Output" dstnodeid="34" dstpinname="Enable Chess Texture" linkstyle="VHV">
+   <LINKPOINT x="465" y="9390">
+   </LINKPOINT>
+   <LINKPOINT x="3885" y="9390">
    </LINKPOINT>
    </LINK>
    </PATCH>

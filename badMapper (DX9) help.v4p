@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha32.2.dtd" >
    <PATCH nodename="C:\Users\Domi\Documents\GitHub\badMapper\badMapper (DX9) help.v4p" systemname="badMapper3 (DX9) help" filename="C:\Users\Domi\Documents\GitHub\badMapper-v3.0\badMapper3 (DX9) help.v4p">
-   <BOUNDS type="Window" left="-13140" top="6285" width="9720" height="6735">
+   <BOUNDS type="Window" left="8955" top="7290" width="9720" height="6735">
    </BOUNDS>
    <PACK Name="addonpack" Version="32.2.0">
    </PACK>
@@ -232,10 +232,10 @@
    </NODE>
    <LINK srcnodeid="34" srcpinname="Output String" dstnodeid="33" dstpinname="Filename">
    </LINK>
-   <NODE systemname="badMapper (DX9)" filename="badMapper (DX9).v4p" nodename="badMapper (DX9)" componentmode="InAWindow" id="28">
+   <NODE systemname="badMapper (DX9)" filename="badMapper (DX9).v4p" nodename="badMapper (DX9)" componentmode="Hidden" id="28">
    <BOUNDS type="Node" left="840" top="4005" width="2835" height="270">
    </BOUNDS>
-   <BOUNDS type="Window" left="1560" top="750" width="25605" height="14265">
+   <BOUNDS type="Window" left="1560" top="750" width="25605" height="13545">
    </BOUNDS>
    <PIN pinname="Filename" visible="1" slicecount="1" values="sub\file.txt">
    </PIN>
@@ -325,7 +325,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="6000" top="3240" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="9">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="17">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
