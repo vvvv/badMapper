@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha32.2.dtd" >
    <PATCH nodename="C:\Users\Domi\Documents\GitHub\badMapper\badMapper (DX9) help.v4p" systemname="badMapper3 (DX9) help" filename="C:\Users\Domi\Documents\GitHub\badMapper-v3.0\badMapper3 (DX9) help.v4p">
-   <BOUNDS type="Window" left="8955" top="7290" width="9720" height="6735">
+   <BOUNDS type="Window" left="8895" top="6300" width="12450" height="6735">
    </BOUNDS>
    <PACK Name="addonpack" Version="32.2.0">
    </PACK>
@@ -235,7 +235,7 @@
    <NODE systemname="badMapper (DX9)" filename="badMapper (DX9).v4p" nodename="badMapper (DX9)" componentmode="Hidden" id="28">
    <BOUNDS type="Node" left="840" top="4005" width="2835" height="270">
    </BOUNDS>
-   <BOUNDS type="Window" left="1560" top="750" width="25605" height="13545">
+   <BOUNDS type="Window" left="11025" top="1605" width="25605" height="13545">
    </BOUNDS>
    <PIN pinname="Filename" visible="1" slicecount="1" values="sub\file.txt">
    </PIN>
@@ -250,6 +250,18 @@
    <PIN pinname="Switch" visible="1" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Chessboard Resolution" visible="1">
+   </PIN>
+   <PIN pinname="Source" visible="1">
+   </PIN>
+   <PIN pinname="Source Camera" visible="1">
+   </PIN>
+   <PIN pinname="Renderer Handles" visible="1">
+   </PIN>
+   <PIN pinname="Destination Preview" visible="1">
+   </PIN>
+   <PIN pinname="Destination" visible="1">
+   </PIN>
+   <PIN pinname="Save/Load Success" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="16" srcpinname="Y Output Value" dstnodeid="28" dstpinname="Save">
@@ -307,9 +319,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="51" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="6390" top="4770" width="4485" height="270">
+   <BOUNDS type="Node" left="6450" top="4770" width="4485" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="6390" top="4770" width="2400" height="510">
+   <BOUNDS type="Box" left="6450" top="4770" width="2400" height="510">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|Press c to enable Chessboard Texture to help fight distortion|">
    </PIN>
@@ -335,5 +347,107 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="56" srcpinname="Y Output Value" dstnodeid="28" dstpinname="Chessboard Resolution">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="57" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="6450" top="5310" width="2760" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6450" top="5310" width="2760" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Press c to toggle chessboard texture|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="65">
+   <BOUNDS type="Node" left="795" top="4785" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="795" top="4785" width="2400" height="1800">
+   </BOUNDS>
+   <BOUNDS type="Window" left="8985" top="930" width="6240" height="5010">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   <PIN pinname="View" visible="1">
+   </PIN>
+   <PIN pinname="Window Handle" visible="1" pintype="Output">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="28" srcpinname="Source" dstnodeid="65" dstpinname="Layers">
+   </LINK>
+   <LINK srcnodeid="28" srcpinname="Source Camera" dstnodeid="65" dstpinname="View">
+   </LINK>
+   <NODE systemname="Cons (Spreads)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Cons (Spreads)" componentmode="Hidden" id="66">
+   <BOUNDS type="Node" left="1125" top="5460" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Count" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Input 3" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="66" srcpinname="Output" dstnodeid="28" dstpinname="Renderer Handles" linkstyle="Bezier">
+   <LINKPOINT x="740" y="6565">
+   </LINKPOINT>
+   <LINKPOINT x="370" y="3620">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="65" srcpinname="Window Handle" dstnodeid="66" dstpinname="Input 1">
+   </LINK>
+   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="71">
+   <BOUNDS type="Node" left="2595" top="4875" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2595" top="4875" width="2400" height="1800">
+   </BOUNDS>
+   <BOUNDS type="Window" left="15315" top="975" width="6240" height="5010">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   <PIN pinname="Window Handle" visible="1" pintype="Output">
+   </PIN>
+   </NODE>
+   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="72">
+   <BOUNDS type="Node" left="4500" top="4875" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4500" top="4875" width="2400" height="1800">
+   </BOUNDS>
+   <BOUNDS type="Window" left="21975" top="870" width="6240" height="5010">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   <PIN pinname="Window Handle" visible="1" pintype="Output">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="28" srcpinname="Destination Preview" dstnodeid="71" dstpinname="Layers">
+   </LINK>
+   <LINK srcnodeid="28" srcpinname="Destination" dstnodeid="72" dstpinname="Layers">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="73" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="5670" top="4290" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5670" top="4290" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="28" srcpinname="Save/Load Success" dstnodeid="73" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="71" srcpinname="Window Handle" dstnodeid="66" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="72" srcpinname="Window Handle" dstnodeid="66" dstpinname="Input 3">
    </LINK>
    </PATCH>
