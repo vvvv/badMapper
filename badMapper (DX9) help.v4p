@@ -101,7 +101,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="10500" top="3870" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="|SaveFile\New Text Document.txt|">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="SaveFile\SaveFile.xml">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="file.txt">
    </PIN>
