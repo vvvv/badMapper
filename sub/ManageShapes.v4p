@@ -639,7 +639,7 @@
    </PIN>
    <PIN pinname="Success" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="10875" top="2055" width="8670" height="5625">
+   <BOUNDS type="Window" left="5910" top="3390" width="10755" height="8115">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="92" srcpinname="Output String" dstnodeid="94" dstpinname="Filename">

@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha32.2.dtd" >
    <PATCH nodename="C:\Users\Domi\Documents\GitHub\badMapper\badMapper (DX9).v4p" systemname="badMapper_v3.0" filename="C:\Users\Domi\Documents\GitHub\badMapper-v3.0\badMapper_v3.0.v4p">
-   <BOUNDS type="Window" left="1035" top="6045" width="24810" height="9060">
+   <BOUNDS type="Window" left="1170" top="555" width="24750" height="13620">
    </BOUNDS>
    <PACK Name="addonpack" Version="32.2.0">
    </PACK>
@@ -187,11 +187,11 @@
    </LINKPOINT>
    </LINK>
    <NODE systemname="SaveXml" filename="sub\SaveXml.v4p" componentmode="Hidden" id="136" nodename="sub\SaveXml.v4p" stayontop="1" hiddenwhenlocked="1">
-   <BOUNDS type="Node" left="14010" top="9885" width="100" height="100">
+   <BOUNDS type="Node" left="13755" top="10230" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="14010" top="9885" width="4800" height="3600">
+   <BOUNDS type="Box" left="13755" top="10230" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="150" top="570" width="9660" height="8265">
+   <BOUNDS type="Window" left="-15495" top="1665" width="9660" height="8265">
    </BOUNDS>
    <PIN pinname="PolygonEditor Source" visible="1" slicecount="36" values="6,4,1,0,1,0,0,12,2,1,1,2,1,1,2,1,1,2,1,1,0.1328125,0.32421875,0,0,-0.45703125,0.32421875,0,0,-0.45703125,0.75,0,0,0.1328125,0.75,0,0">
    </PIN>
@@ -246,12 +246,16 @@
    <PIN pinname="Output String" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="140" srcpinname="Output String" dstnodeid="136" dstpinname="Filename">
+   <LINK srcnodeid="140" srcpinname="Output String" dstnodeid="136" dstpinname="Filename" linkstyle="VHV">
+   <LINKPOINT x="17885" y="9655">
+   </LINKPOINT>
+   <LINKPOINT x="14425" y="9770">
+   </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="141" systemname="IOBox (String)" hiddenwhenlocked="1">
-   <BOUNDS type="Node" left="15120" top="9855" width="3120" height="270">
+   <BOUNDS type="Node" left="14865" top="10200" width="3120" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="15120" top="9855" width="3120" height="270">
+   <BOUNDS type="Box" left="14865" top="10200" width="3120" height="270">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; load is inside ManageShapes|">
    </PIN>
@@ -292,7 +296,11 @@
    <LINKPOINT x="8925" y="4810">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="138" srcpinname="Y Output Value" dstnodeid="136" dstpinname="Save">
+   <LINK srcnodeid="138" srcpinname="Y Output Value" dstnodeid="136" dstpinname="Save" linkstyle="VHV">
+   <LINKPOINT x="18980" y="9820">
+   </LINKPOINT>
+   <LINKPOINT x="14710" y="9935">
+   </LINKPOINT>
    </LINK>
    <PACK Name="VVVV.Packs" Version="0.1.0">
    </PACK>
@@ -425,7 +433,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3540" top="9555" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="8505" top="1170" width="21345" height="13335">
+   <BOUNDS type="Window" left="2460" top="885" width="21345" height="13335">
    </BOUNDS>
    <PIN pinname="Source" visible="1">
    </PIN>
@@ -491,7 +499,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="6495" top="9555" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="495" top="7020" width="29040" height="8580">
+   <BOUNDS type="Window" left="1635" top="975" width="29040" height="11820">
    </BOUNDS>
    <PIN pinname="Destination Selection" visible="1">
    </PIN>
@@ -939,6 +947,10 @@
    </BOUNDS>
    <BOUNDS type="Box" left="6945" top="6930">
    </BOUNDS>
+   <PIN pinname="Quantization" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Force Shape Mode" slicecount="1" values="0">
+   </PIN>
    </NODE>
    <LINK srcnodeid="89" srcpinname="Insert Polygon" dstnodeid="201" dstpinname="Insert">
    </LINK>
