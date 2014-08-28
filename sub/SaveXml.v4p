@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha32.2.dtd" >
    <PATCH nodename="C:\Users\Domi\Documents\GitHub\badMapper\sub\SaveXml.v4p" systemname="SaveXml" filename="C:\Users\Domi\Documents\GitHub\badMapper\sub\SaveXml.v4p">
-   <BOUNDS type="Window" left="-15495" top="1665" width="9660" height="8265">
+   <BOUNDS type="Window" left="10770" top="2520" width="9660" height="8265">
    </BOUNDS>
    <PACK Name="imagepack" Version="0.1.0">
    </PACK>
@@ -233,7 +233,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1515" top="2115" width="15630" height="8880">
    </BOUNDS>
-   <BOUNDS type="Window" left="705" top="5505" width="16140" height="8235">
+   <BOUNDS type="Window" left="3735" top="2520" width="17430" height="11130">
    </BOUNDS>
    <PIN pinname="PolygonEditor Input" visible="1">
    </PIN>

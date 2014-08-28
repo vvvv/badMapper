@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45debug32.2.dtd" >
-   <PATCH nodename="C:\Users\joreg\Documents\repos\badMapper\badMapper (DX9) help.v4p" systemname="badMapper3 (DX9) help" filename="C:\Users\Domi\Documents\GitHub\badMapper-v3.0\badMapper3 (DX9) help.v4p">
-   <BOUNDS type="Window" left="3540" top="7020" width="17460" height="8310">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha32.2.dtd" >
+   <PATCH nodename="C:\Users\Domi\Documents\GitHub\badMapper\badMapper (DX9) help.v4p" systemname="badMapper3 (DX9) help" filename="C:\Users\Domi\Documents\GitHub\badMapper-v3.0\badMapper3 (DX9) help.v4p">
+   <BOUNDS type="Window" left="5835" top="5565" width="17550" height="8310">
    </BOUNDS>
    <PACK Name="addonpack" Version="32.2.0">
    </PACK>
@@ -293,7 +293,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="14535" top="4365" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="19">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="154">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -307,7 +307,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="9375" top="6060" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="0" top="0" width="9705" height="7020">
+   <BOUNDS type="Window" left="195" top="0" width="8010" height="6975">
    </BOUNDS>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
@@ -339,13 +339,15 @@
    </BOUNDS>
    <BOUNDS type="Box" left="11085" top="6060" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="9735" top="0" width="9360" height="6975">
+   <BOUNDS type="Window" left="8175" top="0" width="10725" height="6975">
    </BOUNDS>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Window Handle" visible="1" pintype="Output">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Destination Preview|">
+   </PIN>
+   <PIN pinname="View" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="72">
@@ -644,10 +646,10 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
-   <NODE id="28" componentmode="Hidden" systemname="badMapper (DX9)" filename="badMapper (DX9).v4p" nodename="badMapper (DX9)">
+   <NODE id="28" componentmode="InAWindow" systemname="badMapper (DX9)" filename="badMapper (DX9).v4p" nodename="badMapper (DX9)">
    <BOUNDS type="Node" left="9375" top="5130" width="2835" height="270">
    </BOUNDS>
-   <BOUNDS type="Window" left="1170" top="555" width="24750" height="13620">
+   <BOUNDS type="Window" left="2820" top="780" width="24750" height="13845">
    </BOUNDS>
    <PIN pinname="Filename" visible="1">
    </PIN>
@@ -674,6 +676,8 @@
    <PIN pinname="Destination" visible="1">
    </PIN>
    <PIN pinname="Save/Load Success" visible="1">
+   </PIN>
+   <PIN pinname="Destination Preview Camera" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="28" srcpinname="Destination" dstnodeid="72" dstpinname="Layers">
@@ -703,5 +707,7 @@
    <LINK srcnodeid="17" srcpinname="Y Output Value" dstnodeid="28" dstpinname="Load">
    </LINK>
    <LINK srcnodeid="16" srcpinname="Y Output Value" dstnodeid="28" dstpinname="Save">
+   </LINK>
+   <LINK srcnodeid="28" srcpinname="Destination Preview Camera" dstnodeid="71" dstpinname="View">
    </LINK>
    </PATCH>
