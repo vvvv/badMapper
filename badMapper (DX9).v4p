@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha32.2.dtd" >
    <PATCH nodename="C:\Users\Domi\Documents\GitHub\badMapper\badMapper (DX9).v4p" systemname="badMapper_v3.0" filename="C:\Users\Domi\Documents\GitHub\badMapper-v3.0\badMapper_v3.0.v4p">
-   <BOUNDS type="Window" left="2820" top="780" width="24750" height="13845">
+   <BOUNDS type="Window" left="2790" top="780" width="26010" height="13845">
    </BOUNDS>
    <PACK Name="addonpack" Version="32.2.0">
    </PACK>
@@ -107,7 +107,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="13755" top="10230" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="10770" top="2520" width="9660" height="8265">
+   <BOUNDS type="Window" left="10770" top="2520" width="8895" height="6495">
    </BOUNDS>
    <PIN pinname="PolygonEditor Source" visible="1" slicecount="70" values="12,4,0,0,1,0,0,4,1,1,1,0,0,24,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,-0.296875,-0.16015625,0,0,-0.796875,-0.16015625,0,0,-0.796875,0.33984375,0,0,-0.296875,0.33984375,0,0,0.38671875,-0.0546875,0,0,0.23046875,-0.0546875,0,0,0.23046875,0.13671875,0,0,0.38671875,0.13671875,0,0">
    </PIN>
@@ -441,7 +441,7 @@
    </LINKPOINT>
    </LINK>
    <NODE systemname="KeyMatch (Keyboard)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="KeyMatch (Keyboard)" componentmode="Hidden" id="163" hiddenwhenlocked="1">
-   <BOUNDS type="Node" left="13215" top="3900" width="100" height="100">
+   <BOUNDS type="Node" left="13305" top="3900" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Key Match" slicecount="1" values="S">
    </PIN>
@@ -453,7 +453,7 @@
    <LINK srcnodeid="129" srcpinname="Device" dstnodeid="163" dstpinname="Keyboard" hiddenwhenlocked="1">
    </LINK>
    <NODE systemname="NOT (Boolean)" nodename="NOT (Boolean)" componentmode="Hidden" id="164" hiddenwhenlocked="1">
-   <BOUNDS type="Node" left="13200" top="4245" width="100" height="100">
+   <BOUNDS type="Node" left="13290" top="4245" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -463,7 +463,7 @@
    <LINK srcnodeid="163" srcpinname="S" dstnodeid="164" dstpinname="Input">
    </LINK>
    <NODE systemname="KeyMatch (Keyboard)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="KeyMatch (Keyboard)" componentmode="Hidden" id="166" hiddenwhenlocked="1">
-   <BOUNDS type="Node" left="14400" top="3855" width="100" height="100">
+   <BOUNDS type="Node" left="14460" top="3855" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Key Match" slicecount="1" values="S">
    </PIN>
@@ -473,7 +473,7 @@
    </PIN>
    </NODE>
    <NODE systemname="NOT (Boolean)" nodename="NOT (Boolean)" componentmode="Hidden" id="165" hiddenwhenlocked="1">
-   <BOUNDS type="Node" left="14385" top="4200" width="100" height="100">
+   <BOUNDS type="Node" left="14445" top="4200" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -843,7 +843,7 @@
    </LINKPOINT>
    </LINK>
    <NODE systemname="Switch (Node Input)" nodename="Switch (Node Input)" componentmode="Hidden" id="210">
-   <BOUNDS type="Node" left="6330" top="1185" width="100" height="100">
+   <BOUNDS type="Node" left="5640" top="3555" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1" slicecount="1" values="||">
    </PIN>
@@ -864,7 +864,11 @@
    </NODE>
    <LINK srcnodeid="209" srcpinname="Transform Out" dstnodeid="211" dstpinname="Input Node">
    </LINK>
-   <LINK srcnodeid="76" srcpinname="Destination Preview Hover" dstnodeid="210" dstpinname="Switch">
+   <LINK srcnodeid="76" srcpinname="Destination Preview Hover" dstnodeid="210" dstpinname="Switch" hiddenwhenlocked="1" linkstyle="VHV">
+   <LINKPOINT x="9780" y="3360">
+   </LINKPOINT>
+   <LINKPOINT x="5670" y="3360">
+   </LINKPOINT>
    </LINK>
    <LINK srcnodeid="209" srcpinname="Transform Out" dstnodeid="210" dstpinname="Input 2">
    </LINK>
@@ -913,9 +917,9 @@
    <LINK srcnodeid="200" srcpinname="Selection Rect" dstnodeid="34" dstpinname="Selection Rect">
    </LINK>
    <LINK srcnodeid="164" srcpinname="Output" dstnodeid="200" dstpinname="Snap" linkstyle="VHV" hiddenwhenlocked="1">
-   <LINKPOINT x="12620" y="6375">
+   <LINKPOINT x="12680" y="6375">
    </LINKPOINT>
-   <LINKPOINT x="6220" y="6375">
+   <LINKPOINT x="6250" y="6375">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="129" srcpinname="Device" dstnodeid="200" dstpinname="Keyboard" linkstyle="VHV" hiddenwhenlocked="1">
@@ -949,9 +953,9 @@
    <LINK srcnodeid="207" srcpinname="Remove Polygon Index" dstnodeid="200" dstpinname="Remove Polygon Index">
    </LINK>
    <LINK srcnodeid="200" srcpinname="Output" dstnodeid="207" dstpinname="Source PolygonEditor" linkstyle="Bezier">
-   <LINKPOINT x="1695" y="6630">
+   <LINKPOINT x="1740" y="7470">
    </LINKPOINT>
-   <LINKPOINT x="4200" y="3870">
+   <LINKPOINT x="4005" y="3900">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="207" srcpinname="Remove Polygon" dstnodeid="200" dstpinname="Remove">
@@ -1007,9 +1011,9 @@
    <LINK srcnodeid="201" srcpinname="Selection Rect" dstnodeid="4" dstpinname="Selection Rect">
    </LINK>
    <LINK srcnodeid="165" srcpinname="Output" dstnodeid="201" dstpinname="Snap" linkstyle="VHV" hiddenwhenlocked="1">
-   <LINKPOINT x="13805" y="6615">
+   <LINKPOINT x="13845" y="6615">
    </LINKPOINT>
-   <LINKPOINT x="8755" y="6615">
+   <LINKPOINT x="8775" y="6615">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="207" srcpinname="Insert Polygon" dstnodeid="201" dstpinname="Insert">
@@ -1017,9 +1021,9 @@
    <LINK srcnodeid="207" srcpinname="Remove Polygon Index" dstnodeid="201" dstpinname="Remove Polygon Index">
    </LINK>
    <LINK srcnodeid="201" srcpinname="Output" dstnodeid="207" dstpinname="Destination PolygonEditor" linkstyle="Bezier">
-   <LINKPOINT x="13645" y="8485">
+   <LINKPOINT x="12780" y="9210">
    </LINKPOINT>
-   <LINKPOINT x="7745" y="2645">
+   <LINKPOINT x="7500" y="1905">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="207" srcpinname="Remove Polygon" dstnodeid="201" dstpinname="Remove">
@@ -1063,9 +1067,9 @@
    <LINK srcnodeid="212" srcpinname="T" dstnodeid="213" dstpinname="Switch">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="214" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="1950" top="6705" width="285" height="240">
+   <BOUNDS type="Box" left="2055" top="6825" width="285" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1950" top="6705" width="0" height="0">
+   <BOUNDS type="Node" left="2055" top="6825" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
@@ -1079,9 +1083,9 @@
    <LINK srcnodeid="214" srcpinname="Y Output Value" dstnodeid="213" dstpinname="Input 1">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="215" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="2460" top="6780" width="285" height="240">
+   <BOUNDS type="Box" left="2460" top="6825" width="285" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="2460" top="6780" width="0" height="0">
+   <BOUNDS type="Node" left="2460" top="6825" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.2">
    </PIN>
@@ -1093,21 +1097,5 @@
    <LINK srcnodeid="215" srcpinname="Y Output Value" dstnodeid="213" dstpinname="Input 2">
    </LINK>
    <LINK srcnodeid="213" srcpinname="Output" dstnodeid="4" dstpinname="Preview Alpha Value">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="216" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="8640" top="3420" width="480" height="480">
-   </BOUNDS>
-   <BOUNDS type="Node" left="8640" top="3420" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Toggle">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="76" srcpinname="Source Hover" dstnodeid="216" dstpinname="Y Input Value">
    </LINK>
    </PATCH>
