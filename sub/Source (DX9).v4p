@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha32.2.dtd" >
    <PATCH nodename="C:\Users\Domi\Documents\GitHub\badMapper\sub\Source (DX9).v4p" systemname="source" filename="C:\Users\Domi\Documents\GitHub\badMapper-v3.0\sub\source.v4p">
-   <BOUNDS type="Window" left="2460" top="885" width="21345" height="13335">
+   <BOUNDS type="Window" left="14730" top="2535" width="21345" height="13845">
    </BOUNDS>
    <PACK Name="addonpack" Version="32.2.0">
    </PACK>
@@ -279,9 +279,9 @@
    <PACK Name="imagepack" Version="0.1.0">
    </PACK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="92" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="7065" top="750" width="795" height="240">
+   <BOUNDS type="Box" left="6825" top="660" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="7065" top="750" width="0" height="0">
+   <BOUNDS type="Node" left="6825" top="660" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -480,22 +480,6 @@
    </NODE>
    <LINK srcnodeid="128" srcpinname="Y Output Value" dstnodeid="115" dstpinname="Texture Pixelsize">
    </LINK>
-   <NODE systemname="Mix (EX9.Texture Mixer)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Mixer\Mix\Mix (EX9.Texture Mixer).v4p" nodename="Mix (EX9.Texture Mixer)" componentmode="Hidden" id="129">
-   <BOUNDS type="Node" left="1935" top="8055" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input 2" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Input 1" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="Fader" slicecount="1" visible="1" values="0.5">
-   </PIN>
-   <PIN pinname="Control" visible="1" slicecount="1" values="||">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="9" srcpinname="Output Node" dstnodeid="129" dstpinname="Input 1">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="143" systemname="IOBox (String)">
    <BOUNDS type="Node" left="2400" top="9240" width="2835" height="270">
    </BOUNDS>
@@ -510,128 +494,6 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="147" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="2235" top="7725" width="285" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="2235" top="7725" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.5">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="IOBox (Node)" nodename="IOBox (Node)" componentmode="InABox" id="148">
-   <BOUNDS type="Node" left="2025" top="2880" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="2025" top="2880" width="795" height="240">
-   </BOUNDS>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Chess Texture|">
-   </PIN>
-   <PIN pinname="Output Node" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="Quad (DX9)" nodename="Quad (DX9)" componentmode="Hidden" id="152">
-   <BOUNDS type="Node" left="2505" top="6075" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Transform" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Layer" visible="1">
-   </PIN>
-   <PIN pinname="Render State" visible="1" slicecount="1" values="||">
-   </PIN>
-   </NODE>
-   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="Hidden" id="151">
-   <BOUNDS type="Node" left="2490" top="6870" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="2490" top="6870" width="2400" height="1800">
-   </BOUNDS>
-   <BOUNDS type="Window" left="-8445" top="7650" width="6240" height="5010">
-   </BOUNDS>
-   <PIN pinname="Layers" visible="1">
-   </PIN>
-   <PIN pinname="EX9 Out" visible="1">
-   </PIN>
-   <PIN pinname="Background Color" slicecount="1" values="|0.30584,0.30584,0.30584,1.00000|">
-   </PIN>
-   <PIN pinname="Backbuffer Width" visible="1">
-   </PIN>
-   <PIN pinname="Backbuffer Height" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="152" srcpinname="Layer" dstnodeid="151" dstpinname="Layers">
-   </LINK>
-   <NODE systemname="DX9Texture (EX9.Texture)" nodename="DX9Texture (EX9.Texture)" componentmode="Hidden" id="150">
-   <BOUNDS type="Node" left="2475" top="7305" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Source" visible="1">
-   </PIN>
-   <PIN pinname="Texture Out" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="151" srcpinname="EX9 Out" dstnodeid="150" dstpinname="Source">
-   </LINK>
-   <LINK srcnodeid="150" srcpinname="Texture Out" dstnodeid="129" dstpinname="Control">
-   </LINK>
-   <LINK srcnodeid="148" srcpinname="Output Node" dstnodeid="129" dstpinname="Input 2">
-   </LINK>
-   <LINK srcnodeid="60" srcpinname="Transform Out" dstnodeid="152" dstpinname="Transform">
-   </LINK>
-   <NODE systemname="Vector (2d Split)" nodename="Vector (2d Split)" componentmode="Hidden" id="153">
-   <BOUNDS type="Node" left="2985" top="6450" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="XY" visible="1">
-   </PIN>
-   <PIN pinname="X" visible="1">
-   </PIN>
-   <PIN pinname="Y" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="128" srcpinname="Y Output Value" dstnodeid="153" dstpinname="XY" linkstyle="PolyLine">
-   </LINK>
-   <LINK srcnodeid="153" srcpinname="X" dstnodeid="151" dstpinname="Backbuffer Width">
-   </LINK>
-   <LINK srcnodeid="153" srcpinname="Y" dstnodeid="151" dstpinname="Backbuffer Height">
-   </LINK>
-   <NODE systemname="Switch (Node Input)" nodename="Switch (Node Input)" componentmode="Hidden" id="154">
-   <BOUNDS type="Node" left="1425" top="8550" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input 1" visible="1">
-   </PIN>
-   <PIN pinname="Input 2" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="Switch" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="9" srcpinname="Output Node" dstnodeid="154" dstpinname="Input 1">
-   </LINK>
-   <LINK srcnodeid="129" srcpinname="Output" dstnodeid="154" dstpinname="Input 2">
-   </LINK>
-   <LINK srcnodeid="154" srcpinname="Output" dstnodeid="23" dstpinname="Texture">
-   </LINK>
-   <LINK srcnodeid="147" srcpinname="Y Output Value" dstnodeid="129" dstpinname="Fader">
-   </LINK>
-   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="155">
-   <BOUNDS type="Node" left="3255" top="2775" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="3255" top="2775" width="480" height="480">
-   </BOUNDS>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Toggle">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Enable Chess Texture|">
-   </PIN>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="155" srcpinname="Y Output Value" dstnodeid="154" dstpinname="Switch" linkstyle="PolyLine">
-   </LINK>
    <NODE systemname="BoundingBox (PolygonEditor DX9)" filename="%VVVV%\addonpack\lib\nodes\modules\2d\PolygonEditor\BoundingBox (PolygonEditor DX9).v4p" nodename="BoundingBox (PolygonEditor DX9)" componentmode="Hidden" id="120">
    <BOUNDS type="Node" left="6270" top="9135" width="100" height="100">
    </BOUNDS>
@@ -761,5 +623,7 @@
    </LINKPOINT>
    <LINKPOINT x="5345" y="10845">
    </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="9" srcpinname="Output Node" dstnodeid="23" dstpinname="Texture">
    </LINK>
    </PATCH>
