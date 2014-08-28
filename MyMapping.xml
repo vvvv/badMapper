@@ -1,36 +1,18 @@
 <badMapper_PolygonEditors>
   <Source>
-    <Vertex X="0.08203" Y="0.12500" Tagged="0"></Vertex>
-    <Vertex X="-0.41797" Y="0.12500" Tagged="0"></Vertex>
-    <Vertex X="-0.41797" Y="0.62500" Tagged="0"></Vertex>
-    <Vertex X="0.08203" Y="0.62500" Tagged="0"></Vertex>
-    <Vertex X="0.58203" Y="0.12500" Tagged="0"></Vertex>
-    <Vertex X="0.08203" Y="0.12500" Tagged="0"></Vertex>
-    <Vertex X="0.08203" Y="0.62500" Tagged="0"></Vertex>
-    <Vertex X="0.58203" Y="0.62500" Tagged="0"></Vertex>
-    <Vertex X="0.91797" Y="-0.82813" Tagged="0"></Vertex>
-    <Vertex X="-0.71875" Y="-0.82813" Tagged="0"></Vertex>
-    <Vertex X="-0.71875" Y="-0.67188" Tagged="0"></Vertex>
-    <Vertex X="0.91797" Y="-0.67188" Tagged="0"></Vertex>
-    <Polygon VertexBinSize="4" Tagged="0" ZIndex="0" ShapeMode="1" Rotation="0.00000"></Polygon>
-    <Polygon VertexBinSize="4" Tagged="0" ZIndex="1" ShapeMode="1" Rotation="0.00000"></Polygon>
-    <Polygon VertexBinSize="4" Tagged="0" ZIndex="2" ShapeMode="1" Rotation="0.00000"></Polygon>
+    <Polygon Tagged="1" ZIndex="0" ShapeMode="1" Rotation="0.00000">
+      <Vertex X="0.15234" Y="-0.18359" Tagged="0"></Vertex>
+      <Vertex X="-0.56250" Y="-0.18359" Tagged="0"></Vertex>
+      <Vertex X="-0.56250" Y="0.64063" Tagged="0"></Vertex>
+      <Vertex X="0.15234" Y="0.64063" Tagged="0"></Vertex>
+    </Polygon>
   </Source>
   <Destination>
-    <Vertex X="0.62145" Y="0.10995" Tagged="0"></Vertex>
-    <Vertex X="0.25742" Y="0.07479" Tagged="0"></Vertex>
-    <Vertex X="0.25412" Y="0.59359" Tagged="0"></Vertex>
-    <Vertex X="0.60827" Y="0.76053" Tagged="0"></Vertex>
-    <Vertex X="0.91056" Y="0.06289" Tagged="0"></Vertex>
-    <Vertex X="0.62145" Y="0.10995" Tagged="0"></Vertex>
-    <Vertex X="0.60827" Y="0.76053" Tagged="0"></Vertex>
-    <Vertex X="0.91386" Y="0.65231" Tagged="0"></Vertex>
-    <Vertex X="0.86967" Y="-0.27069" Tagged="1"></Vertex>
-    <Vertex X="-0.02568" Y="-0.46840" Tagged="0"></Vertex>
-    <Vertex X="-0.02239" Y="-0.27896" Tagged="0"></Vertex>
-    <Vertex X="0.85319" Y="-0.13778" Tagged="0"></Vertex>
-    <Polygon VertexBinSize="4" Tagged="0" ZIndex="1" ShapeMode="0" Rotation="0.00000"></Polygon>
-    <Polygon VertexBinSize="4" Tagged="0" ZIndex="0" ShapeMode="0" Rotation="0.00000"></Polygon>
-    <Polygon VertexBinSize="4" Tagged="0" ZIndex="2" ShapeMode="0" Rotation="0.00000"></Polygon>
+    <Polygon Tagged="1" ZIndex="0" ShapeMode="0" Rotation="0.00000">
+      <Vertex X="0.05706" Y="-0.85789" Tagged="0"></Vertex>
+      <Vertex X="-0.44294" Y="-0.85789" Tagged="0"></Vertex>
+      <Vertex X="-0.13323" Y="-0.37180" Tagged="0"></Vertex>
+      <Vertex X="0.05706" Y="-0.35789" Tagged="0"></Vertex>
+    </Polygon>
   </Destination>
 </badMapper_PolygonEditors>

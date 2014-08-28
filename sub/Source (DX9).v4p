@@ -1,11 +1,11 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha32.2.dtd" >
    <PATCH nodename="C:\Users\Domi\Documents\GitHub\badMapper\sub\Source (DX9).v4p" systemname="source" filename="C:\Users\Domi\Documents\GitHub\badMapper-v3.0\sub\source.v4p">
-   <BOUNDS type="Window" left="14730" top="2535" width="21345" height="13845">
+   <BOUNDS type="Window" left="2235" top="885" width="21345" height="13845">
    </BOUNDS>
    <PACK Name="addonpack" Version="32.2.0">
    </PACK>
    <NODE systemname="Group (EX9)" nodename="Group (EX9)" componentmode="Hidden" id="41">
-   <BOUNDS type="Node" left="4140" top="9990" width="8580" height="270">
+   <BOUNDS type="Node" left="4140" top="9990" width="10515" height="270">
    </BOUNDS>
    <PIN pinname="Layer 1" visible="1" slicecount="1" values="||">
    </PIN>
@@ -157,7 +157,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Bounds (Spectral Vector)" filename="%VVVV%\addonpack\lib\nodes\plugins\VectorSized.dll" nodename="Bounds (Spectral Vector)" componentmode="Hidden" id="59">
-   <BOUNDS type="Node" left="4500" top="4410" width="705" height="270">
+   <BOUNDS type="Node" left="4500" top="6630" width="705" height="270">
    </BOUNDS>
    <PIN pinname="Vector Size" slicecount="1" values="2">
    </PIN>
@@ -171,7 +171,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Transform (Transform 2d Vector)" nodename="Transform (Transform 2d Vector)" componentmode="Hidden" id="60">
-   <BOUNDS type="Node" left="4305" top="5130" width="870" height="270">
+   <BOUNDS type="Node" left="4305" top="7350" width="870" height="270">
    </BOUNDS>
    <PIN pinname="TranslateXY" visible="1">
    </PIN>
@@ -199,9 +199,9 @@
    <LINK srcnodeid="62" srcpinname="Output" dstnodeid="56" dstpinname="Color">
    </LINK>
    <NODE systemname="IOBox (Enumerations)" nodename="IOBox (Enumerations)" componentmode="InABox" id="65">
-   <BOUNDS type="Node" left="12855" top="1590" width="100" height="100">
+   <BOUNDS type="Node" left="14805" top="1650" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="12855" top="1590" width="960" height="240">
+   <BOUNDS type="Box" left="14805" top="1650" width="960" height="240">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Cursor type|">
    </PIN>
@@ -271,9 +271,9 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="65" srcpinname="Output Enum" dstnodeid="64" dstpinname="Cursor Type" linkstyle="VHV">
-   <LINKPOINT x="13100" y="10775">
+   <LINKPOINT x="14400" y="10815">
    </LINKPOINT>
-   <LINKPOINT x="5215" y="10735">
+   <LINKPOINT x="5865" y="10755">
    </LINKPOINT>
    </LINK>
    <PACK Name="imagepack" Version="0.1.0">
@@ -299,9 +299,9 @@
    <LINK srcnodeid="64" srcpinname="Layer" dstnodeid="22" dstpinname="Layer 3">
    </LINK>
    <NODE systemname="IOBox (Node)" nodename="IOBox (Node)" componentmode="InABox" id="98">
-   <BOUNDS type="Node" left="17640" top="1275" width="100" height="100">
+   <BOUNDS type="Node" left="19590" top="1335" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="17640" top="1275" width="795" height="240">
+   <BOUNDS type="Box" left="19590" top="1335" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="Mouse">
    </PIN>
@@ -309,9 +309,9 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="98" srcpinname="Output Node" dstnodeid="64" dstpinname="Mouse" linkstyle="VHV">
-   <LINKPOINT x="18430" y="10460">
+   <LINKPOINT x="19730" y="10500">
    </LINKPOINT>
-   <LINKPOINT x="4490" y="10555">
+   <LINKPOINT x="5140" y="10575">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="17" srcpinname="Output" dstnodeid="41" dstpinname="Layer 3">
@@ -319,9 +319,9 @@
    <LINK srcnodeid="56" srcpinname="Layer" dstnodeid="41" dstpinname="Layer 1">
    </LINK>
    <NODE systemname="DisplayInfo" filename="DisplayInfo.v4p" componentmode="Hidden" id="115" nodename="DisplayInfo.v4p" stayontop="0">
-   <BOUNDS type="Node" left="12675" top="8085" width="100" height="100">
+   <BOUNDS type="Node" left="11970" top="7575" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="12675" top="8085" width="4800" height="3600">
+   <BOUNDS type="Box" left="11970" top="7575" width="4800" height="3600">
    </BOUNDS>
    <BOUNDS type="Window" left="2655" top="1950" width="21270" height="12480">
    </BOUNDS>
@@ -367,9 +367,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Color)" componentmode="InABox" id="119" systemname="IOBox (Color)">
-   <BOUNDS type="Box" left="7365" top="8430" width="570" height="435">
+   <BOUNDS type="Box" left="7755" top="8535" width="570" height="435">
    </BOUNDS>
-   <BOUNDS type="Node" left="7365" top="8430" width="0" height="0">
+   <BOUNDS type="Node" left="7755" top="8535" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.00000,0.00000,0.00000,1.00000|">
    </PIN>
@@ -405,9 +405,9 @@
    <LINK srcnodeid="124" srcpinname="Y Output Value" dstnodeid="123" dstpinname="XYZ">
    </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="125">
-   <BOUNDS type="Node" left="14040" top="1290" width="100" height="100">
+   <BOUNDS type="Node" left="15990" top="1350" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="14040" top="1290" width="525" height="480">
+   <BOUNDS type="Box" left="15990" top="1350" width="525" height="480">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="6" values="|Selection Rect|,|Selection Rect|,|Selection Rect|,|Selection Rect|,|Selection Rect|,|Selection Rect|">
    </PIN>
@@ -417,9 +417,9 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="125" srcpinname="Y Output Value" dstnodeid="64" dstpinname="Selection" linkstyle="VHV">
-   <LINKPOINT x="14070" y="10800">
+   <LINKPOINT x="15370" y="10840">
    </LINKPOINT>
-   <LINKPOINT x="5970" y="10800">
+   <LINKPOINT x="6620" y="10820">
    </LINKPOINT>
    </LINK>
    <NODE id="100" systemname="Filter (EX9.SamplerState)" nodename="Filter (EX9.SamplerState)" componentmode="Hidden">
@@ -461,9 +461,9 @@
    <LINK srcnodeid="127" srcpinname="Output" dstnodeid="62" dstpinname="Alpha">
    </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="128">
-   <BOUNDS type="Node" left="5010" top="2640" width="100" height="100">
+   <BOUNDS type="Node" left="11580" top="1110" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="5010" top="2640" width="795" height="480">
+   <BOUNDS type="Box" left="11580" top="1110" width="795" height="480">
    </BOUNDS>
    <PIN pinname="Rows" slicecount="1" values="2">
    </PIN>
@@ -495,7 +495,7 @@
    </PIN>
    </NODE>
    <NODE systemname="BoundingBox (PolygonEditor DX9)" filename="%VVVV%\addonpack\lib\nodes\modules\2d\PolygonEditor\BoundingBox (PolygonEditor DX9).v4p" nodename="BoundingBox (PolygonEditor DX9)" componentmode="Hidden" id="120">
-   <BOUNDS type="Node" left="6270" top="9135" width="100" height="100">
+   <BOUNDS type="Node" left="6735" top="9195" width="100" height="100">
    </BOUNDS>
    <PIN pinname="VerticesXY" visible="1" slicecount="2" values="0,0">
    </PIN>
@@ -519,7 +519,7 @@
    <LINK srcnodeid="119" srcpinname="Color Output" dstnodeid="120" dstpinname="Colors">
    </LINK>
    <NODE systemname="Polygon (PolygonEditor Split)" filename="%VVVV%\addonpack\lib\nodes\modules\2d\PolygonEditor\Polygon (PolygonEditor Split).v4p" nodename="Polygon (PolygonEditor Split)" componentmode="Hidden" id="91">
-   <BOUNDS type="Node" left="6840" top="1815" width="1890" height="270">
+   <BOUNDS type="Node" left="6840" top="1815" width="3255" height="270">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -571,9 +571,9 @@
    <LINK srcnodeid="91" srcpinname="Vertex Bin Size" dstnodeid="120" dstpinname="Vertex Bin Size" hiddenwhenlocked="1">
    </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="156">
-   <BOUNDS type="Node" left="15120" top="1290" width="100" height="100">
+   <BOUNDS type="Node" left="17070" top="1350" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="15120" top="1290" width="480" height="480">
+   <BOUNDS type="Box" left="17070" top="1350" width="480" height="480">
    </BOUNDS>
    <PIN pinname="Value Type" slicecount="1" values="Boolean">
    </PIN>
@@ -585,9 +585,9 @@
    </PIN>
    </NODE>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="157">
-   <BOUNDS type="Node" left="16230" top="1275" width="100" height="100">
+   <BOUNDS type="Node" left="18180" top="1335" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="16230" top="1275" width="480" height="480">
+   <BOUNDS type="Box" left="18180" top="1335" width="480" height="480">
    </BOUNDS>
    <PIN pinname="Value Type" slicecount="1" values="Boolean">
    </PIN>
@@ -599,7 +599,7 @@
    </PIN>
    </NODE>
    <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="158">
-   <BOUNDS type="Node" left="15570" top="2220" width="100" height="100">
+   <BOUNDS type="Node" left="17520" top="2280" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -613,15 +613,15 @@
    <LINK srcnodeid="157" srcpinname="Y Output Value" dstnodeid="158" dstpinname="Input 2">
    </LINK>
    <LINK srcnodeid="158" srcpinname="Output" dstnodeid="17" dstpinname="Switch" linkstyle="VHV">
-   <LINKPOINT x="16405" y="9105">
+   <LINKPOINT x="17705" y="9145">
    </LINKPOINT>
-   <LINKPOINT x="7640" y="9165">
+   <LINKPOINT x="8290" y="9185">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="156" srcpinname="Y Output Value" dstnodeid="64" dstpinname="Enabled" linkstyle="VHV">
-   <LINKPOINT x="15955" y="10785">
+   <LINKPOINT x="17255" y="10825">
    </LINKPOINT>
-   <LINKPOINT x="5345" y="10845">
+   <LINKPOINT x="5995" y="10865">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="9" srcpinname="Output Node" dstnodeid="23" dstpinname="Texture">

@@ -439,7 +439,7 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Source Hover|">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Source Active|">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -453,7 +453,7 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Destination Hover|">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Destination Active|">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>

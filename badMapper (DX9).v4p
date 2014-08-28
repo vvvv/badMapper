@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha32.2.dtd" >
    <PATCH nodename="C:\Users\Domi\Documents\GitHub\badMapper\badMapper (DX9).v4p" systemname="badMapper_v3.0" filename="C:\Users\Domi\Documents\GitHub\badMapper-v3.0\badMapper_v3.0.v4p">
-   <BOUNDS type="Window" left="3450" top="2295" width="24750" height="13620">
+   <BOUNDS type="Window" left="2085" top="885" width="24750" height="13620">
    </BOUNDS>
    <PACK Name="addonpack" Version="32.2.0">
    </PACK>
@@ -15,16 +15,16 @@
    </PIN>
    </NODE>
    <NODE systemname="Mouse (Devices Window)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Mouse (Devices Window)" componentmode="Hidden" id="17">
-   <BOUNDS type="Node" left="6825" top="2445" width="100" height="100">
+   <BOUNDS type="Node" left="7050" top="2430" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Device" visible="1">
    </PIN>
-   <BOUNDS type="Box" left="6825" top="2445">
+   <BOUNDS type="Box" left="7050" top="2430">
    </BOUNDS>
    <PIN pinname="Enabled" visible="1" slicecount="1" values="1">
    </PIN>
    </NODE>
-   <NODE systemname="windowing" filename="sub\windowing.v4p" componentmode="Hidden" id="76" nodename="sub\windowing.v4p" hiddenwhenlocked="1">
+   <NODE systemname="windowing" filename="sub\windowing.v4p" componentmode="InAWindow" id="76" nodename="sub\windowing.v4p" hiddenwhenlocked="1">
    <BOUNDS type="Node" left="9690" top="2505" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="9690" top="2505" width="4800" height="3600">
@@ -42,6 +42,10 @@
    <PIN pinname="Source Hover" visible="1">
    </PIN>
    <PIN pinname="Destination Hover" visible="1">
+   </PIN>
+   <PIN pinname="Destination Fullscreen Hover" visible="1">
+   </PIN>
+   <PIN pinname="Destination Preview Hover" visible="1">
    </PIN>
    </NODE>
    <PACK Name="imagepack" Version="0.1.0">
@@ -283,7 +287,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3540" top="9555" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="14730" top="2535" width="21345" height="13845">
+   <BOUNDS type="Window" left="2235" top="885" width="21345" height="13845">
    </BOUNDS>
    <PIN pinname="Source" visible="1">
    </PIN>
@@ -333,9 +337,9 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="117" srcpinname="Device" dstnodeid="34" dstpinname="Mouse" linkstyle="VHV" hiddenwhenlocked="0">
-   <LINKPOINT x="8610" y="8775">
+   <LINKPOINT x="8610" y="8685">
    </LINKPOINT>
-   <LINKPOINT x="5010" y="8775">
+   <LINKPOINT x="4710" y="8685">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="76" srcpinname="Destination Active" dstnodeid="34" dstpinname="Destination Active" linkstyle="VHV" hiddenwhenlocked="1">
@@ -407,11 +411,13 @@
    </PIN>
    <PIN pinname="Destination Hover" visible="1">
    </PIN>
+   <PIN pinname="Destination Fullscreen Hover" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="17" srcpinname="Device" dstnodeid="4" dstpinname="Mouse" hiddenwhenlocked="1" linkstyle="VHV">
-   <LINKPOINT x="6845" y="9075">
+   <LINKPOINT x="6995" y="9065">
    </LINKPOINT>
-   <LINKPOINT x="7975" y="8955">
+   <LINKPOINT x="8050" y="8950">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="157" srcpinname="Y Output Value" dstnodeid="4" dstpinname="Debug In Destination" linkstyle="VHV">
@@ -513,7 +519,7 @@
    </LINKPOINT>
    </LINK>
    <NODE systemname="Keyboard (Devices Window)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Keyboard (Devices Window)" componentmode="Hidden" id="189">
-   <BOUNDS type="Node" left="5745" top="2430" width="100" height="100">
+   <BOUNDS type="Node" left="5970" top="2415" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Device" visible="1">
    </PIN>
@@ -588,9 +594,7 @@
    </LINK>
    <LINK srcnodeid="76" srcpinname="Source Hover" dstnodeid="117" dstpinname="Enabled">
    </LINK>
-   <LINK srcnodeid="76" srcpinname="Destination Hover" dstnodeid="118" dstpinname="Enabled">
-   </LINK>
-   <LINK srcnodeid="76" srcpinname="Destination Hover" dstnodeid="34" dstpinname="Destination Hover" linkstyle="VHV" hiddenwhenlocked="1">
+   <LINK srcnodeid="76" srcpinname="Destination Preview Hover" dstnodeid="34" dstpinname="Destination Hover" linkstyle="VHV" hiddenwhenlocked="1">
    <LINKPOINT x="10610" y="9465">
    </LINKPOINT>
    <LINKPOINT x="4870" y="9465">
@@ -602,16 +606,16 @@
    <LINKPOINT x="4720" y="9345">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="76" srcpinname="Destination Hover" dstnodeid="4" dstpinname="Destination Hover" linkstyle="VHV">
-   <LINKPOINT x="10610" y="9045">
+   <LINK srcnodeid="76" srcpinname="Destination Preview Hover" dstnodeid="4" dstpinname="Destination Preview Hover" linkstyle="VHV">
+   <LINKPOINT x="10410" y="8910">
    </LINKPOINT>
-   <LINKPOINT x="7660" y="9045">
+   <LINKPOINT x="7620" y="8910">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="76" srcpinname="Source Hover" dstnodeid="4" dstpinname="Source Hover" linkstyle="VHV">
-   <LINKPOINT x="9995" y="8925">
+   <LINKPOINT x="9945" y="8820">
    </LINKPOINT>
-   <LINKPOINT x="7510" y="8925">
+   <LINKPOINT x="7470" y="8820">
    </LINKPOINT>
    </LINK>
    <NODE systemname="PolygonEditor (2d)" filename="%VVVV%\addonpack\lib\nodes\modules\2d\PolygonEditor (2d).v4p" nodename="PolygonEditor (2d)" componentmode="Hidden" id="200">
@@ -695,6 +699,8 @@
    </PIN>
    <PIN pinname="Input" slicecount="36" values="6,4,0,0,0,0,0,12,2,1,1,2,1,1,2,1,1,2,1,1,0.25,-0.25,0,0,-0.25,-0.25,0,0,-0.25,0.25,0,0,0.25,0.25,0,0">
    </PIN>
+   <PIN pinname="StepsizeXY" slicecount="2" values="0.001,0.001">
+   </PIN>
    </NODE>
    <LINK srcnodeid="118" srcpinname="Device" dstnodeid="201" dstpinname="Mouse" linkstyle="VHV" hiddenwhenlocked="1">
    <LINKPOINT x="9870" y="6750">
@@ -751,9 +757,9 @@
    <LINK srcnodeid="202" srcpinname="Destination Texture" dstnodeid="4" dstpinname="Texture ">
    </LINK>
    <LINK srcnodeid="189" srcpinname="Device" dstnodeid="202" dstpinname="Keyboard" linkstyle="VHV">
-   <LINKPOINT x="5775" y="3090">
+   <LINKPOINT x="5925" y="3080">
    </LINKPOINT>
-   <LINKPOINT x="870" y="3090">
+   <LINKPOINT x="945" y="3085">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="202" srcpinname="ChessTexture Enabled" dstnodeid="34" dstpinname="Enable Chess Texture">
@@ -843,18 +849,18 @@
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="17" srcpinname="Device" dstnodeid="207" dstpinname="Mouse" hiddenwhenlocked="1" linkstyle="VHV">
-   <LINKPOINT x="6855" y="4830">
+   <LINKPOINT x="7005" y="4820">
    </LINKPOINT>
-   <LINKPOINT x="7140" y="4830">
+   <LINKPOINT x="7215" y="4825">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="76" srcpinname="Source Active" dstnodeid="207" dstpinname="Source Hover" hiddenwhenlocked="1" linkstyle="VHV">
+   <LINK srcnodeid="76" srcpinname="Source Active" dstnodeid="207" dstpinname="Source Active" hiddenwhenlocked="1" linkstyle="VHV">
    <LINKPOINT x="9695" y="4545">
    </LINKPOINT>
    <LINKPOINT x="5020" y="4545">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="76" srcpinname="Destination Active" dstnodeid="207" dstpinname="Destination Hover" hiddenwhenlocked="1" linkstyle="VHV">
+   <LINK srcnodeid="76" srcpinname="Destination Active" dstnodeid="207" dstpinname="Destination Active" hiddenwhenlocked="1" linkstyle="VHV">
    <LINKPOINT x="10310" y="4680">
    </LINKPOINT>
    <LINKPOINT x="6625" y="4680">
@@ -927,5 +933,27 @@
    </LINKPOINT>
    <LINKPOINT x="3740" y="9405">
    </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="76" srcpinname="Destination Fullscreen Hover" dstnodeid="4" dstpinname="Destination Fullscreen Hover" linkstyle="VHV">
+   <LINKPOINT x="10635" y="9030">
+   </LINKPOINT>
+   <LINKPOINT x="7785" y="9030">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="208">
+   <BOUNDS type="Node" left="9855" top="2955" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="76" srcpinname="Destination Preview Hover" dstnodeid="208" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="76" srcpinname="Destination Fullscreen Hover" dstnodeid="208" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="208" srcpinname="Output" dstnodeid="118" dstpinname="Enabled">
    </LINK>
    </PATCH>
