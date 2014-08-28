@@ -1,36 +1,42 @@
 <badMapper_PolygonEditors>
   <Source>
-    <Vertex X="0.08203" Y="0.12500" Tagged="0"></Vertex>
-    <Vertex X="-0.41797" Y="0.12500" Tagged="0"></Vertex>
-    <Vertex X="-0.41797" Y="0.62500" Tagged="0"></Vertex>
-    <Vertex X="0.08203" Y="0.62500" Tagged="0"></Vertex>
-    <Vertex X="0.58203" Y="0.12500" Tagged="0"></Vertex>
-    <Vertex X="0.08203" Y="0.12500" Tagged="0"></Vertex>
-    <Vertex X="0.08203" Y="0.62500" Tagged="0"></Vertex>
-    <Vertex X="0.58203" Y="0.62500" Tagged="0"></Vertex>
-    <Vertex X="0.91797" Y="-0.82813" Tagged="0"></Vertex>
-    <Vertex X="-0.71875" Y="-0.82813" Tagged="0"></Vertex>
-    <Vertex X="-0.71875" Y="-0.67188" Tagged="0"></Vertex>
-    <Vertex X="0.91797" Y="-0.67188" Tagged="0"></Vertex>
-    <Polygon VertexBinSize="4" Tagged="0" ZIndex="0" ShapeMode="1" Rotation="0.00000"></Polygon>
-    <Polygon VertexBinSize="4" Tagged="0" ZIndex="1" ShapeMode="1" Rotation="0.00000"></Polygon>
-    <Polygon VertexBinSize="4" Tagged="0" ZIndex="2" ShapeMode="1" Rotation="0.00000"></Polygon>
+    <Polygon Tagged="0" ZIndex="0" ShapeMode="1" Rotation="0.00000">
+      <Vertex X="-0.00391" Y="0.08594" Tagged="0"></Vertex>
+      <Vertex X="-0.50391" Y="0.08594" Tagged="0"></Vertex>
+      <Vertex X="-0.50391" Y="0.58594" Tagged="0"></Vertex>
+      <Vertex X="-0.00391" Y="0.58594" Tagged="0"></Vertex>
+    </Polygon>
+    <Polygon Tagged="0" ZIndex="1" ShapeMode="1" Rotation="0.00000">
+      <Vertex X="0.60156" Y="0.08594" Tagged="0"></Vertex>
+      <Vertex X="-0.00391" Y="0.08594" Tagged="0"></Vertex>
+      <Vertex X="-0.00391" Y="0.58594" Tagged="0"></Vertex>
+      <Vertex X="0.60156" Y="0.58594" Tagged="0"></Vertex>
+    </Polygon>
+    <Polygon Tagged="1" ZIndex="2" ShapeMode="1" Rotation="0.00000">
+      <Vertex X="0.69141" Y="-0.88281" Tagged="0"></Vertex>
+      <Vertex X="-0.59375" Y="-0.88281" Tagged="0"></Vertex>
+      <Vertex X="-0.59375" Y="-0.65234" Tagged="0"></Vertex>
+      <Vertex X="0.69141" Y="-0.65234" Tagged="0"></Vertex>
+    </Polygon>
   </Source>
   <Destination>
-    <Vertex X="0.62145" Y="0.10995" Tagged="0"></Vertex>
-    <Vertex X="0.25742" Y="0.07479" Tagged="0"></Vertex>
-    <Vertex X="0.25412" Y="0.59359" Tagged="0"></Vertex>
-    <Vertex X="0.60827" Y="0.76053" Tagged="0"></Vertex>
-    <Vertex X="0.91056" Y="0.06289" Tagged="0"></Vertex>
-    <Vertex X="0.62145" Y="0.10995" Tagged="0"></Vertex>
-    <Vertex X="0.60827" Y="0.76053" Tagged="0"></Vertex>
-    <Vertex X="0.91386" Y="0.65231" Tagged="0"></Vertex>
-    <Vertex X="0.86967" Y="-0.27069" Tagged="1"></Vertex>
-    <Vertex X="-0.02568" Y="-0.46840" Tagged="0"></Vertex>
-    <Vertex X="-0.02239" Y="-0.27896" Tagged="0"></Vertex>
-    <Vertex X="0.85319" Y="-0.13778" Tagged="0"></Vertex>
-    <Polygon VertexBinSize="4" Tagged="0" ZIndex="1" ShapeMode="0" Rotation="0.00000"></Polygon>
-    <Polygon VertexBinSize="4" Tagged="0" ZIndex="0" ShapeMode="0" Rotation="0.00000"></Polygon>
-    <Polygon VertexBinSize="4" Tagged="0" ZIndex="2" ShapeMode="0" Rotation="0.00000"></Polygon>
+    <Polygon Tagged="0" ZIndex="1" ShapeMode="0" Rotation="0.00000">
+      <Vertex X="0.61806" Y="0.22055" Tagged="0"></Vertex>
+      <Vertex X="0.25192" Y="0.19033" Tagged="0"></Vertex>
+      <Vertex X="0.25290" Y="0.59279" Tagged="0"></Vertex>
+      <Vertex X="0.61819" Y="0.75845" Tagged="0"></Vertex>
+    </Polygon>
+    <Polygon Tagged="0" ZIndex="0" ShapeMode="0" Rotation="0.00000">
+      <Vertex X="0.91789" Y="0.21945" Tagged="0"></Vertex>
+      <Vertex X="0.61806" Y="0.22055" Tagged="0"></Vertex>
+      <Vertex X="0.61819" Y="0.75845" Tagged="0"></Vertex>
+      <Vertex X="0.91355" Y="0.64468" Tagged="0"></Vertex>
+    </Polygon>
+    <Polygon Tagged="0" ZIndex="2" ShapeMode="0" Rotation="0.00000">
+      <Vertex X="1.00134" Y="-0.46988" Tagged="0"></Vertex>
+      <Vertex X="-0.25972" Y="-0.94915" Tagged="0"></Vertex>
+      <Vertex X="-0.26235" Y="-0.72429" Tagged="0"></Vertex>
+      <Vertex X="1.00073" Y="-0.33755" Tagged="0"></Vertex>
+    </Polygon>
   </Destination>
 </badMapper_PolygonEditors>

@@ -195,7 +195,7 @@
    </PIN>
    <PIN pinname="Value Type" slicecount="1" values="Integer">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Destination Hover|">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Destination Preview Hover|">
    </PIN>
    <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0">
    </PIN>
@@ -282,16 +282,6 @@
    </LINK>
    <LINK srcnodeid="11" srcpinname="Handle" dstnodeid="24" dstpinname="Input 2">
    </LINK>
-   <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="25">
-   <BOUNDS type="Node" left="5295" top="4545" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input 2" visible="1">
-   </PIN>
-   <PIN pinname="Input 1" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
    <NODE systemname="AND (Boolean)" nodename="AND (Boolean)" componentmode="Hidden" id="26">
    <BOUNDS type="Node" left="6900" top="3885" width="100" height="100">
    </BOUNDS>
@@ -306,10 +296,20 @@
    </LINK>
    <LINK srcnodeid="24" srcpinname="Output" dstnodeid="26" dstpinname="Input 1">
    </LINK>
-   <LINK srcnodeid="26" srcpinname="Output" dstnodeid="25" dstpinname="Input 2">
+   <LINK srcnodeid="23" srcpinname="Output" dstnodeid="19" dstpinname="Y Input Value">
    </LINK>
-   <LINK srcnodeid="23" srcpinname="Output" dstnodeid="25" dstpinname="Input 1">
-   </LINK>
-   <LINK srcnodeid="25" srcpinname="Output" dstnodeid="19" dstpinname="Y Input Value">
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="29">
+   <BOUNDS type="Node" left="7365" top="5115" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7365" top="5115" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Destination Fullscreen Hover|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="26" srcpinname="Output" dstnodeid="29" dstpinname="Y Input Value">
    </LINK>
    </PATCH>
