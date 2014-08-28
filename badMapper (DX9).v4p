@@ -15,11 +15,11 @@
    </PIN>
    </NODE>
    <NODE systemname="Mouse (Devices Window)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Mouse (Devices Window)" componentmode="Hidden" id="17">
-   <BOUNDS type="Node" left="7050" top="2430" width="100" height="100">
+   <BOUNDS type="Node" left="7050" top="720" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Device" visible="1">
    </PIN>
-   <BOUNDS type="Box" left="7050" top="2430">
+   <BOUNDS type="Box" left="7050" top="720">
    </BOUNDS>
    <PIN pinname="Enabled" visible="1" slicecount="1" values="1">
    </PIN>
@@ -415,9 +415,9 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="17" srcpinname="Device" dstnodeid="4" dstpinname="Mouse" hiddenwhenlocked="1" linkstyle="VHV">
-   <LINKPOINT x="6995" y="9065">
+   <LINKPOINT x="6995" y="7925">
    </LINKPOINT>
-   <LINKPOINT x="8050" y="8950">
+   <LINKPOINT x="8050" y="8380">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="157" srcpinname="Y Output Value" dstnodeid="4" dstpinname="Debug In Destination" linkstyle="VHV">
@@ -499,7 +499,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Camera (Transform 2d)" filename="%VVVV%\lib\nodes\modules\Transform\Camera (Transform 2d).v4p" nodename="Camera (Transform 2d)" componentmode="Hidden" id="145">
-   <BOUNDS type="Node" left="4965" top="1605" width="100" height="100">
+   <BOUNDS type="Node" left="4965" top="720" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
@@ -511,18 +511,22 @@
    </PIN>
    <PIN pinname="Enabled" visible="1">
    </PIN>
+   <BOUNDS type="Box" left="4965" top="720">
+   </BOUNDS>
    </NODE>
    <LINK srcnodeid="76" srcpinname="Source Active" dstnodeid="145" dstpinname="Enabled" linkstyle="VHV" hiddenwhenlocked="1">
-   <LINKPOINT x="9995" y="7415">
+   <LINKPOINT x="9995" y="7115">
    </LINKPOINT>
-   <LINKPOINT x="4720" y="4390">
+   <LINKPOINT x="4720" y="3790">
    </LINKPOINT>
    </LINK>
    <NODE systemname="Keyboard (Devices Window)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Keyboard (Devices Window)" componentmode="Hidden" id="189">
-   <BOUNDS type="Node" left="5970" top="2415" width="100" height="100">
+   <BOUNDS type="Node" left="5970" top="720" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Device" visible="1">
    </PIN>
+   <BOUNDS type="Box" left="5970" top="720">
+   </BOUNDS>
    </NODE>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="193">
    <BOUNDS type="Node" left="315" top="570" width="100" height="100">
@@ -581,9 +585,9 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="145" srcpinname="Transform Out" dstnodeid="199" dstpinname="Input Node" linkstyle="VHV">
-   <LINKPOINT x="4785" y="11555">
+   <LINKPOINT x="4785" y="10955">
    </LINKPOINT>
-   <LINKPOINT x="5340" y="11545">
+   <LINKPOINT x="5340" y="11245">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="193" srcpinname="Y Output Value" dstnodeid="76" dstpinname="Renderer Handles" linkstyle="VHV">
@@ -673,9 +677,9 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="145" srcpinname="Transform Out" dstnodeid="200" dstpinname="Camera Transform" linkstyle="VHV">
-   <LINKPOINT x="4840" y="4113">
+   <LINKPOINT x="4995" y="4095">
    </LINKPOINT>
-   <LINKPOINT x="6455" y="4693">
+   <LINKPOINT x="6300" y="4095">
    </LINKPOINT>
    </LINK>
    <NODE systemname="PolygonEditor (2d)" filename="%VVVV%\addonpack\lib\nodes\modules\2d\PolygonEditor (2d).v4p" nodename="PolygonEditor (2d)" componentmode="Hidden" id="201">
@@ -757,9 +761,9 @@
    <LINK srcnodeid="202" srcpinname="Destination Texture" dstnodeid="4" dstpinname="Texture ">
    </LINK>
    <LINK srcnodeid="189" srcpinname="Device" dstnodeid="202" dstpinname="Keyboard" linkstyle="VHV">
-   <LINKPOINT x="5925" y="3080">
+   <LINKPOINT x="6000" y="1920">
    </LINKPOINT>
-   <LINKPOINT x="945" y="3085">
+   <LINKPOINT x="765" y="1920">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="202" srcpinname="ChessTexture Enabled" dstnodeid="34" dstpinname="Enable Chess Texture">
@@ -849,9 +853,9 @@
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="17" srcpinname="Device" dstnodeid="207" dstpinname="Mouse" hiddenwhenlocked="1" linkstyle="VHV">
-   <LINKPOINT x="7005" y="4820">
+   <LINKPOINT x="7005" y="3680">
    </LINKPOINT>
-   <LINKPOINT x="7215" y="4825">
+   <LINKPOINT x="7215" y="4255">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="76" srcpinname="Source Active" dstnodeid="207" dstpinname="Source Active" hiddenwhenlocked="1" linkstyle="VHV">
@@ -885,9 +889,9 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="145" srcpinname="Transform Out" dstnodeid="207" dstpinname="Source Camera" linkstyle="VHV">
-   <LINKPOINT x="4840" y="3115">
+   <LINKPOINT x="4995" y="4095">
    </LINKPOINT>
-   <LINKPOINT x="5690" y="3695">
+   <LINKPOINT x="5535" y="4095">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="207" srcpinname="Insert Polygon" dstnodeid="200" dstpinname="Insert">
