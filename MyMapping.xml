@@ -1,42 +1,36 @@
 <badMapper_PolygonEditors>
   <Source>
-    <Polygon Tagged="0" ZIndex="0" ShapeMode="1" Rotation="0.00000">
-      <Vertex X="-0.03125" Y="0.29297" Tagged="0"></Vertex>
-      <Vertex X="-0.69531" Y="0.29297" Tagged="0"></Vertex>
-      <Vertex X="-0.69531" Y="0.80469" Tagged="0"></Vertex>
-      <Vertex X="-0.03125" Y="0.80469" Tagged="0"></Vertex>
-    </Polygon>
-    <Polygon Tagged="0" ZIndex="1" ShapeMode="1" Rotation="0.00000">
-      <Vertex X="0.44141" Y="0.80469" Tagged="0"></Vertex>
-      <Vertex X="-0.03125" Y="0.80469" Tagged="0"></Vertex>
-      <Vertex X="-0.03125" Y="0.29297" Tagged="0"></Vertex>
-      <Vertex X="0.44141" Y="0.29297" Tagged="0"></Vertex>
-    </Polygon>
-    <Polygon Tagged="1" ZIndex="2" ShapeMode="1" Rotation="0.00000">
-      <Vertex X="0.41406" Y="-0.25391" Tagged="0"></Vertex>
-      <Vertex X="-0.76172" Y="-0.25391" Tagged="0"></Vertex>
-      <Vertex X="-0.76172" Y="0.00781" Tagged="0"></Vertex>
-      <Vertex X="0.41406" Y="0.00781" Tagged="0"></Vertex>
-    </Polygon>
+    <Vertex X="0.08203" Y="0.12500" Tagged="0"></Vertex>
+    <Vertex X="-0.41797" Y="0.12500" Tagged="0"></Vertex>
+    <Vertex X="-0.41797" Y="0.62500" Tagged="0"></Vertex>
+    <Vertex X="0.08203" Y="0.62500" Tagged="0"></Vertex>
+    <Vertex X="0.58203" Y="0.12500" Tagged="0"></Vertex>
+    <Vertex X="0.08203" Y="0.12500" Tagged="0"></Vertex>
+    <Vertex X="0.08203" Y="0.62500" Tagged="0"></Vertex>
+    <Vertex X="0.58203" Y="0.62500" Tagged="0"></Vertex>
+    <Vertex X="0.91797" Y="-0.82813" Tagged="0"></Vertex>
+    <Vertex X="-0.71875" Y="-0.82813" Tagged="0"></Vertex>
+    <Vertex X="-0.71875" Y="-0.67188" Tagged="0"></Vertex>
+    <Vertex X="0.91797" Y="-0.67188" Tagged="0"></Vertex>
+    <Polygon VertexBinSize="4" Tagged="0" ZIndex="0" ShapeMode="1" Rotation="0.00000"></Polygon>
+    <Polygon VertexBinSize="4" Tagged="0" ZIndex="1" ShapeMode="1" Rotation="0.00000"></Polygon>
+    <Polygon VertexBinSize="4" Tagged="0" ZIndex="2" ShapeMode="1" Rotation="0.00000"></Polygon>
   </Source>
   <Destination>
-    <Polygon Tagged="0" ZIndex="1" ShapeMode="0" Rotation="0.00000">
-      <Vertex X="0.61797" Y="0.22525" Tagged="0"></Vertex>
-      <Vertex X="0.25186" Y="0.18802" Tagged="0"></Vertex>
-      <Vertex X="0.25302" Y="0.59524" Tagged="0"></Vertex>
-      <Vertex X="0.61687" Y="0.75913" Tagged="0"></Vertex>
-    </Polygon>
-    <Polygon Tagged="0" ZIndex="0" ShapeMode="0" Rotation="0.00000">
-      <Vertex X="0.91697" Y="0.21048" Tagged="0"></Vertex>
-      <Vertex X="0.61797" Y="0.22525" Tagged="0"></Vertex>
-      <Vertex X="0.61687" Y="0.75913" Tagged="0"></Vertex>
-      <Vertex X="0.91367" Y="0.64236" Tagged="0"></Vertex>
-    </Polygon>
-    <Polygon Tagged="0" ZIndex="2" ShapeMode="0" Rotation="0.00000">
-      <Vertex X="0.99931" Y="-0.46535" Tagged="0"></Vertex>
-      <Vertex X="-0.25989" Y="-0.93840" Tagged="0"></Vertex>
-      <Vertex X="-0.26312" Y="-0.71673" Tagged="0"></Vertex>
-      <Vertex X="1.00139" Y="-0.33433" Tagged="0"></Vertex>
-    </Polygon>
+    <Vertex X="0.62145" Y="0.10995" Tagged="0"></Vertex>
+    <Vertex X="0.25742" Y="0.07479" Tagged="0"></Vertex>
+    <Vertex X="0.25412" Y="0.59359" Tagged="0"></Vertex>
+    <Vertex X="0.60827" Y="0.76053" Tagged="0"></Vertex>
+    <Vertex X="0.91056" Y="0.06289" Tagged="0"></Vertex>
+    <Vertex X="0.62145" Y="0.10995" Tagged="0"></Vertex>
+    <Vertex X="0.60827" Y="0.76053" Tagged="0"></Vertex>
+    <Vertex X="0.91386" Y="0.65231" Tagged="0"></Vertex>
+    <Vertex X="0.86967" Y="-0.27069" Tagged="1"></Vertex>
+    <Vertex X="-0.02568" Y="-0.46840" Tagged="0"></Vertex>
+    <Vertex X="-0.02239" Y="-0.27896" Tagged="0"></Vertex>
+    <Vertex X="0.85319" Y="-0.13778" Tagged="0"></Vertex>
+    <Polygon VertexBinSize="4" Tagged="0" ZIndex="1" ShapeMode="0" Rotation="0.00000"></Polygon>
+    <Polygon VertexBinSize="4" Tagged="0" ZIndex="0" ShapeMode="0" Rotation="0.00000"></Polygon>
+    <Polygon VertexBinSize="4" Tagged="0" ZIndex="2" ShapeMode="0" Rotation="0.00000"></Polygon>
   </Destination>
 </badMapper_PolygonEditors>
