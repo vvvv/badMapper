@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha32.2.dtd" >
-   <PATCH nodename="C:\Users\Domi\Documents\GitHub\badMapper\badMapper (DX9) help.v4p" systemname="badMapper3 (DX9) help" filename="C:\Users\Domi\Documents\GitHub\badMapper-v3.0\badMapper3 (DX9) help.v4p">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45debug32.2.dtd" >
+   <PATCH nodename="C:\Users\joreg\Documents\repos\badMapper\badMapper (DX9) help.v4p" systemname="badMapper3 (DX9) help" filename="C:\Users\Domi\Documents\GitHub\badMapper-v3.0\badMapper3 (DX9) help.v4p">
    <BOUNDS type="Window" left="3540" top="7020" width="17460" height="8310">
    </BOUNDS>
    <PACK Name="addonpack" Version="32.2.0">
@@ -97,11 +97,11 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="18" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="10500" top="3870" width="1125" height="255">
+   <BOUNDS type="Box" left="10500" top="3870" width="1365" height="285">
    </BOUNDS>
    <BOUNDS type="Node" left="10500" top="3870" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="SaveFile\SaveFile.xml">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="MyMapping.xml">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="file.txt">
    </PIN>
@@ -133,9 +133,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="25" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="11685" top="3840" width="810" height="270">
+   <BOUNDS type="Node" left="11910" top="3885" width="810" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="11685" top="3840" width="810" height="270">
+   <BOUNDS type="Box" left="11910" top="3885" width="810" height="270">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Savefile|">
    </PIN>
