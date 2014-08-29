@@ -65,7 +65,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="4200" top="6015" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="6075" top="180" width="18285" height="15420">
+   <BOUNDS type="Window" left="6075" top="180" width="18285" height="15240">
    </BOUNDS>
    <PIN pinname="Destination PolygonEditor" slicecount="36" values="6,4,0,0,0,0,1,12,2,1,1,2,1,1,2,1,1,2,1,1,0.891674845876824,0.132496795458707,1,0,-0.353277787950925,-0.329838857352133,0,0,-0.005234084111579,0.475355551486297,0,0,0.62166575108344,0.752349996948056,0,0">
    </PIN>
@@ -251,9 +251,9 @@
    <NODE id="33" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|Debug In Destination|">
    </PIN>
-   <BOUNDS type="Box" left="8985" top="675" width="750" height="240">
+   <BOUNDS type="Box" left="9060" top="675" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="8985" top="675" width="750" height="240">
+   <BOUNDS type="Node" left="9060" top="675" width="750" height="240">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="33" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Debug In Destination">
@@ -421,7 +421,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="0" top="6585" width="8235" height="3285">
    </BOUNDS>
-   <BOUNDS type="Window" left="5745" top="2535" width="19215" height="7230">
+   <BOUNDS type="Window" left="5745" top="2535" width="15525" height="7230">
    </BOUNDS>
    <PIN pinname="Mouse" visible="1" slicecount="1" values="||">
    </PIN>

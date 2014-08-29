@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha32.2.dtd" >
-   <PATCH nodename="C:\Users\Domi\Documents\GitHub\badMapper\sub\PolygonEditors.v4p" systemname="PolygonEditors" filename="C:\Users\Domi\Documents\GitHub\badMapper\sub\PolygonEditors.v4p" locked="0" scrollx="195" scrolly="0">
+   <PATCH nodename="C:\Users\Domi\Documents\GitHub\badMapper\sub\PolygonEditors.v4p" systemname="PolygonEditors" filename="C:\Users\Domi\Documents\GitHub\badMapper\sub\PolygonEditors.v4p" locked="0" scrollx="195" scrolly="-360">
    <NODE systemname="PolygonEditor (2d)" filename="%VVVV%\addonpack\lib\nodes\modules\2d\PolygonEditor (2d).v4p" nodename="PolygonEditor (2d)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="2670" top="4410" width="1800" height="270">
    </BOUNDS>
@@ -151,9 +151,9 @@
    <NODE id="12" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
    <PIN pinname="Descriptive Name" slicecount="5" values="|PolygonEditor Source|,|PolygonEditor Source|,|PolygonEditor Source|,|PolygonEditor Source|,|PolygonEditor Source|">
    </PIN>
-   <BOUNDS type="Box" left="1635" top="6140" width="750" height="240">
+   <BOUNDS type="Box" left="1740" top="5625" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1635" top="6140" width="750" height="240">
+   <BOUNDS type="Node" left="1740" top="5625" width="750" height="240">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="0" srcpinname="Output" dstnodeid="12" dstpinname="Y Input Value">
@@ -161,9 +161,9 @@
    <NODE id="13" systemname="IOBox (Enumerations)" componentmode="InABox" nodename="IOBox (Enumerations)">
    <PIN pinname="Descriptive Name" slicecount="5" values="|Cursor Type Source|,|Cursor Type Source|,|Cursor Type Source|,|Cursor Type Source|,|Cursor Type Source|">
    </PIN>
-   <BOUNDS type="Box" left="3570" top="6080" width="750" height="240">
+   <BOUNDS type="Box" left="3555" top="5625" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="3570" top="6080" width="750" height="240">
+   <BOUNDS type="Node" left="3555" top="5625" width="750" height="240">
    </BOUNDS>
    <PIN pinname="Input Enum" visible="1">
    </PIN>
@@ -171,9 +171,9 @@
    <NODE id="14" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
    <PIN pinname="Descriptive Name" slicecount="5" values="|Selection Rect Source|,|Selection Rect Source|,|Selection Rect Source|,|Selection Rect Source|,|Selection Rect Source|">
    </PIN>
-   <BOUNDS type="Box" left="5295" top="6155" width="750" height="240">
+   <BOUNDS type="Box" left="5205" top="5625" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="5295" top="6155" width="750" height="240">
+   <BOUNDS type="Node" left="5205" top="5625" width="750" height="240">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="0" srcpinname="Selection Rect" dstnodeid="14" dstpinname="Y Input Value">
@@ -241,9 +241,9 @@
    <NODE id="20" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
    <PIN pinname="Descriptive Name" slicecount="5" values="|PolygonEditor Destination|,|PolygonEditor Destination|,|PolygonEditor Destination|,|PolygonEditor Destination|,|PolygonEditor Destination|">
    </PIN>
-   <BOUNDS type="Box" left="7800" top="6650" width="750" height="240">
+   <BOUNDS type="Box" left="7800" top="5625" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="7800" top="6650" width="750" height="240">
+   <BOUNDS type="Node" left="7800" top="5625" width="750" height="240">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="1" srcpinname="Output" dstnodeid="20" dstpinname="Y Input Value">
@@ -251,9 +251,9 @@
    <NODE id="21" systemname="IOBox (Enumerations)" componentmode="InABox" nodename="IOBox (Enumerations)">
    <PIN pinname="Descriptive Name" slicecount="5" values="|Cursor Type Destination|,|Cursor Type Destination|,|Cursor Type Destination|,|Cursor Type Destination|,|Cursor Type Destination|">
    </PIN>
-   <BOUNDS type="Box" left="9870" top="6650" width="750" height="240">
+   <BOUNDS type="Box" left="9870" top="5625" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="9870" top="6650" width="750" height="240">
+   <BOUNDS type="Node" left="9870" top="5625" width="750" height="240">
    </BOUNDS>
    <PIN pinname="Input Enum" visible="1">
    </PIN>
@@ -261,14 +261,14 @@
    <NODE id="22" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
    <PIN pinname="Descriptive Name" slicecount="5" values="|Selection Rect Destination|,|Selection Rect Destination|,|Selection Rect Destination|,|Selection Rect Destination|,|Selection Rect Destination|">
    </PIN>
-   <BOUNDS type="Box" left="12240" top="6770" width="750" height="240">
+   <BOUNDS type="Box" left="11895" top="5625" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="12240" top="6770" width="750" height="240">
+   <BOUNDS type="Node" left="11895" top="5625" width="750" height="240">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="1" srcpinname="Selection Rect" dstnodeid="22" dstpinname="Y Input Value">
    </LINK>
-   <BOUNDS type="Window" left="13065" top="3930" width="19215" height="7230">
+   <BOUNDS type="Window" left="5745" top="2535" width="15525" height="7230">
    </BOUNDS>
    <LINK srcnodeid="0" srcpinname="Cursor Type" dstnodeid="13" dstpinname="Input Enum">
    </LINK>
