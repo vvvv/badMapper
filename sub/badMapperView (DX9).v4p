@@ -221,7 +221,7 @@
    <LINK srcnodeid="9" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Selection Rect">
    </LINK>
    <NODE id="10" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)" hiddenwhenlocked="0">
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Source Hover|">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Hover Source|">
    </PIN>
    <BOUNDS type="Box" left="8160" top="2955" width="750" height="240">
    </BOUNDS>
@@ -231,7 +231,7 @@
    <LINK srcnodeid="10" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Source Hover">
    </LINK>
    <NODE id="11" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Destination Preview Hover|">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Hover Destination Preview|">
    </PIN>
    <BOUNDS type="Box" left="13770" top="2985" width="750" height="240">
    </BOUNDS>
@@ -309,7 +309,7 @@
    <LINK srcnodeid="11" srcpinname="Y Output Value" dstnodeid="1" dstpinname="Destination Preview Hover">
    </LINK>
    <NODE id="18" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Destination Fullscreen Hover|">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Hover Destination Fullscreen|">
    </PIN>
    <BOUNDS type="Box" left="13830" top="3570" width="750" height="240">
    </BOUNDS>
@@ -321,7 +321,7 @@
    <LINK srcnodeid="18" srcpinname="Y Output Value" dstnodeid="1" dstpinname="Destination Fullscreen Hover">
    </LINK>
    <NODE id="19" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Preview Alpha Value|">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Destination Preview Transparency|">
    </PIN>
    <BOUNDS type="Box" left="13845" top="4095" width="750" height="240">
    </BOUNDS>

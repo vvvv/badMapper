@@ -283,7 +283,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="645" top="4220" width="9288" height="4492">
    </BOUNDS>
-   <BOUNDS type="Window" left="4545" top="3255" width="19260" height="9015">
+   <BOUNDS type="Window" left="1635" top="4140" width="19260" height="9015">
    </BOUNDS>
    <PIN pinname="Mouse Destination" visible="1" slicecount="1" values="||">
    </PIN>
@@ -359,7 +359,7 @@
    </LINKPOINT>
    </LINK>
    <NODE id="219" componentmode="Hidden" systemname="badMapperModel" filename="sub\badMapperModel.v4p" nodename="sub\badMapperModel.v4p" border="1">
-   <BOUNDS type="Window" left="4485" top="210" width="20235" height="15600">
+   <BOUNDS type="Window" left="3645" top="0" width="20235" height="15600">
    </BOUNDS>
    <BOUNDS type="Node" left="4743" top="5045" width="4620" height="270">
    </BOUNDS>
@@ -380,7 +380,7 @@
    </LINK>
    <LINK srcnodeid="203" srcpinname="XY" dstnodeid="219" dstpinname="Content SizeXY">
    </LINK>
-   <LINK srcnodeid="219" srcpinname="Destination Preview Transparency" dstnodeid="217" dstpinname="Preview Alpha Value">
+   <LINK srcnodeid="219" srcpinname="Destination Preview Transparency" dstnodeid="217" dstpinname="Destination Preview Transparency">
    </LINK>
    <LINK srcnodeid="216" srcpinname="Y Output Value" dstnodeid="219" dstpinname="Destination Preview Transparency">
    </LINK>
@@ -402,7 +402,7 @@
    </LINK>
    <LINK srcnodeid="17" srcpinname="Device" dstnodeid="219" dstpinname="Mouse">
    </LINK>
-   <LINK srcnodeid="219" srcpinname="Load/Save Success" dstnodeid="155" dstpinname="Y Input Value">
+   <LINK srcnodeid="219" srcpinname="Save/Load Success" dstnodeid="155" dstpinname="Y Input Value">
    </LINK>
    <LINK srcnodeid="138" srcpinname="Y Output Value" dstnodeid="219" dstpinname="Save">
    </LINK>
@@ -412,11 +412,11 @@
    </LINK>
    <LINK srcnodeid="219" srcpinname="Mouse Source" dstnodeid="217" dstpinname="Mouse Source">
    </LINK>
-   <LINK srcnodeid="219" srcpinname="Destination Fullscreen Hover" dstnodeid="217" dstpinname="Destination Fullscreen Hover">
+   <LINK srcnodeid="219" srcpinname="Destination Fullscreen Hover" dstnodeid="217" dstpinname="Hover Destination Fullscreen">
    </LINK>
-   <LINK srcnodeid="219" srcpinname="Destination Preview Hover" dstnodeid="217" dstpinname="Destination Preview Hover">
+   <LINK srcnodeid="219" srcpinname="Destination Preview Hover" dstnodeid="217" dstpinname="Hover Destination Preview">
    </LINK>
-   <LINK srcnodeid="219" srcpinname="Source Hover" dstnodeid="217" dstpinname="Source Hover">
+   <LINK srcnodeid="219" srcpinname="Source Hover" dstnodeid="217" dstpinname="Hover Source">
    </LINK>
    <LINK srcnodeid="157" srcpinname="Y Output Value" dstnodeid="219" dstpinname="Debug In Destination">
    </LINK>

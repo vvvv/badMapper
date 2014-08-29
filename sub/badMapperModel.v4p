@@ -311,7 +311,7 @@
    <LINK srcnodeid="5" srcpinname="Success" dstnodeid="7" dstpinname="Input 2">
    </LINK>
    <NODE id="39" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Load/Save Success|">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Save/Load Success|">
    </PIN>
    <BOUNDS type="Box" left="17325" top="12105" width="750" height="240">
    </BOUNDS>
@@ -368,7 +368,7 @@
    </NODE>
    <LINK srcnodeid="43" srcpinname="Output Node" dstnodeid="17" dstpinname="Keyboard" hiddenwhenlocked="1">
    </LINK>
-   <BOUNDS type="Window" left="4485" top="210" width="20235" height="15600">
+   <BOUNDS type="Window" left="3645" top="0" width="20235" height="15600">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.1.0">
    </PACK>
