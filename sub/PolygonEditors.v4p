@@ -1,0 +1,311 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha32.2.dtd" >
+   <PATCH nodename="C:\Users\Domi\Documents\GitHub\badMapper\sub\PolygonEditors.v4p" systemname="PolygonEditors" filename="C:\Users\Domi\Documents\GitHub\badMapper\sub\PolygonEditors.v4p" locked="0" scrollx="195" scrolly="0">
+   <NODE systemname="PolygonEditor (2d)" filename="%VVVV%\addonpack\lib\nodes\modules\2d\PolygonEditor (2d).v4p" nodename="PolygonEditor (2d)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="2670" top="4410" width="1800" height="270">
+   </BOUNDS>
+   <BOUNDS type="Window" left="3120" top="0" width="22335" height="15600">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2670" top="4410">
+   </BOUNDS>
+   <PIN pinname="Force Shape Mode" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Quantization" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="StepsizeXY" visible="1" slicecount="2" values="0.00390625,0.00390625">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Insert">
+   </PIN>
+   <PIN pinname="Remove Polygon Index">
+   </PIN>
+   <PIN pinname="Remove">
+   </PIN>
+   <PIN pinname="Initialize">
+   </PIN>
+   <PIN pinname="Input">
+   </PIN>
+   <PIN pinname="Cursor Type" visible="1">
+   </PIN>
+   <PIN pinname="Snap" visible="1" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="PolygonEditor (2d)" filename="%VVVV%\addonpack\lib\nodes\modules\2d\PolygonEditor (2d).v4p" nodename="PolygonEditor (2d)" componentmode="Hidden" id="1">
+   <BOUNDS type="Node" left="8790" top="4575" width="2205" height="270">
+   </BOUNDS>
+   <BOUNDS type="Window" left="-23070" top="-735" width="24495" height="15840">
+   </BOUNDS>
+   <BOUNDS type="Box" left="8790" top="4575">
+   </BOUNDS>
+   <PIN pinname="Quantization" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Force Shape Mode" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Insert">
+   </PIN>
+   <PIN pinname="Remove Polygon Index">
+   </PIN>
+   <PIN pinname="Remove">
+   </PIN>
+   <PIN pinname="Initialize">
+   </PIN>
+   <PIN pinname="Input">
+   </PIN>
+   <PIN pinname="StepsizeXY" slicecount="2" values="0.001,0.001">
+   </PIN>
+   <PIN pinname="Camera Transform" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Cursor Type" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="2" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Input Source|">
+   </PIN>
+   <BOUNDS type="Box" left="615" top="1040" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="615" top="1040" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Input">
+   </LINK>
+   <NODE id="3" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Initialize">
+   </PIN>
+   <BOUNDS type="Box" left="2910" top="995" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2910" top="995" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="3" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Initialize">
+   </LINK>
+   <NODE id="4" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Remove Index|">
+   </PIN>
+   <BOUNDS type="Box" left="3840" top="1025" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3840" top="1025" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="4" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Remove Polygon Index">
+   </LINK>
+   <NODE id="5" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Remove">
+   </PIN>
+   <BOUNDS type="Box" left="5025" top="1040" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5025" top="1040" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="5" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Remove">
+   </LINK>
+   <NODE id="6" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Insert">
+   </PIN>
+   <BOUNDS type="Box" left="5925" top="1040" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5925" top="1040" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Insert">
+   </LINK>
+   <NODE id="8" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Mouse Source|">
+   </PIN>
+   <BOUNDS type="Box" left="9150" top="975" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="9150" top="975" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="8" srcpinname="Output Node" dstnodeid="0" dstpinname="Mouse">
+   </LINK>
+   <NODE id="9" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Keyboard Source|">
+   </PIN>
+   <BOUNDS type="Box" left="9210" top="1620" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="9210" top="1620" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="9" srcpinname="Output Node" dstnodeid="0" dstpinname="Keyboard">
+   </LINK>
+   <NODE id="10" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Camera Source|">
+   </PIN>
+   <BOUNDS type="Box" left="9240" top="2190" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="9240" top="2190" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="10" srcpinname="Output Node" dstnodeid="0" dstpinname="Camera Transform">
+   </LINK>
+   <NODE id="11" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|StepsizeXY Source|">
+   </PIN>
+   <BOUNDS type="Box" left="9270" top="2730" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="9270" top="2730" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="11" srcpinname="Y Output Value" dstnodeid="0" dstpinname="StepsizeXY">
+   </LINK>
+   <NODE id="12" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="5" values="|PolygonEditor Source|,|PolygonEditor Source|,|PolygonEditor Source|,|PolygonEditor Source|,|PolygonEditor Source|">
+   </PIN>
+   <BOUNDS type="Box" left="1635" top="6140" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1635" top="6140" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Output" dstnodeid="12" dstpinname="Y Input Value">
+   </LINK>
+   <NODE id="13" systemname="IOBox (Enumerations)" componentmode="InABox" nodename="IOBox (Enumerations)">
+   <PIN pinname="Descriptive Name" slicecount="5" values="|Cursor Type Source|,|Cursor Type Source|,|Cursor Type Source|,|Cursor Type Source|,|Cursor Type Source|">
+   </PIN>
+   <BOUNDS type="Box" left="3570" top="6080" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3570" top="6080" width="750" height="240">
+   </BOUNDS>
+   <PIN pinname="Input Enum" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="14" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="5" values="|Selection Rect Source|,|Selection Rect Source|,|Selection Rect Source|,|Selection Rect Source|,|Selection Rect Source|">
+   </PIN>
+   <BOUNDS type="Box" left="5295" top="6155" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5295" top="6155" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Selection Rect" dstnodeid="14" dstpinname="Y Input Value">
+   </LINK>
+   <NODE id="15" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Input Destination|">
+   </PIN>
+   <BOUNDS type="Box" left="13245" top="515" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="13245" top="515" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="15" srcpinname="Y Output Value" dstnodeid="1" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Y Output Value" dstnodeid="1" dstpinname="Initialize">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Y Output Value" dstnodeid="1" dstpinname="Remove Polygon Index">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Y Output Value" dstnodeid="1" dstpinname="Remove">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="1" dstpinname="Insert">
+   </LINK>
+   <NODE id="16" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Snap">
+   </PIN>
+   <BOUNDS type="Box" left="6900" top="1040" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6900" top="1040" width="750" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="16" srcpinname="Y Output Value" dstnodeid="1" dstpinname="Snap">
+   </LINK>
+   <NODE id="17" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Mouse Destination|">
+   </PIN>
+   <BOUNDS type="Box" left="13350" top="1125" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="13350" top="1125" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="17" srcpinname="Output Node" dstnodeid="1" dstpinname="Mouse">
+   </LINK>
+   <NODE id="18" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Keyboard Destination|">
+   </PIN>
+   <BOUNDS type="Box" left="13365" top="1830" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="13365" top="1830" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="18" srcpinname="Output Node" dstnodeid="1" dstpinname="Keyboard">
+   </LINK>
+   <NODE id="19" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Camera Transform 1|">
+   </PIN>
+   <BOUNDS type="Box" left="13380" top="2460" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="13380" top="2460" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="19" srcpinname="Output Node" dstnodeid="1" dstpinname="Camera Transform">
+   </LINK>
+   <NODE id="20" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="5" values="|PolygonEditor Destination|,|PolygonEditor Destination|,|PolygonEditor Destination|,|PolygonEditor Destination|,|PolygonEditor Destination|">
+   </PIN>
+   <BOUNDS type="Box" left="7800" top="6650" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7800" top="6650" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Output" dstnodeid="20" dstpinname="Y Input Value">
+   </LINK>
+   <NODE id="21" systemname="IOBox (Enumerations)" componentmode="InABox" nodename="IOBox (Enumerations)">
+   <PIN pinname="Descriptive Name" slicecount="5" values="|Cursor Type Destination|,|Cursor Type Destination|,|Cursor Type Destination|,|Cursor Type Destination|,|Cursor Type Destination|">
+   </PIN>
+   <BOUNDS type="Box" left="9870" top="6650" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="9870" top="6650" width="750" height="240">
+   </BOUNDS>
+   <PIN pinname="Input Enum" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="22" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="5" values="|Selection Rect Destination|,|Selection Rect Destination|,|Selection Rect Destination|,|Selection Rect Destination|,|Selection Rect Destination|">
+   </PIN>
+   <BOUNDS type="Box" left="12240" top="6770" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="12240" top="6770" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Selection Rect" dstnodeid="22" dstpinname="Y Input Value">
+   </LINK>
+   <BOUNDS type="Window" left="13065" top="3930" width="19215" height="7230">
+   </BOUNDS>
+   <LINK srcnodeid="0" srcpinname="Cursor Type" dstnodeid="13" dstpinname="Input Enum">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Cursor Type" dstnodeid="21" dstpinname="Input Enum">
+   </LINK>
+   <PACK Name="VVVV.Packs" Version="0.1.0">
+   </PACK>
+   <PACK Name="addonpack" Version="32.2.0">
+   </PACK>
+   <LINK srcnodeid="16" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Snap">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="23" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="8895" top="5040" width="1290" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="8895" top="5040" width="1290" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="DESTINATION">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="24" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="2805" top="4800" width="930" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2805" top="4800" width="930" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="SOURCE">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   </PATCH>

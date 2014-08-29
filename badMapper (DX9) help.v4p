@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha32.2.dtd" >
-   <PATCH nodename="C:\Users\Domi\Documents\GitHub\badMapper\badMapper (DX9) help.v4p" systemname="badMapper3 (DX9) help" filename="C:\Users\Domi\Documents\GitHub\badMapper-v3.0\badMapper3 (DX9) help.v4p">
-   <BOUNDS type="Window" left="6225" top="6960" width="17550" height="8295">
+   <PATCH nodename="C:\Users\Domi\Documents\GitHub\badMapper\badMapper (DX9) help.v4p" systemname="badMapper3 (DX9) help" filename="C:\Users\Domi\Documents\GitHub\badMapper-v3.0\badMapper3 (DX9) help.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="6225" top="6960" width="17850" height="8295">
    </BOUNDS>
    <PACK Name="addonpack" Version="32.2.0">
    </PACK>
@@ -57,9 +57,9 @@
    <LINK srcnodeid="13" srcpinname="Output String" dstnodeid="12" dstpinname="Filename">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="16" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="14610" top="1950" width="480" height="510">
+   <BOUNDS type="Box" left="14610" top="2115" width="480" height="510">
    </BOUNDS>
-   <BOUNDS type="Node" left="14610" top="1950" width="0" height="0">
+   <BOUNDS type="Node" left="14610" top="2115" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -77,9 +77,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="17" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="14610" top="2760" width="480" height="510">
+   <BOUNDS type="Box" left="14610" top="1380" width="480" height="510">
    </BOUNDS>
-   <BOUNDS type="Node" left="14610" top="2760" width="0" height="0">
+   <BOUNDS type="Node" left="14610" top="1380" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -97,9 +97,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="18" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="10500" top="3870" width="1365" height="285">
+   <BOUNDS type="Box" left="10410" top="3915" width="1365" height="285">
    </BOUNDS>
-   <BOUNDS type="Node" left="10500" top="3870" width="0" height="0">
+   <BOUNDS type="Node" left="10410" top="3915" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="MyMapping.xml">
    </PIN>
@@ -133,9 +133,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="25" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="11910" top="3885" width="810" height="270">
+   <BOUNDS type="Node" left="11820" top="3930" width="810" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="11910" top="3885" width="810" height="270">
+   <BOUNDS type="Box" left="11820" top="3930" width="810" height="270">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Savefile|">
    </PIN>
@@ -147,9 +147,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="26" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="15270" top="2250" width="600" height="270">
+   <BOUNDS type="Node" left="15270" top="2280" width="600" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="15270" top="2250" width="600" height="270">
+   <BOUNDS type="Box" left="15270" top="2280" width="600" height="270">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Save|">
    </PIN>
@@ -161,9 +161,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="27" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="15270" top="2910" width="630" height="270">
+   <BOUNDS type="Node" left="15270" top="1530" width="630" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="15270" top="2910" width="630" height="270">
+   <BOUNDS type="Box" left="15270" top="1530" width="630" height="270">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Load|">
    </PIN>
@@ -175,9 +175,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="30" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="14610" top="3570" width="480" height="510">
+   <BOUNDS type="Box" left="14610" top="2895" width="480" height="510">
    </BOUNDS>
-   <BOUNDS type="Node" left="14610" top="3570" width="0" height="0">
+   <BOUNDS type="Node" left="14610" top="2895" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -193,9 +193,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="31" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="15270" top="3645" width="1785" height="270">
+   <BOUNDS type="Node" left="15270" top="2970" width="1785" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="15270" top="3645" width="1785" height="270">
+   <BOUNDS type="Box" left="15270" top="2970" width="1785" height="270">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Debug In Destination|">
    </PIN>
@@ -247,9 +247,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="49" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="15420" top="4305" width="1305" height="270">
+   <BOUNDS type="Node" left="15480" top="4365" width="1305" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="15420" top="4305" width="1245" height="510">
+   <BOUNDS type="Box" left="15480" top="4365" width="1245" height="510">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Chess Texture Resolution|">
    </PIN>
@@ -289,9 +289,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="56" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="14535" top="4365" width="795" height="240">
+   <BOUNDS type="Box" left="14610" top="4425" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="14535" top="4365" width="0" height="0">
+   <BOUNDS type="Node" left="14610" top="4425" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="15">
    </PIN>
@@ -347,7 +347,7 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Destination Preview|">
    </PIN>
-   <PIN pinname="View" visible="1">
+   <PIN pinname="View" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
    <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="72">
@@ -649,7 +649,7 @@
    <NODE id="28" componentmode="Hidden" systemname="badMapper (DX9)" filename="badMapper (DX9).v4p" nodename="badMapper (DX9)">
    <BOUNDS type="Node" left="9375" top="5130" width="2835" height="270">
    </BOUNDS>
-   <BOUNDS type="Window" left="2820" top="780" width="24750" height="13845">
+   <BOUNDS type="Window" left="1125" top="1185" width="25125" height="10095">
    </BOUNDS>
    <PIN pinname="Filename" visible="1">
    </PIN>
@@ -667,7 +667,7 @@
    </PIN>
    <PIN pinname="Source" visible="1">
    </PIN>
-   <PIN pinname="Source Camera" visible="1">
+   <PIN pinname="Source Camera" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Renderer Handles" visible="1">
    </PIN>
@@ -675,9 +675,11 @@
    </PIN>
    <PIN pinname="Destination" visible="1">
    </PIN>
-   <PIN pinname="Save/Load Success" visible="1">
+   <PIN pinname="Save/Load Success" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Destination Preview Camera" visible="1">
+   <PIN pinname="Destination Preview Camera" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Destination Preview Transparency" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="28" srcpinname="Destination" dstnodeid="72" dstpinname="Layers">
@@ -746,6 +748,34 @@
    <BOUNDS type="Box" left="4275" top="6585" width="2880" height="870">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|If &apos;Debug In Destination&apos; is enabled, you can edit shapes in this window just as you can in the Destination Preview Window.|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="99" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="14610" top="3810" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="14610" top="3810" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.2">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="2">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="99" srcpinname="Y Output Value" dstnodeid="28" dstpinname="Destination Preview Transparency">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="100" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="15480" top="3765" width="2685" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="15480" top="3765" width="1695" height="450">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Destination Preview Transparency|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
