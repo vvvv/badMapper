@@ -1,0 +1,175 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha32.2.dtd" >
+   <PATCH nodename="C:\Users\Domi\Documents\GitHub\badMapper\sub\AssignInputDevices.v4p" systemname="AssignInputDevices" filename="C:\Users\Domi\Documents\GitHub\badMapper\sub\AssignInputDevices.v4p" scrollx="0" scrolly="0">
+   <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="5400" top="1575" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Switch (Node Input)" nodename="Switch (Node Input)" componentmode="Hidden" id="1">
+   <BOUNDS type="Node" left="1455" top="4245" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Switch" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Switch (Node Input)" nodename="Switch (Node Input)" componentmode="Hidden" id="2">
+   <BOUNDS type="Node" left="5370" top="4320" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Switch" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Switch (Node Input)" nodename="Switch (Node Input)" componentmode="Hidden" id="3">
+   <BOUNDS type="Node" left="2640" top="4320" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Switch" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Switch (Node Input)" nodename="Switch (Node Input)" componentmode="Hidden" id="4">
+   <BOUNDS type="Node" left="8025" top="4425" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Switch" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="5" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Source Hover|">
+   </PIN>
+   <BOUNDS type="Box" left="1470" top="350" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1470" top="350" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="5" srcpinname="Y Output Value" dstnodeid="1" dstpinname="Switch">
+   </LINK>
+   <NODE id="6" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Mouse">
+   </PIN>
+   <BOUNDS type="Box" left="10215" top="410" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="10215" top="410" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="6" srcpinname="Output Node" dstnodeid="1" dstpinname="Input 2">
+   </LINK>
+   <NODE id="7" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Mouse Source|">
+   </PIN>
+   <BOUNDS type="Box" left="1455" top="4845" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1455" top="4845" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Output" dstnodeid="7" dstpinname="Input Node">
+   </LINK>
+   <NODE id="8" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Source Active|">
+   </PIN>
+   <BOUNDS type="Box" left="2685" top="455" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2685" top="455" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="8" srcpinname="Y Output Value" dstnodeid="3" dstpinname="Switch">
+   </LINK>
+   <NODE id="9" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Keyboard">
+   </PIN>
+   <BOUNDS type="Box" left="11475" top="425" width="660" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="11475" top="425" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="9" srcpinname="Output Node" dstnodeid="3" dstpinname="Input 2" hiddenwhenlocked="1">
+   </LINK>
+   <NODE id="10" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Keyboard Source|">
+   </PIN>
+   <BOUNDS type="Box" left="2640" top="4920" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2640" top="4920" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="3" srcpinname="Output" dstnodeid="10" dstpinname="Input Node">
+   </LINK>
+   <NODE id="11" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Destination Preview Hover|">
+   </PIN>
+   <BOUNDS type="Box" left="5400" top="545" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5400" top="545" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="11" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Input 1">
+   </LINK>
+   <NODE id="12" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Destination Fullscreen Hover|">
+   </PIN>
+   <BOUNDS type="Box" left="5685" top="1115" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5685" top="1115" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="12" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Output" dstnodeid="2" dstpinname="Switch">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Output Node" dstnodeid="2" dstpinname="Input 2">
+   </LINK>
+   <NODE id="13" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Mouse Destination|">
+   </PIN>
+   <BOUNDS type="Box" left="5370" top="4920" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5370" top="4920" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Output" dstnodeid="13" dstpinname="Input Node">
+   </LINK>
+   <NODE id="14" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Destination Active|">
+   </PIN>
+   <BOUNDS type="Box" left="8070" top="425" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8070" top="425" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="14" srcpinname="Y Output Value" dstnodeid="4" dstpinname="Switch">
+   </LINK>
+   <LINK srcnodeid="9" srcpinname="Output Node" dstnodeid="4" dstpinname="Input 2" hiddenwhenlocked="1">
+   </LINK>
+   <NODE id="15" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Keyboard Destination|">
+   </PIN>
+   <BOUNDS type="Box" left="8025" top="5040" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8025" top="5040" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="4" srcpinname="Output" dstnodeid="15" dstpinname="Input Node">
+   </LINK>
+   <BOUNDS type="Window" left="9165" top="5145" width="13200" height="6750">
+   </BOUNDS>
+   <PACK Name="VVVV.Packs" Version="0.1.0">
+   </PACK>
+   <PACK Name="addonpack" Version="32.2.0">
+   </PACK>
+   </PATCH>
