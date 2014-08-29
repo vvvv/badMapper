@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha32.2.dtd" >
-   <PATCH nodename="C:\Users\Domi\Documents\GitHub\badMapper\sub\Destination (DX9).v4p" systemname="destination" filename="C:\Users\Domi\Documents\GitHub\badMapper-v3.0\sub\destination.v4p">
-   <BOUNDS type="Window" left="4395" top="6705" width="18315" height="11475">
+   <PATCH nodename="C:\Users\Domi\Documents\GitHub\badMapper\sub\Destination (DX9).v4p" systemname="destination" filename="C:\Users\Domi\Documents\GitHub\badMapper-v3.0\sub\destination.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="1665" top="8235" width="28845" height="11475">
    </BOUNDS>
    <PACK Name="addonpack" Version="32.2.0">
    </PACK>
@@ -475,7 +475,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="5460" top="5940" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="-22365" top="4170" width="17670" height="10740">
+   <BOUNDS type="Window" left="-22395" top="600" width="17595" height="11925">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
