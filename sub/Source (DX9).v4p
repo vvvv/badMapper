@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha32.2.dtd" >
    <PATCH nodename="C:\Users\Domi\Documents\GitHub\badMapper\sub\Source (DX9).v4p" systemname="source" filename="C:\Users\Domi\Documents\GitHub\badMapper-v3.0\sub\source.v4p" scrollx="0" scrolly="-360">
-   <BOUNDS type="Window" left="-1650" top="8205" width="27330" height="13845">
+   <BOUNDS type="Window" left="1845" top="1005" width="27330" height="13845">
    </BOUNDS>
    <PACK Name="addonpack" Version="32.2.0">
    </PACK>
@@ -304,12 +304,12 @@
    </LINK>
    <LINK srcnodeid="56" srcpinname="Layer" dstnodeid="41" dstpinname="Layer 1">
    </LINK>
-   <NODE systemname="DisplayInfo" filename="DisplayInfo.v4p" componentmode="Hidden" id="115" nodename="DisplayInfo.v4p" stayontop="0">
+   <NODE systemname="DisplayInfo (DX9)" filename="DisplayInfo (DX9).v4p" componentmode="Hidden" id="115" nodename="DisplayInfo (DX9).v4p" stayontop="0">
    <BOUNDS type="Node" left="11970" top="7575" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="11970" top="7575" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="2655" top="1950" width="21270" height="12480">
+   <BOUNDS type="Window" left="2655" top="1950" width="9090" height="13440">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -403,13 +403,13 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="125" srcpinname="Y Output Value" dstnodeid="64" dstpinname="Selection" linkstyle="VHV">
-   <LINKPOINT x="15250" y="10860">
+   <LINKPOINT x="15840" y="10800">
    </LINKPOINT>
-   <LINKPOINT x="6560" y="10830">
+   <LINKPOINT x="5970" y="10800">
    </LINKPOINT>
    </LINK>
    <NODE id="100" systemname="Filter (EX9.SamplerState)" nodename="Filter (EX9.SamplerState)" componentmode="Hidden">
-   <BOUNDS type="Node" left="1605" top="9345" width="750" height="270">
+   <BOUNDS type="Node" left="1635" top="9345" width="750" height="270">
    </BOUNDS>
    <PIN pinname="Sampler State Out" visible="1">
    </PIN>
@@ -469,9 +469,9 @@
    <LINK srcnodeid="128" srcpinname="Y Output Value" dstnodeid="115" dstpinname="Texture Pixelsize">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="143" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="2400" top="9240" width="2835" height="270">
+   <BOUNDS type="Node" left="2430" top="9240" width="2835" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="2400" top="9240" width="1350" height="660">
+   <BOUNDS type="Box" left="2430" top="9240" width="1350" height="660">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; draw Pixelwise, without interpolation|">
    </PIN>
@@ -620,10 +620,6 @@
    </LINK>
    <LINK srcnodeid="31" srcpinname="Layer" dstnodeid="41" dstpinname="Layer 3">
    </LINK>
-   <NODE systemname="Filter (EX9.SamplerState)" nodename="Filter (EX9.SamplerState)" componentmode="Hidden" id="159">
-   <BOUNDS type="Node" left="2250" top="6630" width="100" height="100">
-   </BOUNDS>
-   </NODE>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="160">
    <BOUNDS type="Node" left="22155" top="1095" width="100" height="100">
    </BOUNDS>
@@ -640,4 +636,6 @@
    </NODE>
    <LINK srcnodeid="160" srcpinname="Y Output Value" dstnodeid="158" dstpinname="Input 3">
    </LINK>
+   <INFO author="dominikKoller" description="EX9 Layer for the Source Renderer" tags="">
+   </INFO>
    </PATCH>

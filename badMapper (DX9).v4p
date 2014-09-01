@@ -15,11 +15,11 @@
    </PIN>
    </NODE>
    <NODE systemname="Mouse (Devices Window)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Mouse (Devices Window)" componentmode="Hidden" id="17">
-   <BOUNDS type="Node" left="7770" top="1080" width="100" height="100">
+   <BOUNDS type="Node" left="7725" top="1080" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Device" visible="1">
    </PIN>
-   <BOUNDS type="Box" left="7770" top="1080">
+   <BOUNDS type="Box" left="7725" top="1080">
    </BOUNDS>
    <PIN pinname="Enabled" visible="1" slicecount="1" values="1">
    </PIN>
@@ -159,11 +159,11 @@
    </PIN>
    </NODE>
    <NODE systemname="Keyboard (Devices Window)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Keyboard (Devices Window)" componentmode="Hidden" id="189">
-   <BOUNDS type="Node" left="9360" top="1080" width="100" height="100">
+   <BOUNDS type="Node" left="9315" top="1080" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Device" visible="1">
    </PIN>
-   <BOUNDS type="Box" left="9360" top="1080">
+   <BOUNDS type="Box" left="9315" top="1080">
    </BOUNDS>
    </NODE>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="193">
@@ -347,9 +347,9 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="189" srcpinname="Device" dstnodeid="217" dstpinname="Keyboard" linkstyle="VHV" hiddenwhenlocked="1">
-   <LINKPOINT x="9390" y="1695">
+   <LINKPOINT x="9360" y="1695">
    </LINKPOINT>
-   <LINKPOINT x="4545" y="1695">
+   <LINKPOINT x="4530" y="1695">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="187" srcpinname="Y Output Value" dstnodeid="217" dstpinname="Chessboard Resolution" linkstyle="VHV">
@@ -359,7 +359,7 @@
    </LINKPOINT>
    </LINK>
    <NODE id="219" componentmode="Hidden" systemname="badMapperModel" filename="sub\badMapperModel.v4p" nodename="sub\badMapperModel.v4p" border="1">
-   <BOUNDS type="Window" left="3645" top="0" width="20235" height="15600">
+   <BOUNDS type="Window" left="3645" top="0" width="19500" height="15300">
    </BOUNDS>
    <BOUNDS type="Node" left="4743" top="5045" width="4620" height="270">
    </BOUNDS>
@@ -422,4 +422,6 @@
    </LINK>
    <LINK srcnodeid="193" srcpinname="Y Output Value" dstnodeid="219" dstpinname="Renderer Handles">
    </LINK>
+   <INFO author="dominikKoller" description="" tags="">
+   </INFO>
    </PATCH>

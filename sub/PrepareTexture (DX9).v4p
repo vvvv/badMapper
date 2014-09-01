@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha32.2.dtd" >
-   <PATCH nodename="C:\Users\Domi\Documents\GitHub\badMapper\sub\PrepareTexture.v4p" systemname="PrepareTexture" filename="C:\Users\Domi\Documents\GitHub\badMapper\sub\PrepareTexture.v4p">
-   <BOUNDS type="Window" left="10230" top="3075" width="11370" height="9780">
+   <PATCH nodename="C:\Users\Domi\Documents\GitHub\badMapper\sub\PrepareTexture (DX9).v4p" systemname="PrepareTexture (DX9)" filename="C:\Users\Domi\Documents\GitHub\badMapper\sub\PrepareTexture (DX9).v4p" scrollx="0" scrolly="-360">
+   <BOUNDS type="Window" left="10230" top="3075" width="11370" height="10005">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.1.0">
    </PACK>
@@ -18,12 +18,12 @@
    <PIN pinname="Switch" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="ChessTexture" filename="ChessTexture.v4p" componentmode="Hidden" id="5" nodename="sub\ChessTexture.v4p" stayontop="1">
+   <NODE systemname="ChessTexture (DX9)" filename="ChessTexture (DX9).v4p" componentmode="Hidden" id="5" nodename="ChessTexture (DX9).v4p" stayontop="1">
    <BOUNDS type="Node" left="4065" top="3240" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="4065" top="3240" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="10245" top="3585" width="12765" height="8325">
+   <BOUNDS type="Window" left="10245" top="3585" width="5220" height="8325">
    </BOUNDS>
    <PIN pinname="Resolution" visible="1" slicecount="2" values="51.2,51.2">
    </PIN>
@@ -141,7 +141,7 @@
    <LINK srcnodeid="26" srcpinname="Width" dstnodeid="25" dstpinname="ScaleXY">
    </LINK>
    <NODE systemname="Mix (EX9.Texture Mixer)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Mixer\Mix\Mix (EX9.Texture Mixer).v4p" nodename="Mix (EX9.Texture Mixer)" componentmode="Hidden" id="24">
-   <BOUNDS type="Node" left="1845" top="6930" width="100" height="100">
+   <BOUNDS type="Node" left="1845" top="7365" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 2" visible="1" slicecount="1" values="||">
    </PIN>
@@ -155,9 +155,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="23" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="2145" top="6600" width="285" height="240">
+   <BOUNDS type="Box" left="2145" top="7035" width="285" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="2145" top="6600" width="0" height="0">
+   <BOUNDS type="Node" left="2145" top="7035" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.5">
    </PIN>
@@ -169,7 +169,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Quad (DX9)" nodename="Quad (DX9)" componentmode="Hidden" id="22">
-   <BOUNDS type="Node" left="2415" top="4950" width="100" height="100">
+   <BOUNDS type="Node" left="2415" top="5385" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Transform" visible="1">
    </PIN>
@@ -183,9 +183,9 @@
    </PIN>
    </NODE>
    <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="Hidden" id="21">
-   <BOUNDS type="Node" left="2400" top="5745" width="100" height="100">
+   <BOUNDS type="Node" left="2400" top="6180" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="2400" top="5745" width="2400" height="1800">
+   <BOUNDS type="Box" left="2400" top="6180" width="2400" height="1800">
    </BOUNDS>
    <BOUNDS type="Window" left="-8445" top="7650" width="6240" height="5010">
    </BOUNDS>
@@ -203,7 +203,7 @@
    <LINK srcnodeid="22" srcpinname="Layer" dstnodeid="21" dstpinname="Layers">
    </LINK>
    <NODE systemname="DX9Texture (EX9.Texture)" nodename="DX9Texture (EX9.Texture)" componentmode="Hidden" id="20">
-   <BOUNDS type="Node" left="2385" top="6180" width="100" height="100">
+   <BOUNDS type="Node" left="2385" top="6615" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Source" visible="1">
    </PIN>
@@ -217,7 +217,7 @@
    <LINK srcnodeid="25" srcpinname="Transform Out" dstnodeid="22" dstpinname="Transform">
    </LINK>
    <NODE systemname="Vector (2d Split)" nodename="Vector (2d Split)" componentmode="Hidden" id="19">
-   <BOUNDS type="Node" left="2895" top="5325" width="100" height="100">
+   <BOUNDS type="Node" left="2895" top="5820" width="100" height="100">
    </BOUNDS>
    <PIN pinname="XY" visible="1" slicecount="2" values="0,0">
    </PIN>
@@ -231,7 +231,7 @@
    <LINK srcnodeid="19" srcpinname="Y" dstnodeid="21" dstpinname="Backbuffer Height">
    </LINK>
    <NODE systemname="Switch (Node Input)" nodename="Switch (Node Input)" componentmode="Hidden" id="18">
-   <BOUNDS type="Node" left="795" top="7470" width="1095" height="270">
+   <BOUNDS type="Node" left="795" top="7905" width="1095" height="270">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1" slicecount="1" values="||">
    </PIN>
@@ -283,29 +283,29 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="5" srcpinname="Texture Out" dstnodeid="24" dstpinname="Input 2" linkstyle="VHV">
-   <LINKPOINT x="4095" y="3720">
+   <LINKPOINT x="4095" y="3865">
    </LINKPOINT>
-   <LINKPOINT x="2040" y="3720">
+   <LINKPOINT x="2040" y="4010">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="10" srcpinname="Output Node" dstnodeid="24" dstpinname="Input 1" linkstyle="VHV">
-   <LINKPOINT x="1000" y="6770">
+   <LINKPOINT x="1000" y="6915">
    </LINKPOINT>
-   <LINKPOINT x="1715" y="6115">
+   <LINKPOINT x="1715" y="6405">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="6" srcpinname="C" dstnodeid="18" dstpinname="Switch">
    </LINK>
    <LINK srcnodeid="10" srcpinname="Output Node" dstnodeid="18" dstpinname="Input 1" linkstyle="VHV">
-   <LINKPOINT x="840" y="6900">
+   <LINKPOINT x="840" y="7045">
    </LINKPOINT>
-   <LINKPOINT x="1350" y="6900">
+   <LINKPOINT x="1350" y="7190">
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="29" systemname="IOBox (Node)">
-   <BOUNDS type="Box" left="810" top="8310" width="795" height="240">
+   <BOUNDS type="Box" left="810" top="8745" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="810" top="8310" width="0" height="0">
+   <BOUNDS type="Node" left="810" top="8745" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Source Texture|">
    </PIN>
@@ -322,7 +322,7 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="31" srcpinname="Y Output Value" dstnodeid="19" dstpinname="XY">
+   <LINK srcnodeid="31" srcpinname="Y Output Value" dstnodeid="19" dstpinname="XY" hiddenwhenlocked="1">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="32" systemname="IOBox (String)">
    <BOUNDS type="Node" left="5970" top="945" width="12420" height="270">
@@ -339,7 +339,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Filter (EX9.SamplerState)" nodename="Filter (EX9.SamplerState)" componentmode="Hidden" id="40">
-   <BOUNDS type="Node" left="4365" top="6660" width="100" height="100">
+   <BOUNDS type="Node" left="2700" top="4995" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Sampler State Out" visible="1">
    </PIN>
@@ -410,4 +410,6 @@
    </LINK>
    <LINK srcnodeid="12" srcpinname="Y Output Value" dstnodeid="41" dstpinname="Input 2">
    </LINK>
+   <INFO author="dominikKoller" description="Gives Source and Destination the right Texture, mixed with the Chess Texture when enabled." tags="">
+   </INFO>
    </PATCH>

@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha32.2.dtd" >
    <PATCH nodename="C:\Users\Domi\Documents\GitHub\badMapper\sub\badMapperView (DX9).v4p" systemname="badMapperView (DX9)" filename="C:\Users\Domi\Documents\GitHub\badMapper\sub\badMapperView (DX9).v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="4545" top="3255" width="19260" height="9015">
+   <BOUNDS type="Window" left="1635" top="4140" width="19260" height="9015">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.1.0">
    </PACK>
@@ -11,7 +11,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="4673" top="6897" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="-1650" top="8205" width="27330" height="13845">
+   <BOUNDS type="Window" left="1845" top="1005" width="27330" height="13845">
    </BOUNDS>
    <PIN pinname="Source" visible="1">
    </PIN>
@@ -61,7 +61,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="10298" top="7002" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="-120" top="-120" width="29040" height="15840">
+   <BOUNDS type="Window" left="2625" top="1920" width="29040" height="15840">
    </BOUNDS>
    <PIN pinname="Destination Selection" visible="1">
    </PIN>
@@ -124,12 +124,12 @@
    <PIN pinname="Preview Alpha Value" slicecount="1" visible="1" values="0.93">
    </PIN>
    </NODE>
-   <NODE systemname="PrepareTexture" filename="PrepareTexture.v4p" nodename="sub\PrepareTexture.v4p" componentmode="Hidden" id="2" stayontop="1">
+   <NODE systemname="PrepareTexture (DX9)" filename="PrepareTexture (DX9).v4p" nodename="PrepareTexture (DX9)" componentmode="Hidden" id="2" stayontop="1">
    <BOUNDS type="Node" left="1800" top="3630" width="1305" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="1493" top="70" width="4765" height="7120">
    </BOUNDS>
-   <BOUNDS type="Window" left="10230" top="3075" width="11370" height="9780">
+   <BOUNDS type="Window" left="10230" top="3075" width="11370" height="10005">
    </BOUNDS>
    <PIN pinname="Original Texture" visible="1">
    </PIN>
@@ -386,4 +386,6 @@
    </LINK>
    <LINK srcnodeid="18" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Destinatino Fullscreen Hover" hiddenwhenlocked="1">
    </LINK>
+   <INFO author="dominikKoller" description="EX9 Layers for Source and Destination" tags="">
+   </INFO>
    </PATCH>
