@@ -1,13 +1,13 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha32.2.dtd" >
-   <PATCH nodename="C:\Users\Domi\Documents\GitHub\badMapper\sub\ChessTexture.v4p" systemname="ChessTexture" filename="C:\Users\Domi\Documents\GitHub\badMapper\sub\ChessTexture.v4p">
-   <BOUNDS type="Window" left="10245" top="3585" width="7365" height="8325">
+   <PATCH nodename="C:\Users\Domi\Documents\GitHub\badMapper\sub\ChessTexture (DX9).v4p" systemname="ChessTexture (DX9)" filename="C:\Users\Domi\Documents\GitHub\badMapper\sub\ChessTexture (DX9).v4p">
+   <BOUNDS type="Window" left="10245" top="3585" width="5220" height="8325">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.1.0">
    </PACK>
    <PACK Name="addonpack" Version="32.2.0">
    </PACK>
    <NODE systemname="Grid (EX9.Geometry)" nodename="Grid (EX9.Geometry)" componentmode="Hidden" id="8">
-   <BOUNDS type="Node" left="1290" top="3255" width="100" height="100">
+   <BOUNDS type="Node" left="435" top="3330" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Mesh" visible="1">
    </PIN>
@@ -17,19 +17,19 @@
    </PIN>
    </NODE>
    <NODE systemname="UniformScale (Transform)" nodename="UniformScale (Transform)" componentmode="Hidden" id="7">
-   <BOUNDS type="Node" left="1755" top="3255" width="100" height="100">
+   <BOUNDS type="Node" left="900" top="3330" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
-   <PIN pinname="XYZ" slicecount="1" values="2">
+   <PIN pinname="XYZ" slicecount="1" values="2" visible="1">
    </PIN>
    <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
    <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="Hidden" id="6">
-   <BOUNDS type="Node" left="1590" top="5625" width="100" height="100">
+   <BOUNDS type="Node" left="735" top="5700" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="1590" top="5625" width="2400" height="1800">
+   <BOUNDS type="Box" left="735" top="5700" width="2400" height="1800">
    </BOUNDS>
    <BOUNDS type="Window" left="2775" top="8730" width="6240" height="5010">
    </BOUNDS>
@@ -43,7 +43,7 @@
    </PIN>
    </NODE>
    <NODE systemname="DX9Texture (EX9.Texture)" nodename="DX9Texture (EX9.Texture)" componentmode="Hidden" id="4">
-   <BOUNDS type="Node" left="3015" top="6165" width="100" height="100">
+   <BOUNDS type="Node" left="2160" top="6300" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Source" visible="1">
    </PIN>
@@ -53,7 +53,7 @@
    <LINK srcnodeid="6" srcpinname="EX9 Out" dstnodeid="4" dstpinname="Source">
    </LINK>
    <NODE systemname="Divide (Value)" nodename="Divide (Value)" componentmode="Hidden" id="3">
-   <BOUNDS type="Node" left="3465" top="2745" width="100" height="100">
+   <BOUNDS type="Node" left="2385" top="2835" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="1" values="1">
    </PIN>
@@ -63,7 +63,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="2">
-   <BOUNDS type="Node" left="3225" top="3540" width="100" height="100">
+   <BOUNDS type="Node" left="2100" top="3285" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -73,9 +73,9 @@
    </PIN>
    </NODE>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="1">
-   <BOUNDS type="Node" left="3210" top="375" width="100" height="100">
+   <BOUNDS type="Node" left="2355" top="450" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="3210" top="375" width="795" height="240">
+   <BOUNDS type="Box" left="2355" top="450" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Value Type" slicecount="1" values="Integer">
    </PIN>
@@ -91,7 +91,7 @@
    <LINK srcnodeid="3" srcpinname="Output" dstnodeid="2" dstpinname="Input 2">
    </LINK>
    <NODE systemname="Chess (EX9.Effect)" filename="%VVVV%\lib\nodes\effects\Chess.fx" nodename="Chess (EX9.Effect)" componentmode="Hidden" id="0">
-   <BOUNDS type="Node" left="1590" top="4365" width="100" height="100">
+   <BOUNDS type="Node" left="735" top="4440" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Technique Pass" slicecount="1" values="-1">
    </PIN>
@@ -111,9 +111,9 @@
    <LINK srcnodeid="7" srcpinname="Transform Out" dstnodeid="0" dstpinname="Transform">
    </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="11" systemname="IOBox (Node)">
-   <BOUNDS type="Box" left="3030" top="6720" width="795" height="240">
+   <BOUNDS type="Box" left="2175" top="6795" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="3030" top="6720" width="0" height="0">
+   <BOUNDS type="Node" left="2175" top="6795" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Texture Out|">
    </PIN>
@@ -123,7 +123,7 @@
    <LINK srcnodeid="4" srcpinname="Texture Out" dstnodeid="11" dstpinname="Input Node">
    </LINK>
    <NODE systemname="Vector (2d Split)" nodename="Vector (2d Split)" componentmode="Hidden" id="31">
-   <BOUNDS type="Node" left="4440" top="1440" width="100" height="100">
+   <BOUNDS type="Node" left="3585" top="1515" width="100" height="100">
    </BOUNDS>
    <PIN pinname="X" visible="1">
    </PIN>
@@ -137,9 +137,9 @@
    <LINK srcnodeid="31" srcpinname="Y" dstnodeid="3" dstpinname="Input 2">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="32" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="4320" top="375" width="795" height="480">
+   <BOUNDS type="Box" left="3570" top="450" width="795" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="4320" top="375" width="0" height="0">
+   <BOUNDS type="Node" left="3570" top="450" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="2" visible="1" values="0,0">
    </PIN>
@@ -160,4 +160,22 @@
    </LINK>
    <LINK srcnodeid="31" srcpinname="Y" dstnodeid="6" dstpinname="Backbuffer Height">
    </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="33" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="1500" top="3015" width="285" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1500" top="3015" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="2">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="33" srcpinname="Y Output Value" dstnodeid="7" dstpinname="XYZ">
+   </LINK>
+   <INFO author="dominikKoller" description="renders a Chessboard on a DX9 Texture" tags="">
+   </INFO>
    </PATCH>

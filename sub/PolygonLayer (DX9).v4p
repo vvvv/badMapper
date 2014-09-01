@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha32.2.dtd" >
-   <PATCH nodename="C:\Users\Domi\Documents\GitHub\badMapper\sub\PolygonLayer.v4p" systemname="PolygonLayer" filename="C:\Users\Domi\Documents\GitHub\badMapper-v3.0\sub\PolygonLayer.v4p" scrollx="0" scrolly="-360">
-   <BOUNDS type="Window" left="-22395" top="600" width="17595" height="11925">
+   <PATCH nodename="C:\Users\Domi\Documents\GitHub\badMapper\sub\PolygonLayer (DX9).v4p" systemname="PolygonLayer (DX9)" filename="C:\Users\Domi\Documents\GitHub\badMapper\sub\PolygonLayer (DX9).v4p" scrollx="0" scrolly="-360">
+   <BOUNDS type="Window" left="5475" top="1200" width="17595" height="11925">
    </BOUNDS>
    <PACK Name="imagepack" Version="0.1.0">
    </PACK>
@@ -788,4 +788,6 @@
    <LINKPOINT x="9930" y="8370">
    </LINKPOINT>
    </LINK>
+   <INFO author="dominikKoller" description="" tags="">
+   </INFO>
    </PATCH>

@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha32.2.dtd" >
-   <PATCH nodename="C:\Users\Domi\Documents\GitHub\badMapper\sub\badMapperModel.v4p" scrollx="0" scrolly="-360" systemname="badMapperModel" filename="C:\Users\Domi\Documents\GitHub\badMapper\sub\badMapperModel.v4p" locked="0" bgcolor="14737632">
+   <PATCH nodename="C:\Users\Domi\Documents\GitHub\badMapper\sub\badMapperModel.v4p" scrollx="0" scrolly="-156" systemname="badMapperModel" filename="C:\Users\Domi\Documents\GitHub\badMapper\sub\badMapperModel.v4p" locked="0" bgcolor="14737632">
    <NODE systemname="Windowing" filename="Windowing.v4p" componentmode="Hidden" id="0" nodename="Windowing.v4p" hiddenwhenlocked="0">
    <BOUNDS type="Node" left="7995" top="2775" width="1515" height="270">
    </BOUNDS>
@@ -29,11 +29,11 @@
    </BOUNDS>
    <BOUNDS type="Box" left="17640" top="10845" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="10770" top="2520" width="8895" height="6495">
+   <BOUNDS type="Window" left="10770" top="2520" width="8460" height="6495">
    </BOUNDS>
-   <PIN pinname="PolygonEditor Source" visible="1" slicecount="36" values="6,4,1,0,1,0,0,12,2,1,1,2,1,1,2,1,1,2,1,1,0.1328125,0.55078125,0,0,-0.49609375,0.55078125,0,0,-0.49609375,-0.17578125,0,0,0.1328125,-0.17578125,0,0">
+   <PIN pinname="PolygonEditor Source" visible="1" slicecount="104" values="18,4,0,0,1,0,0,4,1,2,1,0,0,4,0,1,1,0,0,36,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,-0.00390625,0.0859375,0,0,-0.50390625,0.0859375,0,0,-0.50390625,0.5859375,0,0,-0.00390625,0.5859375,0,0,0.6015625,0.0859375,0,0,-0.00390625,0.0859375,0,0,-0.00390625,0.5859375,0,0,0.6015625,0.5859375,0,0,0.69140625,-0.8828125,0,0,-0.59375,-0.8828125,0,0,-0.59375,-0.65234375,0,0,0.69140625,-0.65234375,0,0">
    </PIN>
-   <PIN pinname="PolygonEditor Destination" visible="1" slicecount="36" values="6,4,0,0,0,0,1,12,2,1,1,2,1,1,2,1,1,2,1,1,0.891674845876824,0.132496795458707,1,0,-0.353277787950925,-0.329838857352133,0,0,-0.005234084111579,0.475355551486297,0,0,0.62166575108344,0.752349996948056,0,0">
+   <PIN pinname="PolygonEditor Destination" visible="1" slicecount="104" values="18,4,0,1,0,0,0,4,0,0,0,0,0,4,0,2,0,0,0,36,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,0.61806,0.22055,0,0,0.25192,0.19033,0,0,0.2529,0.59279,0,0,0.61819,0.75845,0,0,0.91789,0.21945,0,0,0.61806,0.22055,0,0,0.61819,0.75845,0,0,0.91355,0.64468,0,0,1.00134,-0.46988,0,0,-0.25972,-0.94915,0,0,-0.26235,-0.72429,0,0,1.00073,-0.33755,0,0">
    </PIN>
    <PIN pinname="Filename" visible="1" slicecount="1" values="SaveFile\SaveFile.xml">
    </PIN>
@@ -67,9 +67,9 @@
    </BOUNDS>
    <BOUNDS type="Window" left="6075" top="180" width="18285" height="15240">
    </BOUNDS>
-   <PIN pinname="Destination PolygonEditor" slicecount="36" values="6,4,0,0,0,0,1,12,2,1,1,2,1,1,2,1,1,2,1,1,0.891674845876824,0.132496795458707,1,0,-0.353277787950925,-0.329838857352133,0,0,-0.005234084111579,0.475355551486297,0,0,0.62166575108344,0.752349996948056,0,0">
+   <PIN pinname="Destination PolygonEditor" slicecount="104" values="18,4,0,1,0,0,0,4,0,0,0,0,0,4,0,2,0,0,0,36,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,0.61806,0.22055,0,0,0.25192,0.19033,0,0,0.2529,0.59279,0,0,0.61819,0.75845,0,0,0.91789,0.21945,0,0,0.61806,0.22055,0,0,0.61819,0.75845,0,0,0.91355,0.64468,0,0,1.00134,-0.46988,0,0,-0.25972,-0.94915,0,0,-0.26235,-0.72429,0,0,1.00073,-0.33755,0,0">
    </PIN>
-   <PIN pinname="Source PolygonEditor" slicecount="36" values="6,4,1,0,1,0,0,12,2,1,1,2,1,1,2,1,1,2,1,1,0.1328125,0.55078125,0,0,-0.49609375,0.55078125,0,0,-0.49609375,-0.17578125,0,0,0.1328125,-0.17578125,0,0">
+   <PIN pinname="Source PolygonEditor" slicecount="104" values="18,4,0,0,1,0,0,4,1,2,1,0,0,4,0,1,1,0,0,36,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,-0.00390625,0.0859375,0,0,-0.50390625,0.0859375,0,0,-0.50390625,0.5859375,0,0,-0.00390625,0.5859375,0,0,0.6015625,0.0859375,0,0,-0.00390625,0.0859375,0,0,-0.00390625,0.5859375,0,0,0.6015625,0.5859375,0,0,0.69140625,-0.8828125,0,0,-0.59375,-0.8828125,0,0,-0.59375,-0.65234375,0,0,0.69140625,-0.65234375,0,0">
    </PIN>
    <PIN pinname="Destination Camera" visible="1" slicecount="1" values="||">
    </PIN>
@@ -147,7 +147,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="3930" top="13470" width="750" height="240">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="36" values="6,4,1,0,1,0,0,12,2,1,1,2,1,1,2,1,1,2,1,1,0.1328125,0.55078125,0,0,-0.49609375,0.55078125,0,0,-0.49609375,-0.17578125,0,0,0.1328125,-0.17578125,0,0">
+   <PIN pinname="Y Input Value" slicecount="104" values="18,4,0,0,1,0,0,4,1,2,1,0,0,4,0,1,1,0,0,36,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,-0.00390625,0.0859375,0,0,-0.50390625,0.0859375,0,0,-0.50390625,0.5859375,0,0,-0.00390625,0.5859375,0,0,0.6015625,0.0859375,0,0,-0.00390625,0.0859375,0,0,-0.00390625,0.5859375,0,0,0.6015625,0.5859375,0,0,0.69140625,-0.8828125,0,0,-0.59375,-0.8828125,0,0,-0.59375,-0.65234375,0,0,0.69140625,-0.65234375,0,0">
    </PIN>
    </NODE>
    <NODE id="23" systemname="IOBox (Enumerations)" componentmode="InABox" nodename="IOBox (Enumerations)">
@@ -187,9 +187,9 @@
    <NODE id="26" systemname="IOBox (String)" componentmode="InABox" nodename="IOBox (String)">
    <PIN pinname="Descriptive Name" slicecount="1" values="SaveFile">
    </PIN>
-   <BOUNDS type="Box" left="6540" top="655" width="1530" height="240">
+   <BOUNDS type="Box" left="6540" top="675" width="1530" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="6540" top="655" width="750" height="240">
+   <BOUNDS type="Node" left="6540" top="675" width="750" height="240">
    </BOUNDS>
    <PIN pinname="Output String" visible="1">
    </PIN>
@@ -215,7 +215,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="10800" top="13965" width="750" height="240">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="36" values="6,4,0,0,0,0,1,12,2,1,1,2,1,1,2,1,1,2,1,1,0.891674845876824,0.132496795458707,1,0,-0.353277787950925,-0.329838857352133,0,0,-0.005234084111579,0.475355551486297,0,0,0.62166575108344,0.752349996948056,0,0">
+   <PIN pinname="Y Input Value" slicecount="104" values="18,4,0,1,0,0,0,4,0,0,0,0,0,4,0,2,0,0,0,36,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,0.61806,0.22055,0,0,0.25192,0.19033,0,0,0.2529,0.59279,0,0,0.61819,0.75845,0,0,0.91789,0.21945,0,0,0.61806,0.22055,0,0,0.61819,0.75845,0,0,0.91355,0.64468,0,0,1.00134,-0.46988,0,0,-0.25972,-0.94915,0,0,-0.26235,-0.72429,0,0,1.00073,-0.33755,0,0">
    </PIN>
    </NODE>
    <NODE id="30" systemname="IOBox (Enumerations)" componentmode="InABox" nodename="IOBox (Enumerations)">
@@ -241,9 +241,9 @@
    <NODE id="32" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|Renderer Handles|">
    </PIN>
-   <BOUNDS type="Box" left="4515" top="650" width="750" height="240">
+   <BOUNDS type="Box" left="4515" top="675" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="4515" top="650" width="750" height="240">
+   <BOUNDS type="Node" left="4515" top="675" width="750" height="240">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="32" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Renderer Handles">
@@ -311,7 +311,7 @@
    <LINK srcnodeid="5" srcpinname="Success" dstnodeid="7" dstpinname="Input 2">
    </LINK>
    <NODE id="39" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Load/Save Success|">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Save/Load Success|">
    </PIN>
    <BOUNDS type="Box" left="17325" top="12105" width="750" height="240">
    </BOUNDS>
@@ -368,7 +368,7 @@
    </NODE>
    <LINK srcnodeid="43" srcpinname="Output Node" dstnodeid="17" dstpinname="Keyboard" hiddenwhenlocked="1">
    </LINK>
-   <BOUNDS type="Window" left="4485" top="210" width="20235" height="15600">
+   <BOUNDS type="Window" left="3645" top="0" width="19500" height="15300">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.1.0">
    </PACK>
@@ -401,9 +401,9 @@
    <LINK srcnodeid="44" srcpinname="Y Output Value" dstnodeid="45" dstpinname="Input">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="46" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="2655" top="720" width="795" height="240">
+   <BOUNDS type="Box" left="2655" top="675" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="2655" top="720" width="0" height="0">
+   <BOUNDS type="Node" left="2655" top="675" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
@@ -416,86 +416,6 @@
    </NODE>
    <LINK srcnodeid="46" srcpinname="Y Output Value" dstnodeid="45" dstpinname="Input 2">
    </LINK>
-   <NODE systemname="PolygonEditors" filename="PolygonEditors.v4p" nodename="PolygonEditors.v4p" componentmode="Hidden" id="48" stayontop="1">
-   <BOUNDS type="Node" left="4050" top="8227" width="3015" height="270">
-   </BOUNDS>
-   <BOUNDS type="Box" left="0" top="6585" width="8235" height="3285">
-   </BOUNDS>
-   <BOUNDS type="Window" left="5745" top="2535" width="15525" height="7230">
-   </BOUNDS>
-   <PIN pinname="Mouse" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Mouse 1" slicecount="1" visible="1" values="||">
-   </PIN>
-   <PIN pinname="Keyboard" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Keyboard 1" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Keyboard Destination" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Keyboard Source" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Mouse Destination" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Mouse Source" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Camera Source" visible="1" slicecount="1" values="||">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="12" srcpinname="Polygon Source" dstnodeid="48" dstpinname="Input Source">
-   </LINK>
-   <LINK srcnodeid="12" srcpinname="Initialize" dstnodeid="48" dstpinname="Initialize">
-   </LINK>
-   <LINK srcnodeid="12" srcpinname="Remove Polygon Index" dstnodeid="48" dstpinname="Remove Index">
-   </LINK>
-   <LINK srcnodeid="12" srcpinname="Remove Polygon" dstnodeid="48" dstpinname="Remove">
-   </LINK>
-   <LINK srcnodeid="12" srcpinname="Insert Polygon" dstnodeid="48" dstpinname="Insert">
-   </LINK>
-   <LINK srcnodeid="45" srcpinname="Output" dstnodeid="48" dstpinname="StepsizeXY Source" linkstyle="VHV" hiddenwhenlocked="1">
-   <LINKPOINT x="2595" y="8070">
-   </LINKPOINT>
-   <LINKPOINT x="6120" y="8070">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="48" srcpinname="PolygonEditor Source" dstnodeid="5" dstpinname="PolygonEditor Source" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="48" srcpinname="PolygonEditor Source" dstnodeid="12" dstpinname="Source PolygonEditor" linkstyle="Bezier">
-   <LINKPOINT x="3510" y="9630">
-   </LINKPOINT>
-   <LINKPOINT x="3840" y="5160">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="48" srcpinname="PolygonEditor Source" dstnodeid="22" dstpinname="Y Input Value">
-   </LINK>
-   <LINK srcnodeid="48" srcpinname="Cursor Type Source" dstnodeid="23" dstpinname="Input Enum">
-   </LINK>
-   <LINK srcnodeid="48" srcpinname="Selection Rect Source" dstnodeid="24" dstpinname="Y Input Value">
-   </LINK>
-   <LINK srcnodeid="12" srcpinname="Polygon Destination" dstnodeid="48" dstpinname="Input Destination">
-   </LINK>
-   <LINK srcnodeid="11" srcpinname="Output" dstnodeid="48" dstpinname="Snap" linkstyle="VHV" hiddenwhenlocked="1">
-   <LINKPOINT x="11970" y="7980">
-   </LINKPOINT>
-   <LINKPOINT x="5220" y="7980">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="14" srcpinname="Output" dstnodeid="48" dstpinname="Camera Transform 1" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="48" srcpinname="PolygonEditor Destination" dstnodeid="5" dstpinname="PolygonEditor Destination" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="48" srcpinname="PolygonEditor Destination" dstnodeid="29" dstpinname="Y Input Value">
-   </LINK>
-   <LINK srcnodeid="48" srcpinname="PolygonEditor Destination" dstnodeid="12" dstpinname="Destination PolygonEditor" linkstyle="Bezier">
-   <LINKPOINT x="2910" y="11400">
-   </LINKPOINT>
-   <LINKPOINT x="2895" y="4560">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="48" srcpinname="Cursor Type Destination" dstnodeid="30" dstpinname="Input Enum">
-   </LINK>
-   <LINK srcnodeid="48" srcpinname="Selection Rect Destination" dstnodeid="31" dstpinname="Y Input Value">
-   </LINK>
    <LINK srcnodeid="17" srcpinname="S" dstnodeid="11" dstpinname="Input" hiddenwhenlocked="1">
    </LINK>
    <NODE systemname="AssignInputDevices" filename="AssignInputDevices.v4p" nodename="AssignInputDevices.v4p" componentmode="Hidden" id="54" stayontop="1">
@@ -503,7 +423,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="4710" top="4227" width="6535" height="3655">
    </BOUNDS>
-   <BOUNDS type="Window" left="9165" top="5145" width="13200" height="6750">
+   <BOUNDS type="Window" left="9270" top="4455" width="13200" height="6750">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="0" srcpinname="Destination Preview Hover" dstnodeid="54" dstpinname="Destination Preview Hover">
@@ -514,23 +434,15 @@
    </LINK>
    <LINK srcnodeid="43" srcpinname="Output Node" dstnodeid="54" dstpinname="Keyboard">
    </LINK>
-   <LINK srcnodeid="54" srcpinname="Keyboard Destination" dstnodeid="48" dstpinname="Keyboard Destination">
-   </LINK>
    <LINK srcnodeid="0" srcpinname="Source Active" dstnodeid="54" dstpinname="Source Active">
-   </LINK>
-   <LINK srcnodeid="54" srcpinname="Keyboard Source" dstnodeid="48" dstpinname="Keyboard Source">
    </LINK>
    <LINK srcnodeid="25" srcpinname="Output Node" dstnodeid="54" dstpinname="Mouse">
    </LINK>
    <LINK srcnodeid="54" srcpinname="Mouse Destination" dstnodeid="38" dstpinname="Input Node" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="54" srcpinname="Mouse Destination" dstnodeid="48" dstpinname="Mouse Destination">
-   </LINK>
    <LINK srcnodeid="0" srcpinname="Source Hover" dstnodeid="54" dstpinname="Source Hover">
    </LINK>
    <LINK srcnodeid="54" srcpinname="Mouse Source" dstnodeid="37" dstpinname="Input Node" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="54" srcpinname="Mouse Source" dstnodeid="48" dstpinname="Mouse Source">
    </LINK>
    <NODE systemname="LoadXml" filename="LoadXml.v4p" nodename="LoadXml.v4p" componentmode="Hidden" id="55" hiddenwhenlocked="0">
    <BOUNDS type="Node" left="6465" top="5460" width="100" height="100">
@@ -545,6 +457,8 @@
    </PIN>
    <PIN pinname="Success" visible="1">
    </PIN>
+   <BOUNDS type="Window" left="5910" top="3390" width="10635" height="8115">
+   </BOUNDS>
    </NODE>
    <LINK srcnodeid="55" srcpinname="PolygonEditor Source" dstnodeid="12" dstpinname="Load PolygonEditor Source" hiddenwhenlocked="0">
    </LINK>
@@ -559,9 +473,9 @@
    <LINK srcnodeid="55" srcpinname="Success" dstnodeid="7" dstpinname="Input 1" hiddenwhenlocked="1">
    </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="60" systemname="IOBox (Node)">
-   <BOUNDS type="Box" left="450" top="12090" width="795" height="240">
+   <BOUNDS type="Box" left="510" top="12120" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="450" top="12090" width="0" height="0">
+   <BOUNDS type="Node" left="510" top="12120" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="5" values="|Camera Source|,|Camera Source|,|Camera Source|,|Camera Source|,|Camera Source|">
    </PIN>
@@ -569,9 +483,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="61" systemname="IOBox (Node)">
-   <BOUNDS type="Box" left="1725" top="12405" width="795" height="240">
+   <BOUNDS type="Box" left="1620" top="11715" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1725" top="12405" width="0" height="0">
+   <BOUNDS type="Node" left="1620" top="11715" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="5" values="|Camera Preview Destination|,|Camera Preview Destination|,|Camera Preview Destination|,|Camera Preview Destination|,|Camera Preview Destination|">
    </PIN>
@@ -593,9 +507,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="63" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="16155" top="510" width="6675" height="270">
+   <BOUNDS type="Node" left="15855" top="510" width="6675" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="16155" top="510" width="2880" height="690">
+   <BOUNDS type="Box" left="15855" top="510" width="2880" height="690">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|Press CTRL E to make hidden connections disappear, it makes this patch much easier to read|">
    </PIN>
@@ -615,8 +529,6 @@
    <LINK srcnodeid="0" srcpinname="Source Hover" dstnodeid="66" dstpinname="Enabled">
    </LINK>
    <LINK srcnodeid="66" srcpinname="Transform Out" dstnodeid="12" dstpinname="Source Camera">
-   </LINK>
-   <LINK srcnodeid="66" srcpinname="Transform Out" dstnodeid="48" dstpinname="Camera Source" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="66" srcpinname="Transform Out" dstnodeid="60" dstpinname="Input Node">
    </LINK>
@@ -638,4 +550,92 @@
    </LINK>
    <LINK srcnodeid="0" srcpinname="Destination Fullscreen Hover" dstnodeid="12" dstpinname="Destination Fullscreen Hover">
    </LINK>
+   <NODE systemname="PolygonEditors" filename="PolygonEditors.v4p" nodename="PolygonEditors.v4p" componentmode="Hidden" id="68" stayontop="1">
+   <BOUNDS type="Node" left="4050" top="8227" width="3015" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="0" top="6585" width="8235" height="3285">
+   </BOUNDS>
+   <BOUNDS type="Window" left="5745" top="2535" width="15525" height="7230">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="12" srcpinname="Polygon Source" dstnodeid="68" dstpinname="Input Source">
+   </LINK>
+   <LINK srcnodeid="12" srcpinname="Initialize" dstnodeid="68" dstpinname="Initialize">
+   </LINK>
+   <LINK srcnodeid="12" srcpinname="Remove Polygon Index" dstnodeid="68" dstpinname="Remove Index">
+   </LINK>
+   <LINK srcnodeid="12" srcpinname="Remove Polygon" dstnodeid="68" dstpinname="Remove">
+   </LINK>
+   <LINK srcnodeid="12" srcpinname="Insert Polygon" dstnodeid="68" dstpinname="Insert">
+   </LINK>
+   <LINK srcnodeid="45" srcpinname="Output" dstnodeid="68" dstpinname="StepsizeXY Source" linkstyle="VHV" hiddenwhenlocked="1">
+   <LINKPOINT x="2595" y="8070">
+   </LINKPOINT>
+   <LINKPOINT x="6120" y="8070">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="68" srcpinname="PolygonEditor Source" dstnodeid="5" dstpinname="PolygonEditor Source" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="68" srcpinname="PolygonEditor Source" dstnodeid="12" dstpinname="Source PolygonEditor" linkstyle="Bezier">
+   <LINKPOINT x="3510" y="9630">
+   </LINKPOINT>
+   <LINKPOINT x="3840" y="5160">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="68" srcpinname="PolygonEditor Source" dstnodeid="22" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="68" srcpinname="Cursor Type Source" dstnodeid="23" dstpinname="Input Enum">
+   </LINK>
+   <LINK srcnodeid="68" srcpinname="Selection Rect Source" dstnodeid="24" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="12" srcpinname="Polygon Destination" dstnodeid="68" dstpinname="Input Destination">
+   </LINK>
+   <LINK srcnodeid="11" srcpinname="Output" dstnodeid="68" dstpinname="Snap" linkstyle="VHV" hiddenwhenlocked="1">
+   <LINKPOINT x="11970" y="7980">
+   </LINKPOINT>
+   <LINKPOINT x="5220" y="7980">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="14" srcpinname="Output" dstnodeid="68" dstpinname="Camera Transform 1" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="68" srcpinname="PolygonEditor Destination" dstnodeid="5" dstpinname="PolygonEditor Destination" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="68" srcpinname="PolygonEditor Destination" dstnodeid="29" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="68" srcpinname="PolygonEditor Destination" dstnodeid="12" dstpinname="Destination PolygonEditor" linkstyle="Bezier">
+   <LINKPOINT x="2910" y="11400">
+   </LINKPOINT>
+   <LINKPOINT x="2895" y="4560">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="68" srcpinname="Cursor Type Destination" dstnodeid="30" dstpinname="Input Enum">
+   </LINK>
+   <LINK srcnodeid="68" srcpinname="Selection Rect Destination" dstnodeid="31" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="54" srcpinname="Keyboard Destination" dstnodeid="68" dstpinname="Keyboard Destination">
+   </LINK>
+   <LINK srcnodeid="54" srcpinname="Keyboard Source" dstnodeid="68" dstpinname="Keyboard Source">
+   </LINK>
+   <LINK srcnodeid="54" srcpinname="Mouse Destination" dstnodeid="68" dstpinname="Mouse Destination">
+   </LINK>
+   <LINK srcnodeid="54" srcpinname="Mouse Source" dstnodeid="68" dstpinname="Mouse Source">
+   </LINK>
+   <LINK srcnodeid="66" srcpinname="Transform Out" dstnodeid="68" dstpinname="Camera Source" hiddenwhenlocked="1">
+   </LINK>
+   <INFO author="dominikKoller" description="" tags="">
+   </INFO>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="69" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="2685" top="2115" width="1830" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2685" top="2115" width="1830" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; StepsizeXY for Source|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
    </PATCH>

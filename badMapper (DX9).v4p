@@ -1,13 +1,13 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha32.2.dtd" >
-   <PATCH nodename="C:\Users\Domi\Documents\GitHub\badMapper\badMapper (DX9).v4p" systemname="badMapper_v3.0" filename="C:\Users\Domi\Documents\GitHub\badMapper-v3.0\badMapper_v3.0.v4p" scrollx="0" scrolly="0">
+   <PATCH nodename="C:\Users\Domi\Documents\GitHub\badMapper\badMapper (DX9).v4p" systemname="badMapper_v3.0" filename="C:\Users\Domi\Documents\GitHub\badMapper-v3.0\badMapper_v3.0.v4p" scrollx="0" scrolly="-360">
    <BOUNDS type="Window" left="1125" top="1185" width="25125" height="10095">
    </BOUNDS>
    <PACK Name="addonpack" Version="32.2.0">
    </PACK>
    <NODE systemname="IOBox (Node)" nodename="IOBox (Node)" componentmode="InABox" id="6" hiddenwhenlocked="0">
-   <BOUNDS type="Node" left="1335" top="945" width="100" height="100">
+   <BOUNDS type="Node" left="2085" top="630" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="1335" top="945" width="795" height="240">
+   <BOUNDS type="Box" left="2085" top="630" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="Content">
    </PIN>
@@ -15,11 +15,11 @@
    </PIN>
    </NODE>
    <NODE systemname="Mouse (Devices Window)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Mouse (Devices Window)" componentmode="Hidden" id="17">
-   <BOUNDS type="Node" left="7770" top="1080" width="100" height="100">
+   <BOUNDS type="Node" left="7725" top="1080" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Device" visible="1">
    </PIN>
-   <BOUNDS type="Box" left="7770" top="1080">
+   <BOUNDS type="Box" left="7725" top="1080">
    </BOUNDS>
    <PIN pinname="Enabled" visible="1" slicecount="1" values="1">
    </PIN>
@@ -27,9 +27,9 @@
    <PACK Name="imagepack" Version="0.1.0">
    </PACK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="138" systemname="IOBox (Value Advanced)" exposed="0">
-   <BOUNDS type="Box" left="17385" top="1080" width="480" height="480">
+   <BOUNDS type="Box" left="17385" top="630" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="17385" top="1080" width="0" height="0">
+   <BOUNDS type="Node" left="17385" top="630" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -49,9 +49,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="140" systemname="IOBox (String)" exposed="0">
-   <BOUNDS type="Box" left="15540" top="1080" width="795" height="240">
+   <BOUNDS type="Box" left="15540" top="630" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="15540" top="1080" width="0" height="0">
+   <BOUNDS type="Node" left="15540" top="630" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="sub\file.txt">
    </PIN>
@@ -69,9 +69,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="142" systemname="IOBox (Value Advanced)" exposed="0">
-   <BOUNDS type="Box" left="16665" top="1080" width="480" height="480">
+   <BOUNDS type="Box" left="16665" top="630" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="16665" top="1080" width="0" height="0">
+   <BOUNDS type="Node" left="16665" top="630" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -89,9 +89,9 @@
    <PACK Name="VVVV.Packs" Version="0.1.0">
    </PACK>
    <NODE systemname="IOBox (Node)" nodename="IOBox (Node)" componentmode="InABox" id="154" exposed="0">
-   <BOUNDS type="Node" left="10860" top="1080" width="100" height="100">
+   <BOUNDS type="Node" left="10860" top="630" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="10860" top="1080" width="795" height="240">
+   <BOUNDS type="Box" left="10860" top="630" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Background Image|">
    </PIN>
@@ -117,9 +117,9 @@
    </PIN>
    </NODE>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="157" exposed="0">
-   <BOUNDS type="Node" left="18300" top="1080" width="100" height="100">
+   <BOUNDS type="Node" left="18300" top="630" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="18300" top="1080" width="480" height="480">
+   <BOUNDS type="Box" left="18300" top="630" width="480" height="480">
    </BOUNDS>
    <PIN pinname="Value Type" slicecount="1" values="Boolean">
    </PIN>
@@ -131,9 +131,9 @@
    </PIN>
    </NODE>
    <NODE systemname="IOBox (Node)" nodename="IOBox (Node)" componentmode="InABox" id="160" exposed="0">
-   <BOUNDS type="Node" left="12540" top="1080" width="100" height="100">
+   <BOUNDS type="Node" left="12540" top="630" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="12540" top="1080" width="795" height="240">
+   <BOUNDS type="Box" left="12540" top="630" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Background Image Transform|">
    </PIN>
@@ -143,9 +143,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="187" systemname="IOBox (Value Advanced)" exposed="0">
-   <BOUNDS type="Box" left="22815" top="1080" width="795" height="240">
+   <BOUNDS type="Box" left="22815" top="630" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="22815" top="1080" width="0" height="0">
+   <BOUNDS type="Node" left="22815" top="630" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="9">
    </PIN>
@@ -159,17 +159,17 @@
    </PIN>
    </NODE>
    <NODE systemname="Keyboard (Devices Window)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Keyboard (Devices Window)" componentmode="Hidden" id="189">
-   <BOUNDS type="Node" left="9360" top="1080" width="100" height="100">
+   <BOUNDS type="Node" left="9315" top="1080" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Device" visible="1">
    </PIN>
-   <BOUNDS type="Box" left="9360" top="1080">
+   <BOUNDS type="Box" left="9315" top="1080">
    </BOUNDS>
    </NODE>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="193">
-   <BOUNDS type="Node" left="315" top="570" width="100" height="100">
+   <BOUNDS type="Node" left="495" top="630" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="315" top="570" width="795" height="720">
+   <BOUNDS type="Box" left="495" top="630" width="795" height="720">
    </BOUNDS>
    <PIN pinname="Rows" slicecount="1" values="3">
    </PIN>
@@ -185,9 +185,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="196" systemname="IOBox (Node)">
-   <BOUNDS type="Box" left="3570" top="8550" width="795" height="240">
+   <BOUNDS type="Box" left="4185" top="8295" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="3570" top="8550" width="0" height="0">
+   <BOUNDS type="Node" left="4185" top="8295" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="Source">
    </PIN>
@@ -195,9 +195,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="197" systemname="IOBox (Node)">
-   <BOUNDS type="Box" left="10950" top="8565" width="795" height="240">
+   <BOUNDS type="Box" left="10950" top="8295" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="10950" top="8565" width="0" height="0">
+   <BOUNDS type="Node" left="10950" top="8295" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="Destination">
    </PIN>
@@ -205,9 +205,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="198" systemname="IOBox (Node)">
-   <BOUNDS type="Box" left="6915" top="8550" width="795" height="240">
+   <BOUNDS type="Box" left="6915" top="8295" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="6915" top="8550" width="0" height="0">
+   <BOUNDS type="Node" left="6915" top="8295" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Destination Preview|">
    </PIN>
@@ -215,9 +215,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="199" systemname="IOBox (Node)">
-   <BOUNDS type="Box" left="5145" top="8505" width="795" height="240">
+   <BOUNDS type="Box" left="5610" top="8295" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="5145" top="8505" width="0" height="0">
+   <BOUNDS type="Node" left="5610" top="8295" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Source Camera|">
    </PIN>
@@ -225,7 +225,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Info (EX9.Texture)" nodename="Info (EX9.Texture)" componentmode="Hidden" id="204">
-   <BOUNDS type="Node" left="1590" top="3390" width="100" height="100">
+   <BOUNDS type="Node" left="2340" top="3975" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Texture" visible="1" slicecount="1" values="||">
    </PIN>
@@ -235,7 +235,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Vector (2d Join)" nodename="Vector (2d Join)" componentmode="Hidden" id="203">
-   <BOUNDS type="Node" left="1605" top="3870" width="100" height="100">
+   <BOUNDS type="Node" left="2355" top="4455" width="100" height="100">
    </BOUNDS>
    <PIN pinname="X" visible="1">
    </PIN>
@@ -249,15 +249,15 @@
    <LINK srcnodeid="204" srcpinname="Height" dstnodeid="203" dstpinname="Y">
    </LINK>
    <LINK srcnodeid="6" srcpinname="Output Node" dstnodeid="204" dstpinname="Texture" linkstyle="VHV">
-   <LINKPOINT x="1365" y="3135">
+   <LINKPOINT x="2115" y="3130">
    </LINKPOINT>
-   <LINKPOINT x="1620" y="3135">
+   <LINKPOINT x="2370" y="3425">
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="211" systemname="IOBox (Node)">
-   <BOUNDS type="Box" left="8685" top="8595" width="795" height="240">
+   <BOUNDS type="Box" left="8685" top="8295" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="8685" top="8595" width="0" height="0">
+   <BOUNDS type="Node" left="8685" top="8295" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Destination Preview Camera|">
    </PIN>
@@ -265,9 +265,9 @@
    </PIN>
    </NODE>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="216" exposed="0">
-   <BOUNDS type="Node" left="20205" top="1080" width="100" height="100">
+   <BOUNDS type="Node" left="20205" top="630" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="20205" top="1080" width="795" height="240">
+   <BOUNDS type="Box" left="20205" top="630" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="0.2">
    </PIN>
@@ -283,7 +283,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="645" top="4220" width="9288" height="4492">
    </BOUNDS>
-   <BOUNDS type="Window" left="4545" top="3255" width="19260" height="9015">
+   <BOUNDS type="Window" left="1635" top="4140" width="19260" height="9015">
    </BOUNDS>
    <PIN pinname="Mouse Destination" visible="1" slicecount="1" values="||">
    </PIN>
@@ -311,29 +311,29 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="203" srcpinname="XY" dstnodeid="217" dstpinname="Texture SizeXY" linkstyle="VHV">
-   <LINKPOINT x="1635" y="6225">
+   <LINKPOINT x="2385" y="6165">
    </LINKPOINT>
-   <LINKPOINT x="4875" y="6225">
+   <LINKPOINT x="4875" y="6165">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="217" srcpinname="Source" dstnodeid="196" dstpinname="Input Node">
    </LINK>
    <LINK srcnodeid="157" srcpinname="Y Output Value" dstnodeid="217" dstpinname="Debug In Destination" linkstyle="VHV">
-   <LINKPOINT x="19165" y="6125">
+   <LINKPOINT x="18330" y="6000">
    </LINKPOINT>
-   <LINKPOINT x="8810" y="6070">
+   <LINKPOINT x="9660" y="6000">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="154" srcpinname="Output Node" dstnodeid="217" dstpinname="Background Image" linkstyle="VHV">
-   <LINKPOINT x="11880" y="6260">
+   <LINKPOINT x="10890" y="6165">
    </LINKPOINT>
-   <LINKPOINT x="9000" y="6205">
+   <LINKPOINT x="9990" y="6165">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="160" srcpinname="Output Node" dstnodeid="217" dstpinname="Background Image Transform" linkstyle="VHV">
-   <LINKPOINT x="13560" y="6410">
+   <LINKPOINT x="12570" y="6285">
    </LINKPOINT>
-   <LINKPOINT x="9345" y="6355">
+   <LINKPOINT x="10335" y="6285">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="217" srcpinname="Destination" dstnodeid="197" dstpinname="Input Node">
@@ -341,25 +341,25 @@
    <LINK srcnodeid="217" srcpinname="Destination Preview" dstnodeid="198" dstpinname="Input Node">
    </LINK>
    <LINK srcnodeid="6" srcpinname="Output Node" dstnodeid="217" dstpinname="Content" linkstyle="VHV">
-   <LINKPOINT x="1365" y="6300">
+   <LINKPOINT x="2115" y="6330">
    </LINKPOINT>
-   <LINKPOINT x="4200" y="6300">
+   <LINKPOINT x="4200" y="6330">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="189" srcpinname="Device" dstnodeid="217" dstpinname="Keyboard" linkstyle="VHV" hiddenwhenlocked="1">
-   <LINKPOINT x="9390" y="1695">
+   <LINKPOINT x="9360" y="1695">
    </LINKPOINT>
-   <LINKPOINT x="4545" y="1695">
+   <LINKPOINT x="4530" y="1695">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="187" srcpinname="Y Output Value" dstnodeid="217" dstpinname="Chessboard Resolution" linkstyle="VHV">
-   <LINKPOINT x="23630" y="6025">
+   <LINKPOINT x="22845" y="5835">
    </LINKPOINT>
-   <LINKPOINT x="4435" y="5945">
+   <LINKPOINT x="5220" y="5835">
    </LINKPOINT>
    </LINK>
    <NODE id="219" componentmode="Hidden" systemname="badMapperModel" filename="sub\badMapperModel.v4p" nodename="sub\badMapperModel.v4p" border="1">
-   <BOUNDS type="Window" left="4485" top="210" width="20235" height="15600">
+   <BOUNDS type="Window" left="3645" top="0" width="19500" height="15300">
    </BOUNDS>
    <BOUNDS type="Node" left="4743" top="5045" width="4620" height="270">
    </BOUNDS>
@@ -373,14 +373,14 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="219" srcpinname="Camera Source" dstnodeid="199" dstpinname="Input Node" linkstyle="VHV" hiddenwhenlocked="1">
-   <LINKPOINT x="4810" y="8125">
+   <LINKPOINT x="4770" y="8085">
    </LINKPOINT>
-   <LINKPOINT x="5135" y="8210">
+   <LINKPOINT x="5640" y="8085">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="203" srcpinname="XY" dstnodeid="219" dstpinname="Content SizeXY">
    </LINK>
-   <LINK srcnodeid="219" srcpinname="Destination Preview Transparency" dstnodeid="217" dstpinname="Preview Alpha Value">
+   <LINK srcnodeid="219" srcpinname="Destination Preview Transparency" dstnodeid="217" dstpinname="Destination Preview Transparency">
    </LINK>
    <LINK srcnodeid="216" srcpinname="Y Output Value" dstnodeid="219" dstpinname="Destination Preview Transparency">
    </LINK>
@@ -402,7 +402,7 @@
    </LINK>
    <LINK srcnodeid="17" srcpinname="Device" dstnodeid="219" dstpinname="Mouse">
    </LINK>
-   <LINK srcnodeid="219" srcpinname="Load/Save Success" dstnodeid="155" dstpinname="Y Input Value">
+   <LINK srcnodeid="219" srcpinname="Save/Load Success" dstnodeid="155" dstpinname="Y Input Value">
    </LINK>
    <LINK srcnodeid="138" srcpinname="Y Output Value" dstnodeid="219" dstpinname="Save">
    </LINK>
@@ -412,14 +412,16 @@
    </LINK>
    <LINK srcnodeid="219" srcpinname="Mouse Source" dstnodeid="217" dstpinname="Mouse Source">
    </LINK>
-   <LINK srcnodeid="219" srcpinname="Destination Fullscreen Hover" dstnodeid="217" dstpinname="Destination Fullscreen Hover">
+   <LINK srcnodeid="219" srcpinname="Destination Fullscreen Hover" dstnodeid="217" dstpinname="Hover Destination Fullscreen">
    </LINK>
-   <LINK srcnodeid="219" srcpinname="Destination Preview Hover" dstnodeid="217" dstpinname="Destination Preview Hover">
+   <LINK srcnodeid="219" srcpinname="Destination Preview Hover" dstnodeid="217" dstpinname="Hover Destination Preview">
    </LINK>
-   <LINK srcnodeid="219" srcpinname="Source Hover" dstnodeid="217" dstpinname="Source Hover">
+   <LINK srcnodeid="219" srcpinname="Source Hover" dstnodeid="217" dstpinname="Hover Source">
    </LINK>
    <LINK srcnodeid="157" srcpinname="Y Output Value" dstnodeid="219" dstpinname="Debug In Destination">
    </LINK>
    <LINK srcnodeid="193" srcpinname="Y Output Value" dstnodeid="219" dstpinname="Renderer Handles">
    </LINK>
+   <INFO author="dominikKoller" description="" tags="">
+   </INFO>
    </PATCH>

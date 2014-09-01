@@ -166,10 +166,12 @@
    </NODE>
    <LINK srcnodeid="4" srcpinname="Output" dstnodeid="15" dstpinname="Input Node">
    </LINK>
-   <BOUNDS type="Window" left="9165" top="5145" width="13200" height="6750">
+   <BOUNDS type="Window" left="9270" top="4455" width="13200" height="6750">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.1.0">
    </PACK>
    <PACK Name="addonpack" Version="32.2.0">
    </PACK>
+   <INFO author="dominikKoller" description="Toggles Mouse &amp; Keyboard for Source and Destination" tags="">
+   </INFO>
    </PATCH>

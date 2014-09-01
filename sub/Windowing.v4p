@@ -106,7 +106,7 @@
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="EQ (Value)" nodename="EQ (Value)" componentmode="Hidden" id="0">
+   <NODE systemname="EQ (Value)" nodename="EQ (Value)" componentmode="Hidden" id="0" hiddenwhenlocked="1">
    <BOUNDS type="Node" left="9570" top="4215" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
@@ -127,9 +127,9 @@
    <LINK srcnodeid="5" srcpinname="Output" dstnodeid="3" dstpinname="Input 1">
    </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="14">
-   <BOUNDS type="Node" left="9495" top="570" width="100" height="100">
+   <BOUNDS type="Node" left="10305" top="570" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="9495" top="570" width="480" height="480">
+   <BOUNDS type="Box" left="10305" top="570" width="480" height="480">
    </BOUNDS>
    <PIN pinname="Value Type" slicecount="1" values="Boolean">
    </PIN>
@@ -140,7 +140,7 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="AND (Boolean)" nodename="AND (Boolean)" componentmode="Hidden" id="15">
+   <NODE systemname="AND (Boolean)" nodename="AND (Boolean)" componentmode="Hidden" id="15" hiddenwhenlocked="1">
    <BOUNDS type="Node" left="9585" top="4620" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
@@ -150,18 +150,18 @@
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="0" srcpinname="Output" dstnodeid="15" dstpinname="Input 1">
+   <LINK srcnodeid="0" srcpinname="Output" dstnodeid="15" dstpinname="Input 1" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="14" srcpinname="Y Output Value" dstnodeid="15" dstpinname="Input 2">
+   <LINK srcnodeid="14" srcpinname="Y Output Value" dstnodeid="15" dstpinname="Input 2" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="15" srcpinname="Output" dstnodeid="3" dstpinname="Input 2">
+   <LINK srcnodeid="15" srcpinname="Output" dstnodeid="3" dstpinname="Input 2" hiddenwhenlocked="1">
    </LINK>
    <PACK Name="VVVV.Packs" Version="0.1.0">
    </PACK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="16">
-   <BOUNDS type="Node" left="870" top="555" width="100" height="100">
+   <BOUNDS type="Node" left="930" top="555" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="870" top="555" width="795" height="240">
+   <BOUNDS type="Box" left="930" top="555" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Renderer Handles|">
    </PIN>
@@ -215,7 +215,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Unzip (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Unzip (Value)" componentmode="Hidden" id="20">
-   <BOUNDS type="Node" left="870" top="1890" width="915" height="270">
+   <BOUNDS type="Node" left="945" top="1800" width="2160" height="270">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -234,7 +234,7 @@
    </LINK>
    <LINK srcnodeid="20" srcpinname="Output 2" dstnodeid="5" dstpinname="Input 1">
    </LINK>
-   <LINK srcnodeid="20" srcpinname="Output 3" dstnodeid="0" dstpinname="Input 1">
+   <LINK srcnodeid="20" srcpinname="Output 3" dstnodeid="0" dstpinname="Input 1" hiddenwhenlocked="1">
    </LINK>
    <NODE systemname="ActiveWindow (Windows)" nodename="ActiveWindow (Windows)" componentmode="Hidden" id="21">
    <BOUNDS type="Node" left="4770" top="1425" width="100" height="100">
@@ -242,7 +242,7 @@
    <PIN pinname="Handle" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="21" srcpinname="Handle" dstnodeid="0" dstpinname="Input 2">
+   <LINK srcnodeid="21" srcpinname="Handle" dstnodeid="0" dstpinname="Input 2" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="21" srcpinname="Handle" dstnodeid="5" dstpinname="Input 2">
    </LINK>
@@ -269,7 +269,7 @@
    </PIN>
    </NODE>
    <NODE systemname="EQ (Value)" nodename="EQ (Value)" componentmode="Hidden" id="24">
-   <BOUNDS type="Node" left="6525" top="4305" width="100" height="100">
+   <BOUNDS type="Node" left="6540" top="4320" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -300,7 +300,7 @@
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="14" srcpinname="Y Output Value" dstnodeid="26" dstpinname="Input 2">
+   <LINK srcnodeid="14" srcpinname="Y Output Value" dstnodeid="26" dstpinname="Input 2" hiddenwhenlocked="0">
    </LINK>
    <LINK srcnodeid="24" srcpinname="Output" dstnodeid="26" dstpinname="Input 1">
    </LINK>
@@ -392,4 +392,6 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
+   <INFO author="dominikKoller" description="" tags="">
+   </INFO>
    </PATCH>

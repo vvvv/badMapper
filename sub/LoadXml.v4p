@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha32.2.dtd" >
    <PATCH nodename="C:\Users\Domi\Documents\GitHub\badMapper\sub\LoadXml.v4p" systemname="LoadXml" filename="C:\Users\Domi\Documents\GitHub\badMapper\sub\LoadXml.v4p">
-   <BOUNDS type="Window" left="5910" top="3390" width="10755" height="8115">
+   <BOUNDS type="Window" left="5910" top="3390" width="10635" height="8115">
    </BOUNDS>
    <PACK Name="imagepack" Version="0.1.0">
    </PACK>
@@ -316,4 +316,6 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
+   <INFO author="dominikKoller" description="" tags="">
+   </INFO>
    </PATCH>

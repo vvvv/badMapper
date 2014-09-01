@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha32.2.dtd" >
    <PATCH nodename="C:\Users\Domi\Documents\GitHub\badMapper\sub\SaveXml.v4p" systemname="SaveXml" filename="C:\Users\Domi\Documents\GitHub\badMapper\sub\SaveXml.v4p">
-   <BOUNDS type="Window" left="10770" top="2520" width="8895" height="6495">
+   <BOUNDS type="Window" left="10770" top="2520" width="8460" height="6495">
    </BOUNDS>
    <PACK Name="imagepack" Version="0.1.0">
    </PACK>
@@ -31,9 +31,9 @@
    </PIN>
    </NODE>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="4">
-   <BOUNDS type="Node" left="4245" top="825" width="100" height="100">
+   <BOUNDS type="Node" left="3345" top="735" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="4245" top="825" width="795" height="240">
+   <BOUNDS type="Box" left="3345" top="735" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -41,9 +41,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="13" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="7935" top="675" width="480" height="480">
+   <BOUNDS type="Box" left="7410" top="735" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="7935" top="675" width="0" height="0">
+   <BOUNDS type="Node" left="7410" top="735" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -61,9 +61,9 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="13" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Write" linkstyle="VHV">
-   <LINKPOINT x="8475" y="4305">
+   <LINKPOINT x="8125" y="4305">
    </LINKPOINT>
-   <LINKPOINT x="705" y="4305">
+   <LINKPOINT x="530" y="4305">
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="17" systemname="IOBox (Value Advanced)">
@@ -85,9 +85,9 @@
    <LINK srcnodeid="0" srcpinname="Success" dstnodeid="17" dstpinname="Y Input Value">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="18" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="1515" top="5280" width="795" height="240">
+   <BOUNDS type="Box" left="1515" top="5070" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1515" top="5280" width="0" height="0">
+   <BOUNDS type="Node" left="1515" top="5070" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -119,9 +119,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="68" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="5295" top="1110" width="915" height="270">
+   <BOUNDS type="Box" left="4395" top="1110" width="915" height="270">
    </BOUNDS>
-   <BOUNDS type="Node" left="5295" top="1110" width="0" height="0">
+   <BOUNDS type="Node" left="4395" top="1110" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="Destination">
    </PIN>
@@ -143,7 +143,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Cons (XElement)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Cons (XElement)" componentmode="Hidden" id="70">
-   <BOUNDS type="Node" left="975" top="2145" width="3330" height="270">
+   <BOUNDS type="Node" left="975" top="2145" width="2415" height="270">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1" slicecount="1" values="||">
    </PIN>
@@ -183,9 +183,9 @@
    <LINK srcnodeid="71" srcpinname="String" dstnodeid="0" dstpinname="Content">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="73" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="7005" top="720" width="795" height="240">
+   <BOUNDS type="Box" left="6390" top="735" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="7005" top="720" width="0" height="0">
+   <BOUNDS type="Node" left="6390" top="735" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="..\SaveFile\SaveFile.xml">
    </PIN>
@@ -203,15 +203,15 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="73" srcpinname="Output String" dstnodeid="0" dstpinname="Filename" linkstyle="VHV">
-   <LINKPOINT x="7035" y="4200">
+   <LINKPOINT x="6625" y="4200">
    </LINKPOINT>
-   <LINKPOINT x="855" y="4200">
+   <LINKPOINT x="650" y="4200">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="72" srcpinname="Output String" dstnodeid="69" dstpinname="Name">
    </LINK>
    <NODE systemname="AsXElement (PolygonEditor)" filename="AsXElement (PolygonEditor).v4p" nodename="AsXElement (PolygonEditor)" componentmode="Hidden" id="67">
-   <BOUNDS type="Node" left="4230" top="1560" width="100" height="100">
+   <BOUNDS type="Node" left="3330" top="1560" width="100" height="100">
    </BOUNDS>
    <PIN pinname="PolygonEditor Input" visible="1">
    </PIN>
@@ -219,7 +219,7 @@
    </PIN>
    <PIN pinname="Element" visible="1">
    </PIN>
-   <BOUNDS type="Box" left="4230" top="1560">
+   <BOUNDS type="Box" left="3330" top="1560">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="4" srcpinname="Y Output Value" dstnodeid="67" dstpinname="PolygonEditor Input">
@@ -248,4 +248,6 @@
    </LINK>
    <LINK srcnodeid="64" srcpinname="Element" dstnodeid="70" dstpinname="Input 1">
    </LINK>
+   <INFO author="dominikKoller" description="" tags="">
+   </INFO>
    </PATCH>
