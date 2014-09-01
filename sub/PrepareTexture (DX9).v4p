@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha32.2.dtd" >
    <PATCH nodename="C:\Users\Domi\Documents\GitHub\badMapper\sub\PrepareTexture (DX9).v4p" systemname="PrepareTexture (DX9)" filename="C:\Users\Domi\Documents\GitHub\badMapper\sub\PrepareTexture (DX9).v4p" scrollx="0" scrolly="-360">
-   <BOUNDS type="Window" left="10230" top="3075" width="11370" height="10005">
+   <BOUNDS type="Window" left="9930" top="2760" width="11370" height="10005">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.1.0">
    </PACK>
@@ -247,9 +247,9 @@
    <LINK srcnodeid="23" srcpinname="Y Output Value" dstnodeid="24" dstpinname="Fader">
    </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="27">
-   <BOUNDS type="Node" left="8880" top="645" width="100" height="100">
+   <BOUNDS type="Node" left="8880" top="675" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="8880" top="645" width="795" height="240">
+   <BOUNDS type="Box" left="8880" top="675" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="|PolygonEditor Source|">
    </PIN>
@@ -303,9 +303,9 @@
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="29" systemname="IOBox (Node)">
-   <BOUNDS type="Box" left="810" top="8745" width="795" height="240">
+   <BOUNDS type="Box" left="810" top="8445" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="810" top="8745" width="0" height="0">
+   <BOUNDS type="Node" left="810" top="8445" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Source Texture|">
    </PIN>

@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha32.2.dtd" >
-   <PATCH nodename="C:\Users\Domi\Documents\GitHub\badMapper\sub\badMapperModel.v4p" scrollx="0" scrolly="-360" systemname="badMapperModel" filename="C:\Users\Domi\Documents\GitHub\badMapper\sub\badMapperModel.v4p" locked="0" bgcolor="14737632">
+   <PATCH nodename="C:\Users\Domi\Documents\GitHub\badMapper\sub\badMapperModel.v4p" scrollx="0" scrolly="-156" systemname="badMapperModel" filename="C:\Users\Domi\Documents\GitHub\badMapper\sub\badMapperModel.v4p" locked="0" bgcolor="14737632">
    <NODE systemname="Windowing" filename="Windowing.v4p" componentmode="Hidden" id="0" nodename="Windowing.v4p" hiddenwhenlocked="0">
    <BOUNDS type="Node" left="7995" top="2775" width="1515" height="270">
    </BOUNDS>
@@ -29,7 +29,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="17640" top="10845" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="10770" top="2520" width="8895" height="6495">
+   <BOUNDS type="Window" left="10770" top="2520" width="8460" height="6495">
    </BOUNDS>
    <PIN pinname="PolygonEditor Source" visible="1" slicecount="104" values="18,4,0,0,1,0,0,4,1,2,1,0,0,4,0,1,1,0,0,36,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,2,1,1,-0.00390625,0.0859375,0,0,-0.50390625,0.0859375,0,0,-0.50390625,0.5859375,0,0,-0.00390625,0.5859375,0,0,0.6015625,0.0859375,0,0,-0.00390625,0.0859375,0,0,-0.00390625,0.5859375,0,0,0.6015625,0.5859375,0,0,0.69140625,-0.8828125,0,0,-0.59375,-0.8828125,0,0,-0.59375,-0.65234375,0,0,0.69140625,-0.65234375,0,0">
    </PIN>
@@ -187,9 +187,9 @@
    <NODE id="26" systemname="IOBox (String)" componentmode="InABox" nodename="IOBox (String)">
    <PIN pinname="Descriptive Name" slicecount="1" values="SaveFile">
    </PIN>
-   <BOUNDS type="Box" left="6540" top="655" width="1530" height="240">
+   <BOUNDS type="Box" left="6540" top="675" width="1530" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="6540" top="655" width="750" height="240">
+   <BOUNDS type="Node" left="6540" top="675" width="750" height="240">
    </BOUNDS>
    <PIN pinname="Output String" visible="1">
    </PIN>
@@ -241,9 +241,9 @@
    <NODE id="32" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|Renderer Handles|">
    </PIN>
-   <BOUNDS type="Box" left="4515" top="650" width="750" height="240">
+   <BOUNDS type="Box" left="4515" top="675" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="4515" top="650" width="750" height="240">
+   <BOUNDS type="Node" left="4515" top="675" width="750" height="240">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="32" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Renderer Handles">
@@ -401,9 +401,9 @@
    <LINK srcnodeid="44" srcpinname="Y Output Value" dstnodeid="45" dstpinname="Input">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="46" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="2655" top="720" width="795" height="240">
+   <BOUNDS type="Box" left="2655" top="675" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="2655" top="720" width="0" height="0">
+   <BOUNDS type="Node" left="2655" top="675" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
@@ -473,9 +473,9 @@
    <LINK srcnodeid="55" srcpinname="Success" dstnodeid="7" dstpinname="Input 1" hiddenwhenlocked="1">
    </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="60" systemname="IOBox (Node)">
-   <BOUNDS type="Box" left="450" top="12090" width="795" height="240">
+   <BOUNDS type="Box" left="510" top="12120" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="450" top="12090" width="0" height="0">
+   <BOUNDS type="Node" left="510" top="12120" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="5" values="|Camera Source|,|Camera Source|,|Camera Source|,|Camera Source|,|Camera Source|">
    </PIN>
@@ -483,9 +483,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="61" systemname="IOBox (Node)">
-   <BOUNDS type="Box" left="1725" top="12405" width="795" height="240">
+   <BOUNDS type="Box" left="1620" top="11715" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1725" top="12405" width="0" height="0">
+   <BOUNDS type="Node" left="1620" top="11715" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="5" values="|Camera Preview Destination|,|Camera Preview Destination|,|Camera Preview Destination|,|Camera Preview Destination|,|Camera Preview Destination|">
    </PIN>
@@ -507,9 +507,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="63" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="16155" top="510" width="6675" height="270">
+   <BOUNDS type="Node" left="15855" top="510" width="6675" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="16155" top="510" width="2880" height="690">
+   <BOUNDS type="Box" left="15855" top="510" width="2880" height="690">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|Press CTRL E to make hidden connections disappear, it makes this patch much easier to read|">
    </PIN>
