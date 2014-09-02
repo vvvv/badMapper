@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha32.2.dtd" >
-   <PATCH nodename="C:\Users\Domi\Documents\GitHub\badMapper\badMapper (DX9) help.v4p" systemname="badMapper3 (DX9) help" filename="C:\Users\Domi\Documents\GitHub\badMapper-v3.0\badMapper3 (DX9) help.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="3720" top="7005" width="17850" height="8295">
+   <PATCH nodename="C:\Users\Domi\Documents\GitHub\badMapper\badMapper (DX9) help.v4p" systemname="badMapper3 (DX9) help" filename="C:\Users\Domi\Documents\GitHub\badMapper-v3.0\badMapper3 (DX9) help.v4p" scrollx="17190" scrolly="-96">
+   <BOUNDS type="Window" left="4665" top="6900" width="17850" height="8355">
    </BOUNDS>
    <PACK Name="addonpack" Version="32.2.0">
    </PACK>
@@ -339,7 +339,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="11085" top="6060" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="8970" top="0" width="10425" height="6915">
+   <BOUNDS type="Window" left="8895" top="0" width="10425" height="6915">
    </BOUNDS>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
@@ -355,7 +355,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="13575" top="6060" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="19425" top="0" width="9375" height="6975">
+   <BOUNDS type="Window" left="19305" top="0" width="9495" height="6915">
    </BOUNDS>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
@@ -377,11 +377,11 @@
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="81" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="4215" top="1575" width="2400" height="480">
+   <BOUNDS type="Node" left="4335" top="1575" width="2400" height="480">
    </BOUNDS>
-   <BOUNDS type="Box" left="4215" top="1575" width="4065" height="1005">
+   <BOUNDS type="Box" left="4335" top="1575" width="3945" height="915">
    </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|- the info per source is: &cr;&lf;   UpperLeft Point, Size and LowerRight Point in Pixels&cr;&lf;- drag a selection&apos;s edges to resize it&cr;&lf;- mousewheel to zoom, right drag to pan|">
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|- the info per source is: &cr;&lf;   UpperLeft Point, Size and LowerRight Point in Pixels&cr;&lf;&cr;&lf;- drag a selection&apos;s edges to resize it&cr;&lf;|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
@@ -391,9 +391,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="80" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="4215" top="3120" width="2400" height="480">
+   <BOUNDS type="Node" left="4335" top="3075" width="2400" height="480">
    </BOUNDS>
-   <BOUNDS type="Box" left="4215" top="3120" width="2040" height="315">
+   <BOUNDS type="Box" left="4335" top="3075" width="2040" height="315">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|- drag corner points|">
    </PIN>
@@ -423,9 +423,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="78" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="3945" top="1245" width="1215" height="270">
+   <BOUNDS type="Node" left="4065" top="1245" width="1215" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="3945" top="1245" width="2220" height="330">
+   <BOUNDS type="Box" left="4065" top="1245" width="2220" height="330">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|Source Window|">
    </PIN>
@@ -439,9 +439,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="77" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="3885" top="5625" width="1215" height="270">
+   <BOUNDS type="Node" left="4005" top="5580" width="1215" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="3885" top="5625" width="2220" height="330">
+   <BOUNDS type="Box" left="4005" top="5580" width="2220" height="330">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|Destination Window|">
    </PIN>
@@ -455,9 +455,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="76" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="3945" top="2790" width="1215" height="270">
+   <BOUNDS type="Node" left="4065" top="2745" width="1215" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="3945" top="2790" width="2490" height="345">
+   <BOUNDS type="Box" left="4065" top="2745" width="2490" height="345">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|Destination Preview Window|">
    </PIN>
@@ -471,9 +471,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="75" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="4275" top="5985" width="4320" height="270">
+   <BOUNDS type="Node" left="4395" top="5940" width="4320" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="4275" top="5985" width="2775" height="585">
+   <BOUNDS type="Box" left="4395" top="5940" width="2775" height="585">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|The Destination renderer is the one you go fullscreen with.|">
    </PIN>
@@ -485,9 +485,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="74" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="4275" top="4410" width="10395" height="270">
+   <BOUNDS type="Node" left="4395" top="4365" width="10395" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="4275" top="4410" width="3180" height="975">
+   <BOUNDS type="Box" left="4395" top="4365" width="3180" height="975">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|A background image is useful for preparing a mapping &quot;offline&quot;. The image should be a photograph taken from the position of the final projector.|">
    </PIN>
@@ -633,9 +633,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="93" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="4275" top="3435" width="7605" height="270">
+   <BOUNDS type="Node" left="4395" top="3390" width="7605" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="4275" top="3435" width="2865" height="720">
+   <BOUNDS type="Box" left="4395" top="3390" width="2865" height="720">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|- double click a shape to toggle Shape Mode, which lets you resize it just as you can in the Source Window|">
    </PIN>
@@ -743,9 +743,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="97" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="4275" top="6585" width="8670" height="270">
+   <BOUNDS type="Node" left="4395" top="6540" width="8670" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="4275" top="6585" width="2880" height="870">
+   <BOUNDS type="Box" left="4395" top="6540" width="2880" height="870">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|If &apos;Debug In Destination&apos; is enabled, you can edit shapes in this window just as you can in the Destination Preview Window.|">
    </PIN>
@@ -776,6 +776,20 @@
    <BOUNDS type="Box" left="15480" top="3765" width="1695" height="450">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Destination Preview Transparency|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="101" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="585" top="5685" width="3075" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="585" top="5685" width="3075" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|- mousewheel to zoom, right drag to pan|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
