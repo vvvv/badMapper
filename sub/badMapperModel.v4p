@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha32.2.dtd" >
-   <PATCH nodename="C:\Users\Domi\Documents\GitHub\badMapper\sub\badMapperModel.v4p" scrollx="0" scrolly="-156" systemname="badMapperModel" filename="C:\Users\Domi\Documents\GitHub\badMapper\sub\badMapperModel.v4p" locked="0" bgcolor="14737632">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.2.dtd" >
+   <PATCH nodename="C:\Users\joreg\Documents\repos\badMapper\sub\badMapperModel.v4p" scrollx="30" scrolly="0" systemname="badMapperModel" filename="C:\Users\Domi\Documents\GitHub\badMapper\sub\badMapperModel.v4p" locked="0" bgcolor="14737632">
    <NODE systemname="Windowing" filename="Windowing.v4p" componentmode="Hidden" id="0" nodename="Windowing.v4p" hiddenwhenlocked="0">
    <BOUNDS type="Node" left="7995" top="2775" width="1515" height="270">
    </BOUNDS>
@@ -86,6 +86,10 @@
    <PIN pinname="Destination Preview Hover" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Destination Fullscreen Hover" visible="1">
+   </PIN>
+   <PIN pinname="Initialize" visible="1">
+   </PIN>
+   <PIN pinname="Remove Polygon" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="Switch (Node Input)" nodename="Switch (Node Input)" componentmode="Hidden" id="14">
@@ -193,6 +197,10 @@
    </BOUNDS>
    <PIN pinname="Output String" visible="1">
    </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Filename">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="MyMapping.xml">
+   </PIN>
    </NODE>
    <LINK srcnodeid="26" srcpinname="Output String" dstnodeid="12" dstpinname="Load Filename">
    </LINK>
@@ -204,6 +212,10 @@
    <BOUNDS type="Node" left="7305" top="1295" width="750" height="240">
    </BOUNDS>
    <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
    </PIN>
    </NODE>
    <LINK srcnodeid="0" srcpinname="Destination Preview Hover" dstnodeid="14" dstpinname="Switch" hiddenwhenlocked="1" linkstyle="PolyLine">
@@ -255,6 +267,8 @@
    </BOUNDS>
    <BOUNDS type="Node" left="9060" top="675" width="750" height="240">
    </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
    </NODE>
    <LINK srcnodeid="33" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Debug In Destination">
    </LINK>
@@ -329,6 +343,10 @@
    </BOUNDS>
    <BOUNDS type="Node" left="7995" top="1730" width="750" height="240">
    </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
    </NODE>
    <LINK srcnodeid="40" srcpinname="Y Output Value" dstnodeid="5" dstpinname="Save" hiddenwhenlocked="1">
    </LINK>
@@ -343,6 +361,12 @@
    </BOUNDS>
    <BOUNDS type="Node" left="10890" top="675" width="750" height="240">
    </BOUNDS>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="0.2">
+   </PIN>
    </NODE>
    <LINK srcnodeid="41" srcpinname="Y Output Value" dstnodeid="18" dstpinname="Input 2" hiddenwhenlocked="1">
    </LINK>
@@ -368,11 +392,11 @@
    </NODE>
    <LINK srcnodeid="43" srcpinname="Output Node" dstnodeid="17" dstpinname="Keyboard" hiddenwhenlocked="1">
    </LINK>
-   <BOUNDS type="Window" left="3645" top="0" width="19500" height="15300">
+   <BOUNDS type="Window" left="11010" top="2070" width="19500" height="15300">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.1.0">
    </PACK>
-   <PACK Name="addonpack" Version="32.2.0">
+   <PACK Name="addonpack" Version="34.1.0">
    </PACK>
    <NODE systemname="Divide (Value)" nodename="Divide (Value)" componentmode="Hidden" id="45">
    <BOUNDS type="Node" left="2565" top="1830" width="720" height="270">
@@ -382,6 +406,8 @@
    <PIN pinname="Input 2" visible="1" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Error Handling Style" slicecount="1" values="Ignore">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="44" systemname="IOBox (Value Advanced)">
@@ -557,14 +583,14 @@
    </BOUNDS>
    <BOUNDS type="Window" left="5745" top="2535" width="15525" height="7230">
    </BOUNDS>
+   <PIN pinname="Initialize" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Remove" visible="1" slicecount="1" values="0">
+   </PIN>
    </NODE>
    <LINK srcnodeid="12" srcpinname="Polygon Source" dstnodeid="68" dstpinname="Input Source">
    </LINK>
-   <LINK srcnodeid="12" srcpinname="Initialize" dstnodeid="68" dstpinname="Initialize">
-   </LINK>
    <LINK srcnodeid="12" srcpinname="Remove Polygon Index" dstnodeid="68" dstpinname="Remove Index">
-   </LINK>
-   <LINK srcnodeid="12" srcpinname="Remove Polygon" dstnodeid="68" dstpinname="Remove">
    </LINK>
    <LINK srcnodeid="12" srcpinname="Insert Polygon" dstnodeid="68" dstpinname="Insert">
    </LINK>
@@ -638,4 +664,20 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
+   <PACK Name="CV" Version="0.2.0">
+   </PACK>
+   <LINK srcnodeid="12" srcpinname="Initialize" dstnodeid="68" dstpinname="Initialize">
+   </LINK>
+   <NODE systemname="OnOpen (VVVV)" nodename="OnOpen (VVVV)" componentmode="Hidden" id="70">
+   <BOUNDS type="Node" left="5100" top="7320" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Simulate" visible="1">
+   </PIN>
+   <PIN pinname="Bang" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="12" srcpinname="Remove Polygon" dstnodeid="70" dstpinname="Simulate">
+   </LINK>
+   <LINK srcnodeid="70" srcpinname="Bang" dstnodeid="68" dstpinname="Remove">
+   </LINK>
    </PATCH>

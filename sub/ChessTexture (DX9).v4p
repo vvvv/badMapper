@@ -1,10 +1,10 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha32.2.dtd" >
-   <PATCH nodename="C:\Users\Domi\Documents\GitHub\badMapper\sub\ChessTexture (DX9).v4p" systemname="ChessTexture (DX9)" filename="C:\Users\Domi\Documents\GitHub\badMapper\sub\ChessTexture (DX9).v4p">
-   <BOUNDS type="Window" left="10245" top="3585" width="5220" height="8325">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.2.dtd" >
+   <PATCH nodename="C:\Users\joreg\Documents\repos\badMapper\sub\ChessTexture (DX9).v4p" systemname="ChessTexture (DX9)" filename="C:\Users\Domi\Documents\GitHub\badMapper\sub\ChessTexture (DX9).v4p">
+   <BOUNDS type="Window" left="10245" top="3585" width="5925" height="8325">
    </BOUNDS>
    <PACK Name="VVVV.Packs" Version="0.1.0">
    </PACK>
-   <PACK Name="addonpack" Version="32.2.0">
+   <PACK Name="addonpack" Version="34.1.0">
    </PACK>
    <NODE systemname="Grid (EX9.Geometry)" nodename="Grid (EX9.Geometry)" componentmode="Hidden" id="8">
    <BOUNDS type="Node" left="435" top="3330" width="100" height="100">
@@ -21,7 +21,7 @@
    </BOUNDS>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
-   <PIN pinname="XYZ" slicecount="1" values="2" visible="1">
+   <PIN pinname="XYZ" slicecount="1" visible="1" values="2">
    </PIN>
    <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
    </PIN>
@@ -60,6 +60,8 @@
    <PIN pinname="Input 2" visible="1" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Error Handling Style" slicecount="1" values="Ignore">
    </PIN>
    </NODE>
    <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="2">
@@ -178,4 +180,6 @@
    </LINK>
    <INFO author="dominikKoller" description="renders a Chessboard on a DX9 Texture" tags="">
    </INFO>
+   <PACK Name="CV" Version="0.2.0">
+   </PACK>
    </PATCH>
