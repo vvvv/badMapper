@@ -1,8 +1,8 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha32.2.dtd" >
-   <PATCH nodename="C:\Users\Domi\Documents\GitHub\badMapper\sub\Source (DX9).v4p" systemname="source" filename="C:\Users\Domi\Documents\GitHub\badMapper-v3.0\sub\source.v4p" scrollx="0" scrolly="-360">
-   <BOUNDS type="Window" left="2475" top="630" width="24645" height="13155">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.7.dtd" >
+   <PATCH nodename="D:\GIT\badMapper\sub\Source (DX9).v4p" systemname="source" filename="C:\Users\Domi\Documents\GitHub\badMapper-v3.0\sub\source.v4p" scrollx="0" scrolly="-360">
+   <BOUNDS type="Window" left="6615" top="2070" width="24645" height="13155">
    </BOUNDS>
-   <PACK Name="addonpack" Version="32.2.0">
+   <PACK Name="addonpack" Version="35.0.0">
    </PACK>
    <NODE systemname="Group (EX9)" nodename="Group (EX9)" componentmode="Hidden" id="41">
    <BOUNDS type="Node" left="4140" top="9990" width="8040" height="270">
@@ -17,7 +17,7 @@
    </PIN>
    <PIN pinname="Layer 3" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Enabled" slicecount="1" visible="-1" values="1" pintype="Input">
+   <PIN pinname="Enabled" slicecount="1" visible="-1" pintype="Input" values="1">
    </PIN>
    <PIN pinname="Layer 5" visible="1" slicecount="1" values="||">
    </PIN>
@@ -41,7 +41,7 @@
    </PIN>
    <PIN pinname="Show Brush" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Font" slicecount="1" values="|HelveticaNeueLT Std|">
+   <PIN pinname="Font" slicecount="1" values="Arial">
    </PIN>
    <PIN pinname="Vertical Align" slicecount="1" values="Bottom">
    </PIN>
@@ -242,7 +242,7 @@
    </LINK>
    <LINK srcnodeid="76" srcpinname="Transform Out" dstnodeid="31" dstpinname="Transform">
    </LINK>
-   <NODE systemname="Cursor (DX9)" filename="D:\gitHub\vvvv-sdk\vvvv45\lib\nodes\modules\EX9\Cursor (DX9).v4p" nodename="Cursor (DX9)" componentmode="Hidden" id="64">
+   <NODE systemname="Cursor (DX9 Legacy 2)" filename="D:\gitHub\vvvv-sdk\vvvv45\lib\nodes\modules\EX9\Cursor (DX9).v4p" nodename="Cursor (DX9)" componentmode="Hidden" id="64">
    <BOUNDS type="Node" left="5220" top="10905" width="960" height="270">
    </BOUNDS>
    <PIN pinname="Mouse" visible="1" slicecount="1" values="||">
