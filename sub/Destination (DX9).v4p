@@ -1,8 +1,8 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.2.dtd" >
-   <PATCH nodename="C:\Users\joreg\Documents\repos\badMapper\sub\Destination (DX9).v4p" systemname="destination" filename="C:\Users\Domi\Documents\GitHub\badMapper-v3.0\sub\destination.v4p" scrollx="0" scrolly="4965">
-   <BOUNDS type="Window" left="3390" top="5535" width="28980" height="13980">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.7.dtd" >
+   <PATCH nodename="D:\GIT\badMapper\sub\Destination (DX9).v4p" systemname="destination" filename="C:\Users\Domi\Documents\GitHub\badMapper-v3.0\sub\destination.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="-120" top="-120" width="29040" height="15840">
    </BOUNDS>
-   <PACK Name="addonpack" Version="34.1.0">
+   <PACK Name="addonpack" Version="35.0.0">
    </PACK>
    <NODE systemname="Group (EX9)" nodename="Group (EX9)" componentmode="Hidden" id="21">
    <BOUNDS type="Node" left="5460" top="6510" width="10410" height="270">
@@ -414,36 +414,6 @@
    <PIN pinname="Output Node" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="Cursor (DX9)" filename="%VVVV%\lib\nodes\modules\EX9\Cursor (DX9).v4p" nodename="Cursor (DX9)" componentmode="Hidden" id="213">
-   <BOUNDS type="Node" left="1635" top="12480" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Layer" visible="1">
-   </PIN>
-   <PIN pinname="Mouse" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Cursor Type" visible="1">
-   </PIN>
-   <BOUNDS type="Window" left="-18570" top="10635" width="19065" height="13830">
-   </BOUNDS>
-   <PIN pinname="Enabled" visible="1">
-   </PIN>
-   <PIN pinname="Selection" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="213" srcpinname="Layer" dstnodeid="36" dstpinname="Layer 4">
-   </LINK>
-   <LINK srcnodeid="212" srcpinname="Output Node" dstnodeid="213" dstpinname="Mouse" linkstyle="VHV">
-   <LINKPOINT x="15925" y="12130">
-   </LINKPOINT>
-   <LINKPOINT x="2585" y="12080">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="158" srcpinname="Output Enum" dstnodeid="213" dstpinname="Cursor Type" linkstyle="VHV">
-   <LINKPOINT x="13860" y="12115">
-   </LINKPOINT>
-   <LINKPOINT x="1830" y="12155">
-   </LINKPOINT>
-   </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="214">
    <BOUNDS type="Node" left="17925" top="525" width="100" height="100">
    </BOUNDS>
@@ -680,12 +650,6 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="252" srcpinname="Y Output Value" dstnodeid="213" dstpinname="Selection" linkstyle="VHV">
-   <LINKPOINT x="15480" y="12315">
-   </LINKPOINT>
-   <LINKPOINT x="2340" y="12330">
-   </LINKPOINT>
-   </LINK>
    <NODE systemname="Polygon (PolygonEditor Split)" filename="%VVVV%\addonpack\lib\nodes\modules\2d\PolygonEditor\Polygon (PolygonEditor Split).v4p" nodename="Polygon (PolygonEditor Split)" componentmode="Hidden" id="204">
    <BOUNDS type="Node" left="8205" top="1830" width="100" height="100">
    </BOUNDS>
@@ -930,48 +894,6 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="Cursor (DX9)" filename="%VVVV%\lib\nodes\modules\EX9\Cursor (DX9).v4p" nodename="Cursor (DX9)" componentmode="Hidden" id="268">
-   <BOUNDS type="Node" left="6945" top="10350" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Layer" visible="1">
-   </PIN>
-   <PIN pinname="Mouse" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Cursor Type" visible="1">
-   </PIN>
-   <BOUNDS type="Window" left="-18570" top="10635" width="19065" height="13830">
-   </BOUNDS>
-   <PIN pinname="Enabled" visible="1">
-   </PIN>
-   <PIN pinname="Selection" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="212" srcpinname="Output Node" dstnodeid="268" dstpinname="Mouse" linkstyle="VHV">
-   <LINKPOINT x="15925" y="9760">
-   </LINKPOINT>
-   <LINKPOINT x="7895" y="9710">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="158" srcpinname="Output Enum" dstnodeid="268" dstpinname="Cursor Type" linkstyle="VHV">
-   <LINKPOINT x="14300" y="9890">
-   </LINKPOINT>
-   <LINKPOINT x="6700" y="9835">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="144" srcpinname="Y Output Value" dstnodeid="268" dstpinname="Enabled" linkstyle="VHV">
-   <LINKPOINT x="19530" y="10170">
-   </LINKPOINT>
-   <LINKPOINT x="7665" y="10185">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="252" srcpinname="Y Output Value" dstnodeid="268" dstpinname="Selection" linkstyle="VHV">
-   <LINKPOINT x="15920" y="10225">
-   </LINKPOINT>
-   <LINKPOINT x="7210" y="10145">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="268" srcpinname="Layer" dstnodeid="238" dstpinname="Layer 3">
-   </LINK>
    <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="269">
    <BOUNDS type="Node" left="20400" top="1845" width="100" height="100">
    </BOUNDS>
@@ -991,14 +913,6 @@
    </LINKPOINT>
    <LINKPOINT x="6510" y="4013">
    </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="267" srcpinname="Y Output Value" dstnodeid="213" dstpinname="Enabled" linkstyle="VHV">
-   <LINKPOINT x="21780" y="12405">
-   </LINKPOINT>
-   <LINKPOINT x="2355" y="12420">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="213" srcpinname="Layer" dstnodeid="260" dstpinname="Layer 2">
    </LINK>
    <NODE systemname="xyZ (3d XY)" nodename="xyZ (3d XY)" componentmode="Hidden" id="270">
    <BOUNDS type="Node" left="10725" top="4260" width="100" height="100">
@@ -1080,4 +994,84 @@
    </LINK>
    <PACK Name="CV" Version="0.2.0">
    </PACK>
+   <NODE systemname="Cursor (DX9 OwnLegacy FixedEnum)" filename="Cursor (DX9 OwnLegacy FixedEnum).v4p" nodename="Cursor (DX9 OwnLegacy FixedEnum)" componentmode="Hidden" id="275">
+   <BOUNDS type="Node" left="6030" top="10605" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Mouse" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Cursor Type" visible="1">
+   </PIN>
+   <PIN pinname="Selection" visible="1">
+   </PIN>
+   <PIN pinname="Enabled" visible="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="212" srcpinname="Output Node" dstnodeid="275" dstpinname="Mouse" linkstyle="VHV">
+   <LINKPOINT x="16845" y="10230">
+   </LINKPOINT>
+   <LINKPOINT x="6060" y="10230">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="158" srcpinname="Output Enum" dstnodeid="275" dstpinname="Cursor Type" linkstyle="VHV">
+   <LINKPOINT x="13860" y="10305">
+   </LINKPOINT>
+   <LINKPOINT x="6225" y="10305">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="252" srcpinname="Y Output Value" dstnodeid="275" dstpinname="Selection" linkstyle="VHV">
+   <LINKPOINT x="15480" y="10410">
+   </LINKPOINT>
+   <LINKPOINT x="6735" y="10410">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="144" srcpinname="Y Output Value" dstnodeid="275" dstpinname="Enabled" linkstyle="VHV">
+   <LINKPOINT x="19380" y="10530">
+   </LINKPOINT>
+   <LINKPOINT x="6900" y="10530">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="275" srcpinname="Layer" dstnodeid="238" dstpinname="Layer 3">
+   </LINK>
+   <NODE systemname="Cursor (DX9 OwnLegacy FixedEnum)" filename="Cursor (DX9 OwnLegacy FixedEnum).v4p" nodename="Cursor (DX9 OwnLegacy FixedEnum)" componentmode="Hidden" id="276">
+   <BOUNDS type="Node" left="1620" top="12600" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Mouse" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Cursor Type" visible="1" slicecount="1" values="Cross">
+   </PIN>
+   <PIN pinname="Selection" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Enabled" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="212" srcpinname="Output Node" dstnodeid="276" dstpinname="Mouse" linkstyle="VHV">
+   <LINKPOINT x="16845" y="12225">
+   </LINKPOINT>
+   <LINKPOINT x="1650" y="12225">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="158" srcpinname="Output Enum" dstnodeid="276" dstpinname="Cursor Type" linkstyle="VHV">
+   <LINKPOINT x="13860" y="12360">
+   </LINKPOINT>
+   <LINKPOINT x="1815" y="12360">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="252" srcpinname="Y Output Value" dstnodeid="276" dstpinname="Selection" linkstyle="VHV">
+   <LINKPOINT x="15480" y="12465">
+   </LINKPOINT>
+   <LINKPOINT x="2325" y="12465">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="267" srcpinname="Y Output Value" dstnodeid="276" dstpinname="Enabled" linkstyle="VHV">
+   <LINKPOINT x="21630" y="12540">
+   </LINKPOINT>
+   <LINKPOINT x="2490" y="12540">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="276" srcpinname="Layer" dstnodeid="260" dstpinname="Layer 2">
+   </LINK>
    </PATCH>
